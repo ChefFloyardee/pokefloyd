@@ -2,14 +2,22 @@ ViridianSchoolHouse_Object:
 	db $a ; border block
 
 	db 2 ; warps
-	warp 2, 7, 2, -1
-	warp 3, 7, 2, -1
+	warp 2, 7, 5, PEWTER_CITY
+	warp 3, 7, 5, PEWTER_CITY
 
-	db 0 ; signs
+	db 1 ; signs
+	sign 1, 0, -1 ; CeladonMart1Text2
 
-	db 2 ; objects
+	db 9 ; objects
 	object SPRITE_BRUNETTE_GIRL, 3, 5, STAY, UP, 1 ; person
-	object SPRITE_LASS, 4, 1, STAY, DOWN, 2 ; person
+	object SPRITE_BUG_CATCHER, 4, 5, STAY, UP, 2 ; person
+	object SPRITE_LASS, 4, 1, STAY, DOWN, 7 ; person
+	object SPRITE_GIRL, 5, 3, STAY, LEFT, 8 ; person
+	object SPRITE_GAMEBOY_KID, 2, 3, STAY, RIGHT, 4 ; person
+	object SPRITE_YOUNG_BOY, 2, 5, STAY, UP, 6 ; person
+	object SPRITE_LITTLE_GIRL, 5, 5, STAY, UP, 5 ; person
+	object SPRITE_SEEL, 6, 1, STAY, DOWN, 9 ; person
+	object SPRITE_BLACK_HAIR_BOY_1, 5, 4, STAY, LEFT, 3 ; person
 
 	; warp-to
 	warp_to 2, 7, VIRIDIAN_SCHOOL_HOUSE_WIDTH

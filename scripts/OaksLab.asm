@@ -747,6 +747,7 @@ OaksLab_TextPointers:
 	dw OaksLabText25
 	dw OaksLabText26
 	dw OaksLabText27
+	dw OakSnorlaxText
 
 OaksLab_TextPointers2:
 	dw OaksLabText1
@@ -922,7 +923,7 @@ OaksLabMonChoiceMenu:
 	call PrintText
 	xor a ; PLAYER_PARTY_DATA
 	ld [wMonDataLocation], a
-	ld a, 5
+	ld a, 20
 	ld [wCurEnemyLVL], a
 	ld a, [wcf91]
 	ld [wd11e], a
@@ -1231,3 +1232,17 @@ OaksLabText10:
 OaksLabText_1d405:
 	TX_FAR _OaksLabText_1d405
 	db "@"
+	
+OakSnorlaxText:
+	TX_ASM
+	ld hl, OakSnorlaxText_1d5b1
+	call PrintText
+	ld a, SNORLAX
+	call PlayCry
+	call WaitForSoundToFinish
+	jp TextScriptEnd
+	
+OakSnorlaxText_1d5b1:
+	TX_FAR _OakSnorlaxText_1d5b1
+	db "@"
+

@@ -34,7 +34,7 @@ _AgathaAfterBattleText::
 	cont "sees in you now!"
 
 	para "I have nothing"
-	line "else to say! Run"
+	line "else to say!! Run"
 	cont "along now, child!"
 	done
 

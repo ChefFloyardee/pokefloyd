@@ -128,20 +128,16 @@ PalletMovementScript_WalkToLab:
 	ret
 
 RLEList_ProfOakWalkToLab:
-	db NPC_MOVEMENT_DOWN, $05
-	db NPC_MOVEMENT_LEFT, $01
-	db NPC_MOVEMENT_DOWN, $05
-	db NPC_MOVEMENT_RIGHT, $03
-	db NPC_MOVEMENT_UP, $01
+	db NPC_MOVEMENT_DOWN, $03
+	db NPC_MOVEMENT_RIGHT, $06
+	db NPC_MOVEMENT_UP, $02
 	db $E0, $01 ; stand still
 	db $FF
 
 RLEList_PlayerWalkToLab:
-	db D_UP, $02
-	db D_RIGHT, $03
-	db D_DOWN, $05
-	db D_LEFT, $01
-	db D_DOWN, $06
+	db D_UP, $03
+	db D_RIGHT, $06
+	db D_DOWN, $04
 	db $FF
 
 PalletMovementScript_Done:
@@ -250,20 +246,13 @@ PewterMovementScript_WalkToGym:
 
 RLEList_PewterGymPlayer:
 	db 0, $01
-	db D_RIGHT, $02
-	db D_DOWN, $05
-	db D_LEFT, $0B
-	db D_UP, $05
-	db D_LEFT, $0F
+	db D_DOWN, $0A
+	db D_LEFT, $05
 	db $FF
 
 RLEList_PewterGymGuy:
-	db NPC_MOVEMENT_DOWN, $02
-	db NPC_MOVEMENT_LEFT, $0F
-	db NPC_MOVEMENT_UP, $05
-	db NPC_MOVEMENT_LEFT, $0B
-	db NPC_MOVEMENT_DOWN, $05
-	db NPC_MOVEMENT_RIGHT, $03
+	db NPC_MOVEMENT_LEFT, $04
+	db NPC_MOVEMENT_DOWN, $0B
 	db $FF
 
 FreezeEnemyTrainerSprite:

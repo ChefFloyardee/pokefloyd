@@ -9,9 +9,9 @@ const_value = 0
 	const HS_PALLET_TOWN_OAK               ; 00
 	const HS_LYING_OLD_MAN                 ; 01
 	const HS_OLD_MAN                       ; 02
-	const HS_MUSEUM_GUY                    ; 03
-	const HS_GYM_GUY                       ; 04
-	const HS_CERULEAN_RIVAL                ; 05
+	const HS_GYM_GUY                       ; 03
+	const HS_CERULEAN_RIVAL                ; 04
+	const HS_VIRIDIAN_CITY_ITEM_1          ; 05
 	const HS_CERULEAN_ROCKET               ; 06
 	const HS_CERULEAN_GUARD_1              ; 07
 	const HS_UNKNOWN_DUNGEON_GUY           ; 08
@@ -234,3 +234,4 @@ const_value = 0
 	const HS_SEAFOAM_ISLANDS_B4F_BOULDER_1 ; E1
 	const HS_SEAFOAM_ISLANDS_B4F_BOULDER_2 ; E2
 	const HS_ARTICUNO                      ; E3 X
+	const HS_MUSEUM_GUY					   ; E4

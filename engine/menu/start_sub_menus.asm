@@ -158,7 +158,7 @@ StartMenu_Pokemon:
 	jp z, .loop
 	jp CloseTextDisplay
 .surf
-	bit 4, a ; does the player have the Soul Badge?
+	bit 0, a ; does the player have the Boulder Badge?
 	jp z, .newBadgeRequired
 	callba IsSurfingAllowed
 	ld hl, wd728
@@ -181,7 +181,7 @@ StartMenu_Pokemon:
 	call GBPalWhiteOutWithDelay3
 	jp .goBackToMap
 .flash
-	bit 0, a ; does the player have the Boulder Badge?
+	bit 4, a ; does the player have the Soul Badge?
 	jp z, .newBadgeRequired
 	xor a
 	ld [wMapPalOffset], a

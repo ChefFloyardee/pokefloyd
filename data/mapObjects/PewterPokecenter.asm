@@ -7,10 +7,11 @@ PewterPokecenter_Object:
 
 	db 0 ; signs
 
-	db 4 ; objects
+	db 5 ; objects
 	object SPRITE_NURSE, 3, 1, STAY, DOWN, 1 ; person
-	object SPRITE_GENTLEMAN, 11, 7, STAY, LEFT, 2 ; person
-	object SPRITE_CLEFAIRY, 1, 3, STAY, DOWN, 3 ; person
+	object SPRITE_GIRL, 5, 3, STAY, LEFT, 7 ; person
+	object SPRITE_MEDIUM, 11, 7, STAY, LEFT, 5 ; person
+	object SPRITE_BULBASAUR, 1, 3, STAY, DOWN, 6 ; person
 	object SPRITE_CABLE_CLUB_WOMAN, 11, 2, STAY, DOWN, 4 ; person
 
 	; warp-to

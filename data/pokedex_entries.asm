@@ -29,8 +29,8 @@ PokedexEntryPointers:
 	dw BlastoiseDexEntry
 	dw PinsirDexEntry
 	dw TangelaDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
+	dw Wartortle2DexEntry
+	dw Wartortle3DexEntry
 	dw GrowlitheDexEntry
 	dw OnixDexEntry
 	dw FearowDexEntry
@@ -48,7 +48,7 @@ PokedexEntryPointers:
 	dw PsyduckDexEntry
 	dw DrowzeeDexEntry
 	dw GolemDexEntry
-	dw MissingNoDexEntry
+	dw Wartortle33DexEntry
 	dw MagmarDexEntry
 	dw MissingNoDexEntry
 	dw ElectabuzzDexEntry
@@ -189,6 +189,7 @@ PokedexEntryPointers:
 	dw BellsproutDexEntry
 	dw WeepinbellDexEntry
 	dw VictreebelDexEntry
+
 
 ; string: species name
 ; height in feet, inches
@@ -404,6 +405,20 @@ TangelaDexEntry:
 	dw 770
 	TX_FAR _TangelaDexEntry
 	db "@"
+	
+Wartortle2DexEntry:
+	db "TURTLE@"
+	db 3,3
+	dw 500
+	TX_FAR _WartortleDexEntry
+	db "@"
+	
+Wartortle3DexEntry:
+	db "TURTLE@"
+	db 3,3
+	dw 500
+	TX_FAR _WartortleDexEntry
+	db "@"
 
 GrowlitheDexEntry:
 	db "PUPPY@"
@@ -522,6 +537,13 @@ GolemDexEntry:
 	db 4,7
 	dw 6620
 	TX_FAR _GolemDexEntry
+	db "@"
+	
+Wartortle33DexEntry:
+	db "TURTLE@"
+	db 3,3
+	dw 500
+	TX_FAR _WartortleDexEntry
 	db "@"
 
 MagmarDexEntry:
@@ -805,7 +827,7 @@ VaporeonDexEntry:
 	db "@"
 
 MachopDexEntry:
-	db "SUPERPOWER@"
+	db "LIQUID@"
 	db 2,7
 	dw 430
 	TX_FAR _MachopDexEntry
@@ -1148,7 +1170,7 @@ NidorinaDexEntry:
 	db "@"
 
 GeodudeDexEntry:
-	db "ROCK@"
+	db "SOLID@"
 	db 1,4
 	dw 440
 	TX_FAR _GeodudeDexEntry
@@ -1257,3 +1279,4 @@ MissingNoDexEntry:
 	db 10 ; 1.0 m
 	db 100 ; 10.0 kg
 	text "コメント さくせいちゅう@" ; コメント作成中 (Comment to be written)
+

@@ -12,6 +12,8 @@ PewterCity_ScriptPointers:
 	dw PewterCityScript4
 	dw PewterCityScript5
 	dw PewterCityScript6
+	dw PewterCityScript7
+	dw PewterCityScript8
 
 PewterCityScript0:
 	xor a
@@ -113,10 +115,10 @@ PewterCityScript4:
 	ret nz
 	ld a, $5
 	ld [H_SPRITEINDEX], a
-	ld a, SPRITE_FACING_LEFT
+	ld a, SPRITE_FACING_DOWN
 	ld [hSpriteFacingDirection], a
 	call SetSpriteFacingDirectionAndDelay
-	ld a, ($1 << 4) | SPRITE_FACING_LEFT
+	ld a, ($1 << 5) | SPRITE_FACING_DOWN
 	ld [hSpriteImageIndex], a
 	call SetSpriteImageIndexAfterSettingFacingDirection
 	call PlayDefaultMusic
@@ -145,11 +147,12 @@ PewterCityScript4:
 	ret
 
 MovementData_PewterGymGuyExit:
-	db NPC_MOVEMENT_RIGHT
-	db NPC_MOVEMENT_RIGHT
-	db NPC_MOVEMENT_RIGHT
-	db NPC_MOVEMENT_RIGHT
-	db NPC_MOVEMENT_RIGHT
+	db NPC_MOVEMENT_UP
+	db NPC_MOVEMENT_UP
+	db NPC_MOVEMENT_UP
+	db NPC_MOVEMENT_UP
+	db NPC_MOVEMENT_UP
+	db NPC_MOVEMENT_UP
 	db $FF
 
 PewterCityScript5:
@@ -176,12 +179,38 @@ PewterCityScript6:
 	ld [wPewterCityCurScript], a
 	ret
 
+PewterCityScript7:
+	ld a, [wd730]
+	bit 0, a
+	ret nz
+	ld a, HS_CELADON_MANSION_EEVEE_GIFT
+	ld [wMissableObjectIndex], a
+	predef HideObject
+	ld a, $3
+	ld [wPewterCityCurScript], a
+	ret
+
+PewterCityScript8:
+	ld a, $3
+	ld [wSpriteIndex], a
+	call SetSpritePosition2
+	ld a, HS_CELADON_MANSION_EEVEE_GIFT
+	ld [wMissableObjectIndex], a
+	predef ShowObject
+	xor a
+	ld [wJoyIgnore], a
+	ld a, $0
+	ld [wPewterCityCurScript], a
+	ret
+
+
+
 PewterCity_TextPointers:
 	dw PewterCityText1
 	dw PewterCityText2
 	dw PewterCityText3
 	dw PewterCityText4
-	dw PewterCityText5
+	dw PewterCityText55
 	dw PewterCityText6
 	dw PewterCityText7
 	dw MartSignText
@@ -191,6 +220,11 @@ PewterCity_TextPointers:
 	dw PewterCityText12
 	dw PewterCityText13
 	dw PewterCityText14
+	dw PewterCityText15
+	dw VermilionHouse2Text1
+	dw PewterGeorgeText
+	dw PewterCityText18
+	dw ViridianCityText17
 
 PewterCityText1:
 	TX_FAR _PewterCityText1
@@ -275,6 +309,10 @@ PewterCityText_19431:
 	TX_FAR _PewterCityText_19431
 	db "@"
 
+PewterCityText55:
+	TX_FAR _PewterCityText_19431d
+	db "@"
+
 PewterCityText5:
 	TX_ASM
 	ld hl, PewterCityText_1945d
@@ -319,4 +357,100 @@ PewterCityText11:
 
 PewterCityText12:
 	TX_FAR _PewterCityText12
+	db "@"
+	
+PewterCityText15:
+	TX_ASM
+	lb bc, WARTORTLE, 15
+	call GivePokemon
+	jr nc, .asm_24365
+	ld a, HS_VIRIDIAN_CITY_ITEM_1 
+	ld [wMissableObjectIndex], a
+	predef HideObject
+.asm_24365
+	jp TextScriptEnd
+
+VermilionHouse2Text1:
+	TX_ASM
+	ld a, [wd728]
+	bit 3, a
+	jr nz, .asm_03ef5
+	ld hl, VermilionHouse2Text_560b1
+	call PrintText
+	call YesNoChoice
+	ld a, [wCurrentMenuItem]
+	and a
+	jr nz, .asm_eb1b7
+	lb bc, OLD_ROD, 1
+	call GiveItem
+	jr nc, .BagFull
+	ld hl, wd728
+	set 3, [hl]
+	ld hl, VermilionHouse2Text_560b6
+	jr .asm_5dd95
+.BagFull
+	ld hl, VermilionHouse2Text_560ca
+	jr .asm_5dd95
+.asm_eb1b7
+	ld hl, VermilionHouse2Text_560c0
+	jr .asm_5dd95
+.asm_03ef5
+	ld hl, VermilionHouse2Text_560c5
+.asm_5dd95
+	call PrintText
+	jp TextScriptEnd
+
+VermilionHouse2Text_560b1:
+	TX_FAR _VermilionHouse2Text_560b1
+	db "@"
+
+VermilionHouse2Text_560b6:
+	TX_FAR _VermilionHouse2Text_560b6
+	TX_SFX_ITEM_1
+	TX_FAR _VermilionHouse2Text_560bb
+	db "@"
+
+VermilionHouse2Text_560c0:
+	TX_FAR _VermilionHouse2Text_560c0
+	db "@"
+
+VermilionHouse2Text_560c5:
+	TX_FAR _VermilionHouse2Text_560c5
+	db "@"
+
+VermilionHouse2Text_560ca:
+	TX_FAR _VermilionHouse2Text_560ca
+	db "@"
+	
+PewterGeorgeText:
+	TX_ASM
+	ld hl, PewterGeorgeText_1d5b1
+	call PrintText
+	ld a, GROWLITHE
+	call PlayCry
+	call WaitForSoundToFinish
+	jp TextScriptEnd
+
+PewterGeorgeText_1d5b1:
+	TX_FAR _PewterGeorgeText_1d5b1
+	db "@"
+	
+PewterCityText18:
+	TX_FAR _PewterCityText18
+	db "@"
+	
+ViridianCityText17:
+	TX_ASM
+	CheckEvent EVENT_BEAT_BLAINE
+	jr nz, .asm_627d9
+	ld hl, PewterCityText5
+	jr .asm_0b11d
+.asm_627d9
+	ld hl, BeatGText_75ac7
+.asm_0b11d
+	call PrintText
+	jp TextScriptEnd
+
+BeatGText_75ac7:
+	TX_FAR _BeatGText_75ac7
 	db "@"

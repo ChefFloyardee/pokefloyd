@@ -713,48 +713,33 @@ PrintBCDDigit::
 ; assumes the corresponding mon header is already loaded
 ; hl contains offset to sprite pointer ($b for front or $d for back)
 UncompressMonSprite::
-	ld bc, wMonHeader
-	add hl, bc
-	ld a, [hli]
-	ld [wSpriteInputPtr], a    ; fetch sprite input pointer
-	ld a, [hl]
-	ld [wSpriteInputPtr+1], a
-; define (by index number) the bank that a pokemon's image is in
-; index = Mew, bank 1
-; index = Kabutops fossil, bank $B
-; index < $1F, bank 9
-; $1F ≤ index < $4A, bank $A
-; $4A ≤ index < $74, bank $B
-; $74 ≤ index < $99, bank $C
-; $99 ≤ index,       bank $D
-	ld a, [wcf91] ; XXX name for this ram location
-	ld b, a
-	cp MEW
-	ld a, BANK(MewPicFront)
-	jr z, .GotBank
-	ld a, b
+	ld bc,wMonHeader
+	add hl,bc
+	ld a,[hli]
+	ld [wSpriteInputPtr],a    ; fetch sprite input pointer
+	ld a,[hl]
+	ld [wSpriteInputPtr+1],a
+	ld a,[wcf91] ; XXX name for this ram location
 	cp FOSSIL_KABUTOPS
-	ld a, BANK(FossilKabutopsPic)
-	jr z, .GotBank
-	ld a, b
-	cp TANGELA + 1
-	ld a, BANK(TangelaPicFront)
-	jr c, .GotBank
-	ld a, b
-	cp MOLTRES + 1
-	ld a, BANK(MoltresPicFront)
-	jr c, .GotBank
-	ld a, b
-	cp BEEDRILL + 2
-	ld a, BANK(BeedrillPicFront)
-	jr c, .GotBank
-	ld a, b
-	cp STARMIE + 1
-	ld a, BANK(StarmiePicFront)
-	jr c, .GotBank
-	ld a, BANK(VictreebelPicFront)
+	jr z,.RecallBank
+	cp FOSSIL_AERODACTYL
+	jr z,.RecallBank
+	cp MON_GHOST
+	jr z,.RecallBank
+	cp WARTORTLE_2
+	jr z,.RecallBank
+	cp WARTORTLE_3
+	jr z,.RecallBank
+	cp WARTORTLE_33
+	jr z,.RecallBank
+	ld a,[wMonSpritesBank]
+	jr .GotBank
+.RecallBank
+	ld a,BANK(FossilKabutopsPic)
 .GotBank
 	jp UncompressSpriteData
+
+	ds $19
 
 ; de: destination location
 LoadMonFrontSprite::

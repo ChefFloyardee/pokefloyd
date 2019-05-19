@@ -1,22 +1,22 @@
 TitleMons:
 ; mons on the title screen are randomly chosen from here
-IF DEF(_RED)
-	db CHARMANDER
-	db SQUIRTLE
-	db BULBASAUR
-	db WEEDLE
-	db NIDORAN_M
+IF DEF(_BLUE)
+	db WARTORTLE
+	db GOLEM
+	db ELECTABUZZ
+	db MAGMAR
+	db PORYGON
+	db MEW
+	db MACHAMP
+	db PINSIR
 	db SCYTHER
-	db PIKACHU
-	db CLEFAIRY
-	db RHYDON
-	db ABRA
-	db GASTLY
-	db DITTO
-	db PIDGEOTTO
-	db ONIX
-	db PONYTA
-	db MAGIKARP
+	db POLIWRATH
+	db MEWTWO
+	db GOLDUCK
+	db SNORLAX
+	db KABUTOPS
+	db SEADRA
+	db SANDSLASH
 ENDC
 IF DEF(_GREEN)
 	db BULBASAUR
@@ -36,7 +36,7 @@ IF DEF(_GREEN)
 	db PONYTA
 	db MAGIKARP
 ENDC
-IF DEF(_BLUE)
+IF DEF(_RED)
 	db SQUIRTLE
 	db CHARMANDER
 	db BULBASAUR

@@ -1,8 +1,8 @@
 MonPartyData:
-	dn SPRITE_GRASS, SPRITE_GRASS           ;Bulbasaur/Ivysaur
-	dn SPRITE_GRASS, SPRITE_MON             ;Venusaur/Charmander
+	dn SPRITE_MON, SPRITE_GRASS             ;Machop/Ivysaur
+	dn SPRITE_GRASS, SPRITE_MON             ;Venusaur/Gastly
 	dn SPRITE_MON, SPRITE_MON               ;Charmeleon/Charizard
-	dn SPRITE_WATER, SPRITE_WATER           ;Squirtle/Wartortle
+	dn SPRITE_MON, SPRITE_WATER             ;Geodude/Wartortle
 	dn SPRITE_WATER, SPRITE_BUG             ;Blastoise/Caterpie
 	dn SPRITE_BUG, SPRITE_BUG               ;Metapod/Butterfree
 	dn SPRITE_BUG, SPRITE_BUG               ;Weedle/Kakuna
@@ -31,11 +31,11 @@ MonPartyData:
 	dn SPRITE_QUADRUPED, SPRITE_MON         ;Arcanine/Poliwag
 	dn SPRITE_MON, SPRITE_MON               ;Poliwhirl/Poliwrath
 	dn SPRITE_MON, SPRITE_MON               ;Abra/Kadabra
-	dn SPRITE_MON, SPRITE_MON               ;Alakazam/Machop
+	dn SPRITE_MON, SPRITE_GRASS             ;Alakazam/Bulbasaur
 	dn SPRITE_MON, SPRITE_MON               ;Machoke/Machamp
 	dn SPRITE_GRASS, SPRITE_GRASS           ;Bellsprout/Weepinbell
 	dn SPRITE_GRASS, SPRITE_WATER           ;Victreebel/Tentacool
-	dn SPRITE_WATER, SPRITE_MON             ;Tentacruel/Geodude
+	dn SPRITE_WATER, SPRITE_WATER           ;Tentacruel/Squirtle
 	dn SPRITE_MON, SPRITE_MON               ;Graveler/Golem
 	dn SPRITE_QUADRUPED, SPRITE_QUADRUPED   ;Ponyta/Rapidash
 	dn SPRITE_QUADRUPED, SPRITE_MON         ;Slowpoke/Slowbro
@@ -44,7 +44,7 @@ MonPartyData:
 	dn SPRITE_BIRD_M, SPRITE_WATER          ;Dodrio/Seel
 	dn SPRITE_WATER, SPRITE_MON             ;Dewgong/Grimer
 	dn SPRITE_MON, SPRITE_HELIX             ;Muk/Shellder
-	dn SPRITE_HELIX, SPRITE_MON             ;Cloyster/Gastly
+	dn SPRITE_HELIX, SPRITE_MON             ;Cloyster/Charmander
 	dn SPRITE_MON, SPRITE_MON               ;Haunter/Gengar
 	dn SPRITE_SNAKE, SPRITE_MON             ;Onix/Drowzee
 	dn SPRITE_MON, SPRITE_WATER             ;Hypno/Krabby
@@ -74,4 +74,6 @@ MonPartyData:
 	dn SPRITE_BIRD_M, SPRITE_BIRD_M         ;Zapdos/Moltres
 	dn SPRITE_SNAKE, SPRITE_SNAKE           ;Dratini/Dragonair
 	dn SPRITE_SNAKE, SPRITE_MON             ;Dragonite/Mewtwo
-	dn SPRITE_MON, 0                        ;Mew/Padding
+	dn SPRITE_MON, SPRITE_WATER             ;Mew/Wartortle2
+	dn SPRITE_WATER, SPRITE_WATER           ;Wartortle3/Wartortle33
+	

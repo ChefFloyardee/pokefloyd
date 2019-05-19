@@ -1,12 +1,16 @@
 PewterPokecenter_Script:
 	call Serial_TryEstablishingExternallyClockedConnection
 	jp EnableAutoTextBoxDrawing
+	
 
 PewterPokecenter_TextPointers:
 	dw PewterHealNurseText
 	dw PewterPokecenterText2
 	dw PewterJigglypuffText
 	dw PewterTradeNurseText
+	dw UndergroundPathEntranceRoute5Text1
+	dw BulbasaurText
+	dw PewterPokecenterText3
 
 PewterHealNurseText:
 	TX_POKECENTER_NURSE
@@ -82,3 +86,29 @@ JigglypuffFacingDirectionsEnd:
 
 PewterTradeNurseText:
 	TX_CABLE_CLUB_RECEPTIONIST
+	
+UndergroundPathEntranceRoute5Text1:
+	TX_ASM
+	ld a, $9
+	ld [wWhichTrade], a
+	predef DoInGameTradeDialogue
+	ld hl, UndergroundPathEntranceRoute5_5d6af
+	ret
+	
+BulbasaurText:
+	TX_ASM
+	ld hl, BulbasaurText_1d5b1
+	call PrintText
+	ld a, IVYSAUR
+	call PlayCry
+	call WaitForSoundToFinish
+	jp TextScriptEnd
+	
+BulbasaurText_1d5b1:
+	TX_FAR _BulbasaurText_1d5b1
+	db "@"
+
+PewterPokecenterText3:
+	TX_FAR _PewterPokecenterText3
+	db "@"
+	

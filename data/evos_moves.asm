@@ -32,8 +32,8 @@ EvosMovesPointerTable:
 	dw BlastoiseEvosMoves
 	dw PinsirEvosMoves
 	dw TangelaEvosMoves
-	dw MissingNo1FEvosMoves
-	dw MissingNo20EvosMoves
+	dw Wartortle2EvosMoves
+	dw Wartortle3EvosMoves
 	dw GrowlitheEvosMoves
 	dw OnixEvosMoves
 	dw FearowEvosMoves
@@ -51,7 +51,7 @@ EvosMovesPointerTable:
 	dw PsyduckEvosMoves
 	dw DrowzeeEvosMoves
 	dw GolemEvosMoves
-	dw MissingNo32EvosMoves
+	dw Wartortle33EvosMoves
 	dw MagmarEvosMoves
 	dw MissingNo34EvosMoves
 	dw ElectabuzzEvosMoves
@@ -538,16 +538,36 @@ TangelaEvosMoves:
 	db 49, GROWTH
 	db 0
 
-MissingNo1FEvosMoves:
+Wartortle2EvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 1, TRANSFORM
+	db 16, TRANSFORM
+	db 17, PSYBEAM
+	db 18, ICE_BEAM
+	db 19, TRANSFORM
+	db 24, BITE
+	db 31, WITHDRAW
+	db 35, SKULL_BASH
+	db 40, TRANSFORM
+	db 42, HYDRO_PUMP
 	db 0
-
-MissingNo20EvosMoves:
+	
+Wartortle3EvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 1, TRANSFORM
+	db 16, TRANSFORM
+	db 17, PSYBEAM
+	db 18, ICE_BEAM
+	db 19, TRANSFORM
+	db 24, BITE
+	db 31, WITHDRAW
+	db 35, SKULL_BASH
+	db 40, TRANSFORM
+	db 42, HYDRO_PUMP
 	db 0
 
 GrowlitheEvosMoves:
@@ -752,10 +772,20 @@ GolemEvosMoves:
 	db 43, EXPLOSION
 	db 0
 
-MissingNo32EvosMoves:
+Wartortle33EvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 1, TRANSFORM
+	db 16, TRANSFORM
+	db 17, PSYBEAM
+	db 18, ICE_BEAM
+	db 19, TRANSFORM
+	db 24, BITE
+	db 31, WITHDRAW
+	db 35, SKULL_BASH
+	db 40, TRANSFORM
+	db 42, HYDRO_PUMP
 	db 0
 
 MagmarEvosMoves:
@@ -2014,7 +2044,8 @@ CharmeleonEvosMoves:
 
 WartortleEvosMoves:
 ; Evolutions
-	db EV_LEVEL, 36, BLASTOISE
+	db EV_TRADE, 1, WARTORTLE_2
+	DB EV_LEVEL, 36, BLASTOISE
 	db 0
 ; Learnset
 	db 8, BUBBLE
@@ -2132,3 +2163,5 @@ VictreebelEvosMoves:
 	db 15, POISONPOWDER
 	db 18, SLEEP_POWDER
 	db 0
+	
+

@@ -252,45 +252,44 @@ _AIBattleUseItemText::
 	prompt
 
 _TradeWentToText::
+	text "CHANNELLER placed"
+	line "her hand on"
+	cont "@"
 	TX_RAM wcf4b
-	text " went"
-	line "to @"
-	TX_RAM wGrassRate
-	text "."
+	text "'s head."
 	done
 
 _TradeForText::
-	text "For <PLAYER>'s"
+	text "Causing"
 	line "@"
 	TX_RAM wcf4b
-	text ","
+	text " to"
+	cont "start glowing"
+	cont "with power..."
 	done
 
 _TradeSendsText::
-	TX_RAM wGrassRate
-	text " sends"
-	line "@"
 	TX_RAM wcd6d
-	text "."
+	text "'s hidden"
+	line "potential has now"
+	cont "been unlocked!"
 	done
 
 _TradeWavesFarewellText::
-	TX_RAM wGrassRate
-	text " waves"
-	line "farewell as"
+	text "My word,"
+	line "what power!"
 	done
 
 _TradeTransferredText::
-	TX_RAM wcd6d
-	text " is"
-	line "transferred."
+	text "Be sure to"
+	line "treat this"
+	cont "#MON well."
 	done
 
 _TradeTakeCareText::
-	text "Take good care of"
-	line "@"
-	TX_RAM wcd6d
-	text "."
+	text "For it will"
+	line "help you in your"
+	cont "quest..."
 	done
 
 _TradeWillTradeText::
@@ -396,14 +395,19 @@ _ViridianCityPokecenterGuyText::
 	done
 
 _PewterCityPokecenterGuyText::
-	text "Yawn!"
-
-	para "When JIGGLYPUFF"
-	line "sings, #MON"
-	cont "get drowsy..."
-
-	para "...Me too..."
-	line "Snore..."
+	text "This town you're"
+	line "in?"
+	para "It's called"
+	line "FLOYDFIELD!"
+	para "Mr. Floyd founded"
+	line "and designed it"
+	cont "to MODEL the"
+	cont "start of his"
+	cont "science career!"
+	para "He also taught"
+	line "a class here"
+	cont "before vanishing"
+	cont "mysteriously..."
 	done
 
 _CeruleanPokecenterGuyText::
@@ -513,8 +517,8 @@ _CeladonCityHotelText::
 	done
 
 _BookcaseText::
-	text "Crammed full of"
-	line "#MON books!"
+	text "Subcribe to"
+	line "ChaseFloydInc!"
 	done
 
 _NewBicycleText::
@@ -523,14 +527,24 @@ _NewBicycleText::
 	done
 
 _PushStartText::
-	text "Push START to"
-	line "open the MENU!"
+	text "It's a poster"
+	line "with a list of"
+	cont "signatures from"
+	para "G's old students!"
+	para "Hmmmm..."
+	line "...."
+	cont "there's that A"
+	para "name again..."
 	done
 
 _SaveOptionText::
-	text "The SAVE option is"
-	line "on the MENU"
-	cont "screen."
+	text "It's a poster"
+	line "with a list of"
+	cont "signatures from"
+	para "G's old students!"
+	para "Hey!"
+	line "...."
+	cont "there's Mr. Floyd's!"
 	done
 
 _StrengthsAndWeaknessesText::
@@ -552,7 +566,7 @@ _GameOverText::
 	done
 
 _CinnabarGymQuizIntroText::
-	text "#MON Quiz!"
+	text "SCI Quiz!"
 
 	para "Get it right and"
 	line "the door opens to"
@@ -567,52 +581,92 @@ _CinnabarGymQuizIntroText::
 	cont "GYM LEADER..."
 
 	para "Then get it right!"
-	line "Here we go!"
+	para "SO, GET EXCITED!"
 	prompt
 
 _CinnabarQuizQuestionsText1::
-	text "CATERPIE evolves"
-	line "into BUTTERFREE?"
+	text "Asking a QUESTION"
+	line "after making an"
+	cont "OBSERVATION is"
+	para "the 1st part of the"
+	line "SCIENTIFIC METHOD?!"
+	done
+
+_CinnabarQuizQuestionsText7::
+	text "Making a THEORY"
+	line "aka an EDUCATED"
+	cont "GUESS as to what"
+	para "the answer is"
+	line "to your question"
+	cont "is the SECOND"
+	para "part of the"
+	line "SCIENTIFIC METHOD?!"
 	done
 
 _CinnabarQuizQuestionsText2::
-	text "There are 9"
-	line "certified #MON"
-	cont "LEAGUE BADGEs?"
+	text "The THIRD part of"
+	line "SCIENTIFIC METHOD"
+	cont "requires you to"
+	para "ANALYZE the data"
+	line "you collected in"
+	cont "your EXPERIMENT?!"
 	done
 
 _CinnabarQuizQuestionsText3::
-	text "POLIWAG evolves 3"
-	line "times?"
+	text "Properly designed"
+	line "science"
+	cont "experiments have"
+	para "AT LEAST 2 main"
+	line "types of variables?!"
 	done
 
 _CinnabarQuizQuestionsText4::
-	text "Are thunder moves"
-	line "effective against"
-	cont "ground element-"
-	cont "type #MON?"
+	text "The DEPENDENT"
+	line "variable is what"
+	cont "you CHANGE in an"
+	para "experiment to"
+	line "produce a RESULT?!"
 	done
 
 _CinnabarQuizQuestionsText5::
-	text "#MON of the"
-	line "same kind and"
-	cont "level are not"
-	cont "identical?"
+	text "TOOLS used to"
+	line "collect DATA are"
+	cont "SYSTEMS and after"
+	para "you use one you"
+	line "must make sure"
+	cont "that it is"
+	para "CALIBRATED?!"
 	done
-
+	
 _CinnabarQuizQuestionsText6::
-	text "TM28 contains"
-	line "TOMBSTONER?"
+	text "The CONCLUSION"
+	line "involves analyzing"
+	cont "graphed/tabulated"
+	para "DATA to ACCEPT or"
+	line "REJECT your"
+	para "HYPOTHESIS?!"
 	done
+	
+_CinnabarQuizQuestionsText8::
+	TX_FAR _ViridianCityText_19122
+	db "@"
 
 _CinnabarGymQuizCorrectText::
-	text "You're absolutely"
-	line "correct!"
+	text "You're"
+	line "scientifically"
+	cont "CORRECT!"
 
 	para "Go on through!@@"
 
 _CinnabarGymQuizIncorrectText::
-	text "Sorry! Bad call!"
+	text "Incorrect, but"
+	line "don't give up!"
+	para "What would the"
+	line "Chef do?!"
+	para "He'd practice some"
+	line "more and keep"
+	cont "trying, so you"
+	cont "should too!"
 	prompt
 
 _MagazinesText::
@@ -647,28 +701,56 @@ _BillsHousePokemonListText2::
 _OakLabEmailText::
 	text "There's an e-mail"
 	line "message here!"
+	
+	para "To: Dr. Grandstaff"
+	para "Cc: Vlad,"
+	line "A. R-Perdew,"
+	cont "J. Bloxton,"
+	cont "S. Love,"
+	cont "G. Meyer,"
+	cont "J. Martoff,"
+	cont "E. Borovitskaya,"
+	cont "Ilya,"
+	cont "M. Childs,"
+	cont "T. Tsankov,"
+	cont "Pepe,"
+	cont "B. Kim,"
+	cont "L. Toran,"
+	cont "J. Nyquist,"
+	cont "G. Fiorin,"
+	cont "C. Weitz,"
+	cont "Jesse,"
+	cont "Z. Dziembowski,"
+	cont "and Steve."
 
 	para "..."
 
-	para "Calling all"
-	line "#MON trainers!"
+	para "All,"
 
-	para "The elite trainers"
-	line "of #MON LEAGUE"
-	cont "are ready to take"
-	cont "on all comers!"
+	para "A fellow science"
+	line "alumnus/former"
+	cont "student of yours"
+	cont "has gone missing."
+	para "He was an A-student"
+	line "in all of your"
+	cont "classes so please"
+	para "keep a look-out for"
+	line "any information"
+	cont "about Chase"
+	cont "Floyd."
 
-	para "Bring your best"
-	line "#MON and see"
-	cont "how you rate as a"
-	cont "trainer!"
-
-	para "#MON LEAGUE HQ"
-	line "INDIGO PLATEAU"
-
-	para "PS: PROF.OAK,"
-	line "please visit us!"
+	para "PS: Dr. Meyer,"
+	line "How goes the"
+	cont "retirement?!"
+	para "Please visit us"
+	line "soon!"
 	cont "..."
+	
+	para "From: Dr. G Mehler"
+	done
+	
+_OakLabEmailTextt::
+	text "SNORLAX"
 	done
 
 _GameCornerCoinCaseText::
@@ -720,68 +802,56 @@ _TurnPageText::
 	done
 
 _ViridianSchoolNotebookText5::
-	text "GIRL: Hey! Don't"
-	line "look at my notes!@@"
+	text "STUDENT: At least"
+	line "it's KA2 format!@@"
 
 _ViridianSchoolNotebookText1::
 	text "Looked at the"
 	line "notebook!"
-
-	para "First page..."
-
-	para "# BALLs are"
-	line "used to catch"
-	cont "#MON."
-
-	para "Up to 6 #MON"
-	line "can be carried."
-
-	para "People who raise"
-	line "and make #MON"
-	cont "fight are called"
-	cont "#MON trainers."
+	para "DO NOW"
+	para "Know:"
+	line "Asked:"
+	cont "Answer:"
+	para "QP"
+	para "......"
+	para "H-Dub"
+	para "......"
 	prompt
 
 _ViridianSchoolNotebookText2::
 	text "Second page..."
-
-	para "A healthy #MON"
-	line "may be hard to"
-	cont "catch, so weaken"
-	cont "it first!"
-
-	para "Poison, burns and"
-	line "other damage are"
-	cont "effective!"
+	para "DO NOW"
+	para "Know:"
+	line "Asked:"
+	cont "Answer:"
+	para "QP"
+	para "......"
+	para "H-Dub"
+	para "......"
 	prompt
 
 _ViridianSchoolNotebookText3::
 	text "Third page..."
-
-	para "#MON trainers"
-	line "seek others to"
-	cont "engage in #MON"
-	cont "fights."
-
-	para "Battles are"
-	line "constantly fought"
-	cont "at #MON GYMs."
+	para "DO NOW"
+	para "Know:"
+	line "Asked:"
+	cont "Answer:"
+	para "QP"
+	para "......"
+	para "H-Dub"
+	para "......"
 	prompt
 
 _ViridianSchoolNotebookText4::
 	text "Fourth page..."
-
-	para "The goal for"
-	line "#MON trainers"
-	cont "is to beat the "
-	cont "top 8 #MON"
-	cont "GYM LEADERs."
-
-	para "Do so to earn the"
-	line "right to face..."
-
-	para "The ELITE FOUR of"
-	line "#MON LEAGUE!"
+	para "DO NOW"
+	para "Know:"
+	line "Asked:"
+	cont "Answer:"
+	para "QP"
+	para "......"
+	para "H-Dub"
+	para "......"
 	prompt
 
 _EnemiesOnEverySideText::
@@ -866,10 +936,11 @@ _LinkCableInfoText3::
 	prompt
 
 _ViridianSchoolBlackboardText1::
-	text "The blackboard"
-	line "describes #MON"
-	cont "STATUS changes"
-	cont "during battles."
+	text "The Start-Up"
+	line "Slide shows"
+	para "Today's Plan and"
+	line "Academic"
+	cont "Objective!"
 	prompt
 
 _ViridianSchoolBlackboardText2::
@@ -878,66 +949,51 @@ _ViridianSchoolBlackboardText2::
 	done
 
 _ViridianBlackboardSleepText::
-	text "A #MON can't"
-	line "attack if it's"
-	cont "asleep!"
-
-	para "#MON will stay"
-	line "asleep even after"
-	cont "battles."
-
-	para "Use AWAKENING to"
-	line "wake them up!"
+	text "Today's Date:"
+	line "MONDAY APRIL 29th"
 	prompt
 
+
 _ViridianBlackboardPoisonText::
-	text "When poisoned, a"
-	line "#MON's health"
-	cont "steadily drops."
-
-	para "Poison lingers"
-	line "after battles."
-
-	para "Use an ANTIDOTE"
-	line "to cure poison!"
+	text "DO NOW"
+	para "KNOW:"
+	para "There are 8 bits"
+	line "in 1 byte. These"
+	para "are units of"
+	line "Computer Science!"
+	para "ASKED:"
+	para "How many bits"
+	line "are in 92 bytes?"
 	prompt
 
 _ViridianBlackboardPrlzText::
-	text "Paralysis could"
-	line "make #MON"
-	cont "moves misfire!"
-
-	para "Paralysis remains"
-	line "after battles."
-
-	para "Use PARLYZ HEAL"
-	line "for treatment!"
+	text "TODAY'S ACADEMIC"
+	line "OBJECTIVE"
+	para "Today you will"
+	line "DESIGN a Computer"
+	para "Program in order"
+	line "to MODEL our"
+	cont "class PROCEDURES!"
 	prompt
 
 _ViridianBlackboardBurnText::
-	text "A burn reduces"
-	line "power and speed."
-	cont "It also causes"
-	cont "ongoing damage."
-
-	para "Burns remain"
-	line "after battles."
-
-	para "Use BURN HEAL to"
-	line "cure a burn!"
+	text "Today's QP"
+	para "QP QUIZ PREP"
+	para "Using your"
+	line "Jot-Down notes,"
+	para "SKETCH"
+	line "how you think"
+	cont "COMPUTERS work"
+	cont "and then"
+	para "REDEFINE"
+	line "the term"
+	cont "BINARY CODE!"
 	prompt
 
 _ViridianBlackboardFrozenText::
-	text "If frozen, a"
-	line "#MON becomes"
-	cont "totally immobile!"
-
-	para "It stays frozen"
-	line "even after the"
-	cont "battle ends."
-
-	para "Use ICE HEAL to"
-	line "thaw out #MON!"
+	text "HW"
+	para "Read and Complete"
+	line "Page 19-20!"
 	prompt
 
 _VermilionGymTrashText::
@@ -1021,8 +1077,8 @@ _IndigoPlateauStatuesText3::
 	done
 
 _PokemonBooksText::
-	text "Crammed full of"
-	line "#MON books!"
+	text "Subscribe to"
+	line "ChaseFloydInc!"
 	done
 
 _DiglettSculptureText::
@@ -1036,7 +1092,7 @@ _ElevatorText::
 	done
 
 _TownMapText::
-	text "A TOWN MAP.@@"
+	text "RULES.@@"
 
 _PokemonStuffText::
 	text "Wow! Tons of"
@@ -1867,13 +1923,13 @@ _GetDexRatedText::
 	line "#DEX rated?"
 	done
 
-_ClosedOaksPCText::
+_ClosedChefsPCText::
 	text "Closed link to"
-	line "PROF.OAK's PC.@@"
+	line "CHEF's PC.@@"
 
-_AccessedOaksPCText::
-	text "Accessed PROF."
-	line "OAK's PC."
+_AccessedChefsPCText::
+	text "Accessed THE"
+	line "CHEF's PC."
 
 	para "Accessed #DEX"
 	line "Rating System."
@@ -1911,8 +1967,9 @@ _YourNameIsText::
 
 _HisNameIsText::
 	text "That's right! I"
-	line "remember now! His"
-	cont "name is <RIVAL>!"
+	line "remember now!"
+	para "His name is"
+	line "<RIVAL>!"
 	prompt
 
 _WillBeTradedText::
@@ -1926,7 +1983,9 @@ _WillBeTradedText::
 
 _Char00Text::
 	TX_NUM hSpriteIndexOrTextID,1,2
-	text " ERROR."
+	text " CLASSROOM RULES"
+	para "Rule Number 3"
+	line "looks important!"
 	done
 
 _Char55Text::
@@ -3050,18 +3109,24 @@ _AlreadyKnowsText::
 	prompt
 
 _ConnectCableText::
-	text "Okay, connect the"
-	line "cable like so!"
+	text "Perfect...just"
+	line "place him in a"
+	cont "#Ball and"
+	cont "stand back as"
+	cont "I unlock this"
+	cont "#MON's true,"
+	cont "hidden potential."
 	prompt
 
 _TradedForText::
-	text "<PLAYER> traded"
+	text "<PLAYER> unlocked"
 	line "@"
 	TX_RAM wInGameTradeGiveMonName
-	text " for"
-	cont "@"
+	text "'s hidden"
+	cont "potential!"
+	para "@"
 	TX_RAM wInGameTradeReceiveMonName
-	text "!@@"
+	text " IS PRIME!@@"
 
 _WannaTrade1Text::
 	text "I'm looking for"
@@ -3142,19 +3207,24 @@ _AfterTrade2Text::
 	done
 
 _WannaTrade3Text::
-	text "Hi! Do you have"
-	line "@"
-	TX_RAM wInGameTradeGiveMonName
-	text "?"
-
-	para "Want to trade it"
-	line "for @"
-	TX_RAM wInGameTradeReceiveMonName
-	text "?"
+	text "Hello there..."
+	line "I am a #MON"
+	cont "channeller."
+	para "I have the ability"
+	line "to unlock a"
+	cont "#MON's latent,"
+	cont "hidden power."
+	para "I specialize with"
+	line "WARTORTLE."
+	para "Do you have one?"
+	para "If so, may I see"
+	line "this WARTORTLE?"
 	done
 
 _NoTrade3Text::
-	text "That's too bad."
+	text "Well, if you ever"
+	line "find one let me"
+	cont "know..."
 	done
 
 _WrongMon3Text::
@@ -3163,24 +3233,21 @@ _WrongMon3Text::
 	TX_RAM wInGameTradeGiveMonName
 	text "."
 
-	para "If you get one,"
-	line "trade it with me!"
+	para "If you ever find,"
+	line "one let me know."
 	done
 
 _Thanks3Text::
-	text "Thanks pal!"
+	text "There...it"
+	line "has been done."
 	done
 
 _AfterTrade3Text::
-	text "How is my old"
-	line "@"
-	TX_RAM wInGameTradeReceiveMonName
-	text "?"
-
-	para "My @"
-	TX_RAM wInGameTradeGiveMonName
-	text " is"
-	line "doing great!"
+	text "Go forth my"
+	line "child and use"
+	cont "that #MON's"
+	cont "power to save"
+	cont "this world..."
 	done
 
 _NothingToCutText::

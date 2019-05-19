@@ -2,8 +2,8 @@ PewterSpeechHouse_Object:
 	db $a ; border block
 
 	db 2 ; warps
-	warp 2, 7, 5, -1
-	warp 3, 7, 5, -1
+	warp 2, 7, 5, VIRIDIAN_CITY
+	warp 3, 7, 5, VIRIDIAN_CITY
 
 	db 0 ; signs
 

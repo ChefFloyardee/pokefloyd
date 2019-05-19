@@ -92,10 +92,7 @@ DisplayTitleScreen:
 
 	call DrawPlayerCharacter
 
-; put a pokeball in the player's hand
-	ld hl, wOAMBuffer + $28
-	ld a, $74
-	ld [hl], a
+
 
 ; place tiles for title screen copyright
 	coord hl, 2, 17
@@ -118,10 +115,10 @@ DisplayTitleScreen:
 	call LoadScreenTilesFromBuffer2
 	call EnableLCD
 IF DEF(_RED)
-	ld a, CHARMANDER ; which Pokemon to show first on the title screen
+	ld a, WARTORTLE_3 ; which Pokemon to show first on the title screen
 ENDC
 IF DEF(_BLUE)
-	ld a, SQUIRTLE ; which Pokemon to show first on the title screen
+	ld a, WARTORTLE_2 ; which Pokemon to show first on the title screen
 ENDC
 
 	ld [wTitleMonSpecies], a

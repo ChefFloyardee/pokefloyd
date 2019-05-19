@@ -1,7 +1,7 @@
 MapSpriteSets:
 	db $01 ; PALLET_TOWN
 	db $01 ; VIRIDIAN_CITY
-	db $02 ; PEWTER_CITY
+	db $01 ; PEWTER_CITY
 	db $02 ; CERULEAN_CITY
 	db $03 ; LAVENDER_TOWN
 	db $04 ; VERMILION_CITY
@@ -62,15 +62,15 @@ SpriteSets:
 ; sprite set $01
 	db SPRITE_BLUE
 	db SPRITE_BUG_CATCHER
-	db SPRITE_GIRL
+	db SPRITE_BRUNETTE_GIRL
 	db SPRITE_FISHER2
-	db SPRITE_BLACK_HAIR_BOY_1
-	db SPRITE_GAMBLER
+	db SPRITE_ROCKER
+	db SPRITE_OAK_AIDE
 	db SPRITE_SEEL
-	db SPRITE_OAK
-	db SPRITE_SWIMMER
-	db SPRITE_BALL
-	db SPRITE_LYING_OLD_MAN
+	db SPRITE_FAT_BALD_GUY
+	db SPRITE_BLACK_HAIR_BOY_1
+	db SPRITE_QUADRUPED2 
+	db SPRITE_BOULDER
 
 ; sprite set $02
 	db SPRITE_BUG_CATCHER
@@ -489,6 +489,11 @@ SpriteSheetPointerTable:
 	dw SeelSprite
 	db $c0 ; byte count
 	db BANK(SeelSprite)
+	
+	; SPRITE_BULBARSAUR
+	dw BulbasaurSprite
+	db $c0 ; byte count
+	db BANK(BulbasaurSprite)
 
 	; SPRITE_BALL
 	dw BallSprite
@@ -549,3 +554,14 @@ SpriteSheetPointerTable:
 	dw LyingOldManSprite
 	db $40 ; byte count
 	db BANK(LyingOldManSprite)
+
+	; SPRITE_QUADRUPED2
+	dw Quadruped2Sprite
+	db $49 ; byte count
+	db BANK(Quadruped2Sprite)
+	
+	; SPRITE_SANDSHREW
+	dw SandshrewSprite
+	db $50 ; byte count
+	db BANK(SandshrewSprite)
+	

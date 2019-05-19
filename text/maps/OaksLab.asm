@@ -1,22 +1,23 @@
 _OaksLabGaryText1::
-	text "<RIVAL>: Yo"
-	line "<PLAYER>! Gramps"
-	cont "isn't around!"
+	text "..."
 	done
 
 _OaksLabText40::
-	text "<RIVAL>: Heh, I"
-	line "don't need to be"
-	cont "greedy like you!"
-
+	text "<RIVAL>: Ya"
+	line "know what?!"
 	para "Go ahead and"
-	line "choose, <PLAYER>!"
+	line "make your pick!"
+	para "See if I care..."
+	para "You're on my"
+	line "radar now though,"
+	para "MUSH-HEAD..."
 	done
 
 _OaksLabText41::
 	text "<RIVAL>: My"
 	line "#MON looks a"
-	cont "lot stronger."
+	cont "lot stronger,"
+	cont "MUSH-HEAD!"
 	done
 
 _OaksLabText39::
@@ -26,26 +27,32 @@ _OaksLabText39::
 	done
 
 _OaksLabCharmanderText::
-	text "So! You want the"
-	line "fire #MON,"
-	cont "CHARMANDER?"
+	text "SO! You want the"
+	line "GASEOUS #MON,"
+	cont "GASTLY?!"
 	done
 
 _OaksLabSquirtleText::
-	text "So! You want the"
-	line "water #MON,"
-	cont "SQUIRTLE?"
+	text "SO! You want the"
+	line "SOLID #MON,"
+	cont "GEODUDE?!"
 	done
 
 _OaksLabBulbasaurText::
-	text "So! You want the"
-	line "plant #MON,"
-	cont "BULBASAUR?"
+	text "SO! You want the"
+	line "LIQUID #MON,"
+	cont "MACHOP?!"
 	done
 
 _OaksLabMonEnergeticText::
-	text "This #MON is"
-	line "really energetic!"
+	text "This #MON looks"
+	line "like it could"
+	cont "be quite"
+	cont "POWERFUL!"
+	para "There must be"
+	line "a way to unlock"
+	cont "its full HIDDEN"
+	cont "POTENTIAL!"
 	prompt
 
 _OaksLabReceivedMonText::
@@ -55,21 +62,25 @@ _OaksLabReceivedMonText::
 	text "!@@"
 
 _OaksLabLastMonText::
-	text "That's PROF.OAK's"
-	line "last #MON!"
+	text "That's G's"
+	line "last # BALL!"
 	done
 
 _OaksLabText_1d2f0::
-	text "OAK: Now, <PLAYER>,"
-	line "which #MON do"
-	cont "you want?"
+	text "G: <PLAYER>,"
+	line "please pick"
+	cont "the #MON you'd"
+	cont "like!"
 	done
 
 _OaksLabText_1d2f5::
-	text "OAK: If a wild"
-	line "#MON appears,"
-	cont "your #MON can"
-	cont "fight against it!"
+	text "G: There are 7"
+	line "more SCI Badges"
+	cont "to earn my young"
+	cont "student, so make"
+	para "Mr. Floyd and I"
+	line "proud by earning"
+	cont "them all!"
 	done
 
 _OaksLabText_1d2fa::
@@ -172,74 +183,99 @@ _OaksLabText8::
 	done
 
 _OaksLabText_1d340::
-	text "PROF.OAK is the"
-	line "authority on"
-	cont "#MON!"
-
-	para "Many #MON"
-	line "trainers hold him"
-	cont "in high regard!"
+	text "It's one of G's"
+	line "ultra-rare fossils!"
 	done
 
 _OaksLabRivalWaitingText::
-	text "<RIVAL>: Gramps!"
-	line "I'm fed up with"
-	cont "waiting!"
+	text "<RIVAL>: ..."
+	para "Huh..."
+	line "So this is the"
+	cont "other kid who"
+	cont "got the badge?"
+	para "Looks pretty"
+	line "pathetic to me..."
 	done
 
 _OaksLabChooseMonText::
-	text "OAK: <RIVAL>?"
-	line "Let me think..."
-
-	para "Oh, that's right,"
-	line "I told you to"
-	cont "come! Just wait!"
-
-	para "Here, <PLAYER>!"
-
-	para "There are 3"
-	line "#MON here!"
-
-	para "Haha!"
-
-	para "They are inside"
-	line "the # BALLs."
-
-	para "When I was young,"
-	line "I was a serious"
-	cont "#MON trainer!"
-
-	para "In my old age, I"
-	line "have only 3 left,"
-	cont "but you can have"
-	cont "one! Choose!"
+	text "G: <RIVAL>!"
+	line "Is that anyway to"
+	cont "treat a fellow"
+	para "student of"
+	line "SCIENCE?!"
+	para "Science is all"
+	line "about COMMUNITY,"
+	cont "so put away your"
+	para "differences my"
+	line "lad and listen"
+	cont "UP!"
+	para "As a reward for"
+	line "earning your 1st"
+	cont "SCI Badge, I am"
+	para "going to give each"
+	line "of you a #MON!"
+	para "Now, these three"
+	line "# BALLs each"
+	cont "hold a very rare"
+	cont "#MON!"
+	para "Don't believe me?"
+	para "HAH!"
+	para "Just look over my"
+	line "shoulder!"
+	para "I give ALL of my"
+	line "students who earn"
+	cont "their first badge"
+	cont "a rare mon!"
+	para "Infact that SNORLAX"
+	line "over there was"
+	cont "what I gave to"
+	para "the one you may"
+	line "know as Mr. Floyd"
+	cont "back when he was"
+	para "my student!"
+	para "Each of these"
+	line "#MON also"
+	para "REPRESENT"
+	line "one of the 3"
+	cont "STATES of MATTER!"
+	para "Isn't that cool!"
+	para "SO!"
+	para "<PLAYER>, go ahead"
+	line "and pick which"
+	cont "ever you'd like!"
 	done
 
 _OaksLabRivalInterjectionText::
 	text "<RIVAL>: Hey!"
-	line "Gramps! What"
+	line "Old man! What"
 	cont "about me?"
 	done
 
 _OaksLabBePatientText::
-	text "OAK: Be patient!"
-	line "<RIVAL>, you can"
-	cont "have one too!"
+	text "G: <RIVAL>,"
+	line "you'll get yours,"
+	cont "but you're going"
+	para "to have to wait"
+	line "your turn due"
+	cont "to that electron"
+	para "of a comment that"
+	line "you made!"
 	done
 
 _OaksLabLeavingText::
-	text "OAK: Hey! Don't go"
-	line "away yet!"
+	text "G: Not so fast!"
+	line "You have a"
+	cont "SCI-mon to pick!"
 	done
 
 _OaksLabRivalPickingMonText::
-	text "<RIVAL>: I'll take"
-	line "this one, then!"
+	text "<RIVAL>: This"
+	line "one's MINE!"
 	done
 
 _OaksLabRivalReceivedMonText::
-	text "<RIVAL> received"
-	line "a @"
+	text "<RIVAL>"
+	line "received a @"
 	TX_RAM wcd6d
 	text "!@@"
 
@@ -354,8 +390,8 @@ _OaksLabText27::
 	done
 
 _OaksLabText_1d405::
-	text "I study #MON as"
-	line "PROF.OAK's AIDE."
+	text "It's one of G's"
+	line "ultra-rare fossils!"
 	done
 
 _OaksLabText_441cc::
@@ -475,3 +511,8 @@ _OaksLabText_4424c::
 	line "entirely complete!"
 	cont "Congratulations!"
 	done
+
+_OakSnorlaxText_1d5b1::
+	text "CHORFLAX: SNOR!"
+	done
+

@@ -230,7 +230,7 @@ InGameTrade_GetReceivedMonPointer:
 	ret
 
 InGameTrade_TrainerString:
-	; "TRAINER@@@@@@@@@@"
+	; "CHEF@@@@@@@@@@@@@"
 	db $5d, "@@@@@@@@@@"
 
 InGameTradeTextPointers:

@@ -1,6 +1,6 @@
-OpenOaksPC:
+OpenChefsPC:
 	call SaveScreenTilesToBuffer2
-	ld hl, AccessedOaksPCText
+	ld hl, AccessedChefsPCText
 	call PrintText
 	ld hl, GetDexRatedText
 	call PrintText
@@ -10,7 +10,7 @@ OpenOaksPC:
 	jr nz, .closePC
 	predef DisplayDexRating
 .closePC
-	ld hl, ClosedOaksPCText
+	ld hl, ClosedChefsPCText
 	call PrintText
 	jp LoadScreenTilesFromBuffer2
 
@@ -18,11 +18,11 @@ GetDexRatedText:
 	TX_FAR _GetDexRatedText
 	db "@"
 
-ClosedOaksPCText:
-	TX_FAR _ClosedOaksPCText
+ClosedChefsPCText:
+	TX_FAR _ClosedChefsPCText
 	TX_WAIT
 	db "@"
 
-AccessedOaksPCText:
-	TX_FAR _AccessedOaksPCText
+AccessedChefsPCText:
+	TX_FAR _AccessedChefsPCText
 	db "@"

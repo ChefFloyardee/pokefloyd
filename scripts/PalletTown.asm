@@ -156,6 +156,10 @@ PalletTown_TextPointers:
 	dw PalletTownText5
 	dw PalletTownText6
 	dw PalletTownText7
+	dw PalletTownText8
+	dw PalletTownText9
+	dw PalletTownText10
+	dw PalletTownText11
 
 PalletTownText1:
 	TX_ASM
@@ -212,3 +216,45 @@ PalletTownText6: ; sign by Red’s house
 PalletTownText7: ; sign by Blue’s house
 	TX_FAR _PalletTownText7
 	db "@"
+	
+PalletTownText8:
+	TX_FAR _PalletTownText8
+	db "@"
+	
+PalletTownText9:
+	TX_ASM
+	ld hl, PalletTownText99
+	call PrintText
+	call YesNoChoice
+	ld a, [wCurrentMenuItem]
+	cp $0
+	jr nz, .asm_1941e
+	ld hl, PalletTownText98
+	call PrintText
+	jr .asm_19424
+.asm_1941e
+	ld hl, PalletTownText97
+	call PrintText
+.asm_19424
+	jp TextScriptEnd
+	
+PalletTownText99:
+	TX_FAR _PalletTownText99
+	db "@"
+
+PalletTownText97:
+	TX_FAR _PalletTownText97
+	db "@"
+
+PalletTownText98:
+	TX_FAR _PalletTownText98
+	db "@"
+	
+PalletTownText10:
+	TX_FAR _PalletTownText10
+	db "@"
+	
+PalletTownText11:
+	TX_FAR _PalletTownText11
+	db "@"
+

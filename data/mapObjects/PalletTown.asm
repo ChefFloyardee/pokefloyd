@@ -2,22 +2,26 @@ PalletTown_Object:
 	db $b ; border block
 
 	db 3 ; warps
-	warp 5, 5, 0, REDS_HOUSE_1F
-	warp 13, 5, 0, BLUES_HOUSE
-	warp 12, 11, 1, OAKS_LAB
+	warp 12, 4, 2, CINNABAR_GYM; staircase
+	warp 14, 4, 0, VIRIDIAN_NICKNAME_HOUSE
+	warp 16, 4, 1, OAKS_LAB
 
-	db 4 ; signs
-	sign 13, 13, 4 ; PalletTownText4
-	sign 7, 9, 5 ; PalletTownText5
-	sign 3, 5, 6 ; PalletTownText6
-	sign 11, 5, 7 ; PalletTownText7
+	db 5 ; signs
+	sign 13, 4, 11 ; PalletTownText4
+	sign 17, 4, 7 ; PalletTownText5
+	sign 17, 7, 8 ; PalletTownText6
+	sign 11, 0, 8 ; PalletTownText7
+	sign 9, 0, 9 ; PalletTownText7
 
-	db 3 ; objects
-	object SPRITE_OAK, 8, 5, STAY, NONE, 1 ; person
-	object SPRITE_GIRL, 3, 8, WALK, 0, 2 ; person
-	object SPRITE_FISHER2, 11, 14, WALK, 0, 3 ; person
+	db 6 ; objects
+	object SPRITE_FAT_BALD_GUY, 8, 5, STAY, NONE, 1 ; person
+	object SPRITE_OAK_AIDE, 3, 8, WALK, 0, 2 ; person
+	object SPRITE_BRUNETTE_GIRL, 11, 10, WALK, 0, 3 ; person
+	object SPRITE_ROCKER, 9, 4, WALK, 0, 4 ; person
+	object SPRITE_BOULDER, 8, 1, STAY, 0, 5 ; person
+	object SPRITE_BLACK_HAIR_BOY_1, 17, 8, STAY, UP, 10 ; person
 
 	; warp-to
-	warp_to 5, 5, PALLET_TOWN_WIDTH ; REDS_HOUSE_1F
-	warp_to 13, 5, PALLET_TOWN_WIDTH ; BLUES_HOUSE
-	warp_to 12, 11, PALLET_TOWN_WIDTH ; OAKS_LAB
+	warp_to 12, 4, PALLET_TOWN_WIDTH ; CINNABAR_GYM
+	warp_to 14, 4, PALLET_TOWN_WIDTH ; VIRIDIAN_NICKNAME_HOUSE
+	warp_to 16, 4, PALLET_TOWN_WIDTH ; OAKS_LAB

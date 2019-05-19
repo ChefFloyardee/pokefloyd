@@ -209,18 +209,21 @@ BluesHouseHiddenObjects:
 	dw PrintBookcaseText
 	db $FF
 OaksLabHiddenObjects:
-	db $00,$04,$04
+	db $00,$06,$04
 	db BANK(DisplayOakLabLeftPoster)
 	dw DisplayOakLabLeftPoster
-	db $00,$05,$04
+	db $00,$07,$04
 	db BANK(DisplayOakLabRightPoster)
 	dw DisplayOakLabRightPoster
-	db $01,$00,$04
+	db $01,$03,$04
 	db BANK(DisplayOakLabEmailText)
 	dw DisplayOakLabEmailText
-	db $01,$01,$04
+	db $01,$04,$04
 	db BANK(DisplayOakLabEmailText)
 	dw DisplayOakLabEmailText
+	db $01,$10,$04
+	db BANK(DisplayOakLabEmailTextt)
+	dw DisplayOakLabEmailTextt
 	db $FF
 ViridianPokecenterHiddenObjects:
 	db $04,$00,$08
@@ -492,12 +495,24 @@ CinnabarGymHiddenObjects:
 	db $0d,$09,$14
 	db Bank(PrintCinnabarQuiz)
 	dw PrintCinnabarQuiz
-	db $0d,$01,$05
+	db $0d,$01,$15
 	db Bank(PrintCinnabarQuiz)
 	dw PrintCinnabarQuiz
-	db $07,$01,$16
+	db $07,$01,$06
 	db Bank(PrintCinnabarQuiz)
 	dw PrintCinnabarQuiz
+	db $01,$10,$17
+	db Bank(PrintCinnabarQuiz)
+	dw PrintCinnabarQuiz
+	db $02,$01,$08
+	db Bank(PrintCinnabarQuiz)
+	dw PrintCinnabarQuiz
+	db $01,$11,POTION
+	dbw BANK(HiddenItems),HiddenItems
+	db $01,$0b,POTION
+	dbw BANK(HiddenItems),HiddenItems
+	db $01,$05,POTION
+	dbw BANK(HiddenItems),HiddenItems
 	db $FF
 CinnabarPokecenterHiddenObjects:
 	db $04,$00,$04

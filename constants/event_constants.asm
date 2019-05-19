@@ -673,7 +673,7 @@ const_value = 0
 	const EVENT_BEAT_CINNABAR_GYM_TRAINER_4          ; 29E, (D79A, bit 6)
 	const EVENT_BEAT_CINNABAR_GYM_TRAINER_5          ; 29F, (D79A, bit 7)
 	const EVENT_BEAT_CINNABAR_GYM_TRAINER_6          ; 2A0, (D79B, bit 0)
-	const EVENT_2A1                                  ; 2A1, (D79B, bit 1)
+	const EVENT_BEAT_CINNABAR_GYM_TRAINER_7          ; 2A1, (D79B, bit 1)
 	const EVENT_2A2                                  ; 2A2, (D79B, bit 2)
 	const EVENT_2A3                                  ; 2A3, (D79B, bit 3)
 	const EVENT_2A4                                  ; 2A4, (D79B, bit 4)
@@ -2560,3 +2560,6 @@ const_value = 0
 	const EVENT_9FD                                  ; 9FD, (D886, bit 5)
 	const EVENT_9FE                                  ; 9FE, (D886, bit 6)
 	const EVENT_9FF                                  ; 9FF, (D886, bit 7)
+	const EVENT_BEAT_CINNABAR_GYM_TRAINER_8          ; 10A0, (D887, bit 0)
+	const EVENT_BEAT_CINNABAR_GYM_TRAINER_9          ; 10A1, (D888, bit 1)
+	

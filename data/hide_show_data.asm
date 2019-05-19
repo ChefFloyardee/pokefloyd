@@ -137,7 +137,6 @@ MapHSPointers:
 	dw MapHSXX
 	dw MapHSXX
 	dw MapHSXX
-	dw MapHS84
 	dw MapHSXX
 	dw MapHSXX
 	dw MapHS87
@@ -279,6 +278,7 @@ MapHS01:
 MapHS02:
 	db PEWTER_CITY,$03,Show
 	db PEWTER_CITY,$05,Show
+	db PEWTER_CITY,$06,Show
 MapHS03:
 	db CERULEAN_CITY,$01,Hide
 	db CERULEAN_CITY,$02,Show
@@ -300,7 +300,6 @@ MapHS0A:
 	db SAFFRON_CITY,$0C,Hide
 	db SAFFRON_CITY,$0D,Hide
 	db SAFFRON_CITY,$0E,Show
-	db SAFFRON_CITY,$0F,Hide
 MapHS0D:
 	db ROUTE_2,$01,Show
 	db ROUTE_2,$02,Show
@@ -366,8 +365,6 @@ MapHS94:
 	db POKEMON_TOWER_7F,$04,Show
 MapHS95:
 	db MR_FUJIS_HOUSE,$05,Hide
-MapHS84:
-	db CELADON_MANSION_ROOF_HOUSE,$02,Show
 MapHS87:
 	db GAME_CORNER,$0B,Show
 MapHS9B:

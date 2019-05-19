@@ -79,24 +79,24 @@ PewterMuseumGuyCoords:
 ; main movement
 ; $00 is a pause
 PewterGymGuyCoords:
-	db 16, 34
+	db 20, 9
 	dw .one
-	db 17, 35
+	db 20, 7
 	dw .two
-	db 18, 37
+	db 21, 8
 	dw .three
-	db 19, 37
+	db 19, 8
 	dw .four
-	db 17, 36
+	db 18, 8
 	dw .five
 
 .one
-	db D_LEFT, D_DOWN, D_DOWN, D_RIGHT, $ff
+	db D_LEFT, $ff
 .two
-	db D_LEFT, D_DOWN, D_RIGHT, D_LEFT, $ff
+	db D_RIGHT, $ff
 .three
-	db D_LEFT, D_LEFT, D_LEFT, $00, $00, $00, $00, $00, $00, $00, $00, $ff
+	db D_UP, $ff
 .four
-	db D_LEFT, D_LEFT, D_UP, D_LEFT, $ff
+	db D_DOWN, $ff
 .five
 	db D_LEFT, D_DOWN, D_LEFT, $00, $00, $00, $00, $00, $00, $00, $00, $ff

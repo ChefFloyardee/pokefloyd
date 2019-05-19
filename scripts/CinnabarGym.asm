@@ -23,9 +23,9 @@ CinnabarGymScript_75772:
 	jp LoadGymLeaderAndCityName
 
 Gym7CityName:
-	db "CINNABAR ISLAND@"
+	db "FLOYDFIELD@"
 Gym7LeaderName:
-	db "BLAINE@"
+	db "G@"
 
 CinnabarGymScript_75792:
 	xor a
@@ -144,7 +144,7 @@ CinnabarGymScript3_75857:
 	ld [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	SetEvent EVENT_BEAT_BLAINE
-	lb bc, TM_38, 1
+	lb bc, HM_03, 1
 	call GiveItem
 	jr nc, .BagFull
 	ld a, $b
@@ -158,12 +158,12 @@ CinnabarGymScript3_75857:
 	call DisplayTextID
 .asm_75880
 	ld hl, wObtainedBadges
-	set 6, [hl]
+	set 0, [hl]
 	ld hl, wBeatGymFlags
-	set 6, [hl]
+	set 0, [hl]
 
 	; deactivate gym trainers
-	SetEventRange EVENT_BEAT_CINNABAR_GYM_TRAINER_0, EVENT_BEAT_CINNABAR_GYM_TRAINER_6
+	SetEventRange EVENT_BEAT_CINNABAR_GYM_TRAINER_0, EVENT_BEAT_CINNABAR_GYM_TRAINER_8
 
 	ld hl, wCurrentMapScriptFlags
 	set 5, [hl]
@@ -183,6 +183,9 @@ CinnabarGym_TextPointers:
 	dw BlaineBadgeText
 	dw ReceivedTM38Text
 	dw TM38NoRoomText
+	dw CinnabarGymText10
+	dw CinnabarGymText11
+	dw CinnabarGymText12
 
 CinnabarGymScript_758b7:
 	ld a, [hSpriteIndexOrTextID]
@@ -278,7 +281,7 @@ CinnabarGymText_7595f:
 CinnabarGymText_75964:
 	TX_FAR _CinnabarGymText_75964
 	db "@"
-
+	
 CinnabarGymText_75969:
 	TX_FAR _CinnabarGymText_75969
 	db "@"
@@ -351,7 +354,7 @@ CinnabarGymText5:
 	call SaveEndBattleTextPointers
 	jp CinnabarGymScript_758b7
 .asm_5cfd7
-	ld hl, CinnabarGymText_75a08
+	ld hl, CinnabarGymText_75aa7dg
 	call PrintText
 	jp TextScriptEnd
 
@@ -363,8 +366,8 @@ CinnabarGymText_75a03:
 	TX_FAR _CinnabarGymText_75a03
 	db "@"
 
-CinnabarGymText_75a08:
-	TX_FAR _CinnabarGymText_75a08
+CinnabarGymText_75aa7dg:
+	TX_FAR _CinnabarGymText_75aa7dg
 	db "@"
 
 CinnabarGymText6:
@@ -469,4 +472,98 @@ CinnabarGymText_75ac2:
 
 CinnabarGymText_75ac7:
 	TX_FAR _CinnabarGymText_75ac7
+	db "@"
+	
+CinnabarGymText10:
+	TX_ASM
+	call CinnabarGymScript_757a0
+	CheckEvent EVENT_BEAT_CINNABAR_GYM_TRAINER_7
+	jr nz, .asm_d87be
+	ld hl, CinnabarGymText_75a9dd
+	call PrintText
+	ld hl, CinnabarGymText_75aa2d
+	ld de, CinnabarGymText_75aa2d
+	call SaveEndBattleTextPointers
+	jp CinnabarGymScript_758b7
+.asm_d87be
+	ld hl, CinnabarGymText_75aa7d
+	call PrintText
+	jp TextScriptEnd
+
+CinnabarGymText_75a9dd:
+	TX_FAR _CinnabarGymText_75a9dd
+	db "@"
+
+CinnabarGymText_75aa2d:
+	TX_FAR _CinnabarGymText_75aa2d
+	db "@"
+
+CinnabarGymText_75aa7d:
+	TX_FAR _CinnabarGymText_75aa7d
+	db "@"
+	
+CinnabarGymText11:
+	TX_ASM
+	call CinnabarGymScript_757a0
+	CheckEvent EVENT_BEAT_CINNABAR_GYM_TRAINER_8
+	jr nz, .asm_d87be
+	ld hl, CinnabarGymText_75a9ddg
+	call PrintText
+	ld hl, CinnabarGymText_75aa2dg
+	ld de, CinnabarGymText_75aa2dg
+	call SaveEndBattleTextPointers
+	jp CinnabarGymScript_758b7
+.asm_d87be
+	ld hl, CinnabarGymText_75a08
+	call PrintText
+	jp TextScriptEnd
+
+CinnabarGymText_75a9ddg:
+	TX_FAR _CinnabarGymText_75a9ddg
+	db "@"
+
+CinnabarGymText_75aa2dg:
+	TX_FAR _CinnabarGymText_75aa2dg
+	db "@"
+
+CinnabarGymText_75a08:
+	TX_FAR _CinnabarGymText_75a08
+	db "@"
+
+CinnabarGymText12:
+	TX_ASM
+	ld hl, ViridianCityText_1914d
+	call PrintText
+	call YesNoChoice
+	ld a, [wCurrentMenuItem]
+	and a
+	jr nz, .asm_6dfea
+	call WaitForSoundToFinish
+	ld a, SFX_GET_ITEM_1
+	call PlaySound
+	call WaitForSoundToFinish
+	ld hl, ViridianCityText_19157
+	call PrintText
+	jr .asm_d611f
+.asm_6dfea
+.wrongAnswer
+	call WaitForSoundToFinish
+	ld a, SFX_DENIED
+	call PlaySound
+	call WaitForSoundToFinish
+	ld hl, ViridianCityText_19152
+	call PrintText
+.asm_d611f
+	jp TextScriptEnd
+
+ViridianCityText_1914d:
+	TX_FAR _ViridianCityText_1914d
+	db "@"
+
+ViridianCityText_19152:
+	TX_FAR _ViridianCityText_19152
+	db "@"
+
+ViridianCityText_19157:
+	TX_FAR _ViridianCityText_19157
 	db "@"

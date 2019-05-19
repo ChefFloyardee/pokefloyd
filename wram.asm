@@ -2061,6 +2061,8 @@ wMonHGrowthRate:: ; d0cb
 wMonHLearnset:: ; d0cc
 ; bit field
 	flag_array 50 + 5
+	
+wMonSpritesBank:: ; d0d3
 	ds 1
 
 wSavedTilesetType:: ; d0d4
@@ -2313,9 +2315,9 @@ wPokedexOwned:: ; d2f7
 	flag_array NUM_POKEMON
 wPokedexOwnedEnd::
 
-wPokedexSeen:: ; d30a
-	flag_array NUM_POKEMON
-wPokedexSeenEnd::
+
+	 flag_array 2 * 151 - NUM_POKEMON
+wPokedexSeenEndOld::
 
 
 wNumBagItems:: ; d31d
@@ -2546,7 +2548,11 @@ wDestinationWarpID:: ; d42f
 ; if $ff, the player's coordinates are not updated when entering the map
 	ds 1
 
-	ds 128
+wPokedexSeen::
+	flag_array NUM_POKEMON
+wPokedexSeenEnd::
+
+	ds 128 - (wPokedexSeenEnd - wPokedexSeen)
 
 wNumSigns:: ; d4b0
 ; number of signs in the current map (up to 16)
@@ -2882,6 +2888,7 @@ wRoute18Gate1FCurScript:: ; d669
 	ds 78
 wGameProgressFlagsEnd::
 
+wEvolutionData::
 	ds 56
 
 wObtainedHiddenItemsFlags::

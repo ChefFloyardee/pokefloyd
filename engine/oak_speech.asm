@@ -34,16 +34,16 @@ SetDefaultNames:
 OakSpeech:
 	ld a, $FF
 	call PlaySound ; stop music
-	ld a, BANK(Music_Routes2)
+	ld a, BANK(Music_Dungeon1)
 	ld c, a
-	ld a, MUSIC_ROUTES2
+	ld a, MUSIC_DUNGEON1
 	call PlayMusic
 	call ClearScreen
 	call LoadTextBoxTilePatterns
 	call SetDefaultNames
 	predef InitPlayerData2
 	ld hl, wNumBoxItems
-	ld a, POTION
+	ld a, POKE_BALL
 	ld [wcf91], a
 	ld a, 1
 	ld [wItemQuantity], a
@@ -64,7 +64,7 @@ OakSpeech:
 	call PrintText
 	call GBFadeOutToWhite
 	call ClearScreen
-	ld a, NIDORINO
+	ld a, WARTORTLE
 	ld [wd0b5], a
 	ld [wcf91], a
 	call GetMonHeader
@@ -157,7 +157,7 @@ OakSpeechText1:
 	db "@"
 OakSpeechText2:
 	TX_FAR _OakSpeechText2A
-	TX_CRY_NIDORINA
+	TX_CRY_WARTORTLE
 	TX_FAR _OakSpeechText2B
 	db "@"
 IntroducePlayerText:

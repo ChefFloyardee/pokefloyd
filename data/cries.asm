@@ -30,8 +30,8 @@ CryData:
 	db $13, $00, $80; Blastoise
 	db $14, $00, $80; Pinsir
 	db $12, $00, $80; Tangela
-	db $00, $00, $00; MissingNo.
-	db $00, $00, $00; MissingNo.
+	db $1D, $20, $40; Wartortle2
+	db $1D, $20, $40; Wartortle3
 	db $1F, $20, $40; Growlithe
 	db $17, $FF, $C0; Onix
 	db $18, $40, $A0; Fearow
@@ -49,7 +49,7 @@ CryData:
 	db $21, $20, $60; Psyduck
 	db $0D, $88, $20; Drowzee
 	db $12, $E0, $40; Golem
-	db $00, $00, $00; MissingNo.
+	db $1D, $20, $40; Wartortle33
 	db $04, $FF, $30; Magmar
 	db $00, $00, $00; MissingNo.
 	db $06, $8F, $FF; Electabuzz
@@ -190,3 +190,4 @@ CryData:
 	db $21, $55, $01; Bellsprout
 	db $25, $44, $20; Weepinbell
 	db $25, $66, $CC; Victreebel
+	

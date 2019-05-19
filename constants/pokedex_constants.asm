@@ -1,12 +1,12 @@
 const_value = 1
 
-	const DEX_BULBASAUR  ; 1
+	const DEX_MACHOP     ; 1
 	const DEX_IVYSAUR    ; 2
 	const DEX_VENUSAUR   ; 3
-	const DEX_CHARMANDER ; 4
+	const DEX_GEODUDE    ; 4
 	const DEX_CHARMELEON ; 5
 	const DEX_CHARIZARD  ; 6
-	const DEX_SQUIRTLE   ; 7
+	const DEX_GASTLY     ; 7
 	const DEX_WARTORTLE  ; 8
 	const DEX_BLASTOISE  ; 9
 	const DEX_CATERPIE   ; 10
@@ -65,7 +65,7 @@ const_value = 1
 	const DEX_ABRA       ; 63
 	const DEX_KADABRA    ; 64
 	const DEX_ALAKAZAM   ; 65
-	const DEX_MACHOP     ; 66
+	const DEX_BULBASAUR  ; 66
 	const DEX_MACHOKE    ; 67
 	const DEX_MACHAMP    ; 68
 	const DEX_BELLSPROUT ; 69
@@ -73,7 +73,7 @@ const_value = 1
 	const DEX_VICTREEBEL ; 71
 	const DEX_TENTACOOL  ; 72
 	const DEX_TENTACRUEL ; 73
-	const DEX_GEODUDE    ; 74
+	const DEX_CHARMANDER ; 74
 	const DEX_GRAVELER   ; 75
 	const DEX_GOLEM      ; 76
 	const DEX_PONYTA     ; 77
@@ -91,7 +91,7 @@ const_value = 1
 	const DEX_MUK        ; 89
 	const DEX_SHELLDER   ; 90
 	const DEX_CLOYSTER   ; 91
-	const DEX_GASTLY     ; 92
+	const DEX_SQUIRTLE   ; 92
 	const DEX_HAUNTER    ; 93
 	const DEX_GENGAR     ; 94
 	const DEX_ONIX       ; 95
@@ -151,5 +151,8 @@ const_value = 1
 	const DEX_DRAGONITE  ; 149
 	const DEX_MEWTWO     ; 150
 	const DEX_MEW        ; 151
+	const DEX_WARTORTLE_2; 152
+	const DEX_WARTORTLE_3; 153
+	const DEX_WARTORTLE_33; 154
 
-NUM_POKEMON    EQU 151
+NUM_POKEMON    EQU 154

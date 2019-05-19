@@ -101,7 +101,7 @@ endm
 	dict $5B, Char5B ; PC
 	dict $5E, Char5E ; ROCKET
 	dict $5C, Char5C ; TM
-	dict $5D, Char5D ; TRAINER
+	dict $5D, Char5D ; CHEF
 	dict $55, Char55 ; cont
 	dict $56, Char56 ; 6 dots
 	dict $57, Char57 ; done
@@ -139,7 +139,7 @@ Char53:: ; rival’s name
 	ld de, wRivalName
 	jr FinishDTE
 
-Char5D:: ; TRAINER
+Char5D:: ; CHEF
 	push de
 	ld de, Char5DText
 	jr FinishDTE
@@ -216,7 +216,7 @@ FinishDTE::
 Char5CText::
 	db "TM@"
 Char5DText::
-	db "TRAINER@"
+	db "CHEF@"
 Char5BText::
 	db "PC@"
 Char5EText::
@@ -626,7 +626,7 @@ TextCommandSounds::
 	db $10, SFX_GET_ITEM_2
 	db $11, SFX_GET_KEY_ITEM
 	db $13, SFX_DEX_PAGE_ADDED
-	db $14, NIDORINA ; used in OakSpeech
+	db $14, WARTORTLE ; used in OakSpeech
 	db $15, PIDGEOT  ; used in SaffronCityText12
 	db $16, DEWGONG  ; unused?
 

@@ -115,6 +115,6 @@ GetTitleBallY:
 	pop de
 	and a
 	ret z
-	ld [wOAMBuffer + $28], a
+	ld [wOAMBuffer + $0], a
 	inc e
 	ret

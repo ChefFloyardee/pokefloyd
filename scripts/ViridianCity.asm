@@ -9,7 +9,7 @@ ViridianCity_ScriptPointers:
 	dw ViridianCityScript1
 	dw ViridianCityScript2
 	dw ViridianCityScript3
-
+	
 ViridianCityScript0:
 	call ViridianCityScript_1900b
 	jp ViridianCityScript_1903d
@@ -57,7 +57,7 @@ ViridianCityScript_1903d:
 	ld a, $3
 	ld [wViridianCityCurScript], a
 	ret
-
+	
 ViridianCityScript1:
 	ld a, [wSpriteStateData1 + $34]
 	ld [$ffeb], a
@@ -80,7 +80,7 @@ ViridianCityScript1:
 	ld a, $2
 	ld [wViridianCityCurScript], a
 	ret
-
+	
 ViridianCityScript2:
 	ld a, [$ffeb]
 	ld [wSpriteStateData1 + $34], a
@@ -103,6 +103,10 @@ ViridianCityScript2:
 	ld a, $0
 	ld [wViridianCityCurScript], a
 	ret
+
+
+
+
 
 ViridianCityScript3:
 	ld a, [wSimulatedJoypadStatesIndex]
@@ -167,34 +171,9 @@ ViridianCityText_19127:
 	db "@"
 
 ViridianCityText3:
-	TX_ASM
-	ld hl, ViridianCityText_1914d
-	call PrintText
-	call YesNoChoice
-	ld a, [wCurrentMenuItem]
-	and a
-	jr nz, .asm_6dfea
-	ld hl, ViridianCityText_19157
-	call PrintText
-	jr .asm_d611f
-.asm_6dfea
-	ld hl, ViridianCityText_19152
-	call PrintText
-.asm_d611f
-	jp TextScriptEnd
-
-ViridianCityText_1914d:
-	TX_FAR _ViridianCityText_1914d
+	TX_FAR _CinnabarGymText12
 	db "@"
-
-ViridianCityText_19152:
-	TX_FAR _ViridianCityText_19152
-	db "@"
-
-ViridianCityText_19157:
-	TX_FAR _ViridianCityText_19157
-	db "@"
-
+	
 ViridianCityText4:
 	TX_ASM
 	CheckEvent EVENT_GOT_POKEDEX
@@ -228,6 +207,8 @@ ViridianCityText5:
 ViridianCityText_19191:
 	TX_FAR _ViridianCityText_19191
 	db "@"
+
+
 
 ViridianCityText6:
 	TX_ASM
@@ -302,13 +283,16 @@ ViridianCityText_19214:
 	TX_FAR _ViridianCityText_19214
 	db "@"
 
-ViridianCityText15:
-	TX_FAR _ViridianCityText_19219
-	db "@"
-
 ViridianCityText8:
-	TX_FAR _ViridianCityText8
-	db "@"
+	TX_ASM
+	lb bc, WARTORTLE, 25
+	call GivePokemon
+	jr nc, .asm_24365
+	ld a, HS_VIRIDIAN_CITY_ITEM_1 
+	ld [wMissableObjectIndex], a
+	predef HideObject
+.asm_24365
+	jp TextScriptEnd
 
 ViridianCityText9:
 	TX_FAR _ViridianCityText9
@@ -325,3 +309,8 @@ ViridianCityText13:
 ViridianCityText14:
 	TX_FAR _ViridianCityText14
 	db "@"
+	
+ViridianCityText15:
+	TX_FAR _ViridianCityText15
+	db "@"
+

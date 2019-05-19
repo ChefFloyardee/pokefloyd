@@ -268,14 +268,14 @@ ViridianSchoolBlackboardText2:
 	db "@"
 
 StatusAilmentText1:
-	db   " SLP"
-	next " PSN"
-	next " PAR@"
+	db   " DATE"
+	next " DN"
+	next " AO@"
 
 StatusAilmentText2:
-	db   " BRN"
-	next " FRZ"
-	next " QUIT@@"
+	db   " QP"
+	next " HW"
+	next " EXIT@@"
 
 ViridianBlackboardStatusPointers:
 	dw ViridianBlackboardSleepText

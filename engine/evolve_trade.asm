@@ -22,6 +22,10 @@ EvolveTradeMon:
 	; GRAVELER
 	cp "G"
 	jr z, .ok
+	
+	; WARTORTLE
+	cp "W"
+	jr z, .ok
 
 	; "SPECTRE" (HAUNTER)
 	cp "S"

@@ -32,7 +32,7 @@ TrainerNames:
 	db "COOLTRAINER♂@"
 	db "COOLTRAINER♀@"
 	db "BRUNO@"
-	db "BROCK@"
+	db "G@"
 	db "MISTY@"
 	db "LT.SURGE@"
 	db "ERIKA@"

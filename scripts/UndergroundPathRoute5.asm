@@ -9,10 +9,4 @@ UndergroundPathEntranceRoute5_5d6af:
 UndergroundPathRoute5_TextPointers:
 	dw UndergroundPathEntranceRoute5Text1
 
-UndergroundPathEntranceRoute5Text1:
-	TX_ASM
-	ld a, $9
-	ld [wWhichTrade], a
-	predef DoInGameTradeDialogue
-	ld hl, UndergroundPathEntranceRoute5_5d6af
-	ret
+

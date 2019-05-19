@@ -1,12 +1,5 @@
 _ViridianCityText1::
-	text "Those # BALLs"
-	line "at your waist!"
-	cont "You have #MON!"
-
-	para "It's great that"
-	line "you can carry and"
-	cont "use #MON any"
-	cont "time, anywhere!"
+	text "Let's get EXCITED!"
 	done
 
 _ViridianCityText_19122::
@@ -23,23 +16,42 @@ _ViridianCityText_19127::
 	done
 
 _ViridianCityText_1914d::
-	text "You want to know"
-	line "about the 2 kinds"
-	cont "of caterpillar"
-	cont "#MON?"
+	text "Here is it!"
+	para "The FINAL SCI"
+	line "QUIZ QUESTION!"
+	para "A HYPOTHESIS can"
+	line "become a THEORY"
+	cont "if it is well"
+	para "tested and proven"
+	line "to occur"
+	cont "consistently."
+	para "Similar to this an"
+	line "OBSERVATION can"
+	cont "become a"
+	para "Scientific LAW"
+	line "if it is observed"
+	cont "to occur time and"
+	cont "time again with"
+	para "no change in"
+	line "results!"
+	para "Is the following"
+	line "thus a viable"
+	cont "SCIENTIFIC LAW?"
+	para "All matter is"
+	line "made of PARTICLES?!"
 	done
 
 _ViridianCityText_19152::
-	text "Oh, OK then!"
+	text "Incorrect indeed!"
+	para "..."
+	para "Well, some of"
+	line "the time!"
 	done
 
 _ViridianCityText_19157::
-	text "CATERPIE has no"
-	line "poison, but"
-	cont "WEEDLE does."
-
-	para "Watch out for its"
-	line "POISON STING!"
+	text "Yes! This is"
+	line "factual!..."
+	cont "well, sometimes!"
 	done
 
 _ViridianCityText_19175::
@@ -55,14 +67,6 @@ _ViridianCityText_1917a::
 	cont "have to take the"
 	cont "winding trail in"
 	cont "VIRIDIAN FOREST."
-	done
-
-_ViridianCityText_19191::
-	text "You can't go"
-	line "through here!"
-
-	para "This is private"
-	line "property!"
 	done
 
 _ViridianCityText_191ca::
@@ -97,51 +101,7 @@ _TM42NoRoomText::
 	line "stuff already."
 	done
 
-_ViridianCityText_1920a::
-	text "Ahh, I've had my"
-	line "coffee now and I"
-	cont "feel great!"
 
-	para "Sure you can go"
-	line "through!"
-
-	para "Are you in a"
-	line "hurry?"
-	done
-
-_ViridianCityText_1920f::
-	text "I see you're using"
-	line "a #DEX."
-
-	para "When you catch a"
-	line "#MON, #DEX"
-	cont "is automatically"
-	cont "updated."
-
-	para "What? Don't you"
-	line "know how to catch"
-	cont "#MON?"
-
-	para "I'll show you"
-	line "how to then."
-	done
-
-_ViridianCityText_19214::
-	text "Time is money..."
-	line "Go along then."
-	done
-
-_ViridianCityText_19219::
-	text "First, you need"
-	line "to weaken the"
-	cont "target #MON."
-	done
-
-_ViridianCityText8::
-	text "VIRIDIAN CITY "
-	line "The Eternally"
-	cont "Green Paradise"
-	done
 
 _ViridianCityText9::
 	text "TRAINER TIPS"
@@ -177,4 +137,58 @@ _ViridianCityText13::
 _ViridianCityText14::
 	text "The GYM's doors"
 	line "are locked..."
+	done
+	
+_ViridianCityText15::
+	text "MR. FLOYD'S CLASS"
+	para "Have Fun And"
+	line "SCIENCE ON!"
+	done
+	
+_ViridianCityText_19191::
+	text "You can't go"
+	line "through here!"
+
+	para "This is private"
+	line "property!"
+	done
+	
+_ViridianCityText_1920a::
+	text "Ahh, I've had my"
+	line "coffee now and I"
+	cont "feel great!"
+
+	para "Sure you can go"
+	line "through!"
+
+	para "Are you in a"
+	line "hurry?"
+	done
+	
+_ViridianCityText_1920f::
+	text "I see you're using"
+	line "a #DEX."
+
+	para "When you catch a"
+	line "#MON, #DEX"
+	cont "is automatically"
+	cont "updated."
+
+	para "What? Don't you"
+	line "know how to catch"
+	cont "#MON?"
+
+	para "I'll show you"
+	line "how to then."
+	done
+
+_ViridianCityText_19214::
+	text "Time is money..."
+	line "Go along then."
+	done
+
+_ViridianCityText_19219::
+	text "First, you need"
+	line "to weaken the"
+	cont "target #MON."
 	done

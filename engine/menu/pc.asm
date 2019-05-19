@@ -34,7 +34,7 @@ PCMainMenu:
 	cp 1
 	jr z, .playersPC ;if current menu item id is 1, it's players pc
 	cp 2
-	jp z, OaksPC     ;if current menu item id is 2, it's oaks pc
+	jp z, ChefsPC     ;if current menu item id is 2, it's Chefs pc
 	jp LogOff        ;otherwise, it's 3, and you're logging off
 .next2
 	ld a, [wCurrentMenuItem]
@@ -43,7 +43,7 @@ PCMainMenu:
 	cp 1
 	jr z, .playersPC ;if current menu item id is 1, it's players pc
 	cp 2
-	jp z, OaksPC     ;if current menu item id is 2, it's oaks pc
+	jp z, ChefsPC     ;if current menu item id is 2, it's Chefs pc
 	cp 3
 	jp z, PKMNLeague ;if current menu item id is 3, it's pkmnleague
 	jp LogOff        ;otherwise, it's 4, and you're logging off
@@ -58,11 +58,11 @@ PCMainMenu:
 	call PrintText
 	callba PlayerPC
 	jr ReloadMainMenu
-OaksPC:
+ChefsPC:
 	ld a, SFX_ENTER_PC
 	call PlaySound
 	call WaitForSoundToFinish
-	callba OpenOaksPC
+	callba OpenChefsPC
 	jr ReloadMainMenu
 PKMNLeague:
 	ld a, SFX_ENTER_PC

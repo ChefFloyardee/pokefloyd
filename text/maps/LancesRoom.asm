@@ -1,31 +1,29 @@
 _LanceBeforeBattleText::
-	text "Ah! I heard about"
-	line "you <PLAYER>!"
+	text "If it isn't my"
+	line "old student here"
 
-	para "I lead the ELITE"
-	line "FOUR! You can"
-	cont "call me LANCE the"
-	cont "dragon trainer!"
+	para "to challenge"
+	line "his old teacher."
+	para "I thought I had"
+	line "taught you well"
 
-	para "You know that"
-	line "dragons are"
-	cont "mythical #MON!"
+	para "enough to know"
+	line "you'd NEVER"
+	cont "be better than I."
 
-	para "They're hard to"
-	line "catch and raise,"
-	cont "but their powers"
-	cont "are superior!"
+	para "They say I'm not"
+	line "real but believe"
+	para "me when I say that"
+	line "I'm REAL enough to"
 
-	para "They're virtually"
-	line "indestructible!"
+	para "finish you off."
+	para "Not even the UNITS"
 
-	para "Well, are you"
-	line "ready to lose?"
+	line "can save you now"
+	para "and FYI this is"
 
-	para "Your LEAGUE"
-	line "challenge ends"
-	cont "with me, <PLAYER>!"
-	done
+	line "NO RED HERRING!"
+		done
 
 _LanceEndBattleText::
 	text "That's it!"

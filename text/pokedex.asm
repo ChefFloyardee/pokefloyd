@@ -297,6 +297,26 @@ _TangelaDexEntry::
 	next "weed. Its vines"
 	next "shake as it walks"
 	dex
+	
+_Wartortle2DexEntry::
+	text "Often hides in"
+	next "water to stalk"
+	next "unwary prey. For"
+
+	page "swimming fast, it"
+	next "moves its ears to"
+	next "maintain balance"
+	dex
+	
+_Wartortle3DexEntry::
+	text "Often hides in"
+	next "water to stalk"
+	next "unwary prey. For"
+
+	page "swimming fast, it"
+	next "moves its ears to"
+	next "maintain balance"
+	dex
 
 _GrowlitheDexEntry::
 	text "Very protective"
@@ -466,6 +486,16 @@ _GolemDexEntry::
 	page "easily withstand"
 	next "dynamite blasts"
 	next "without damage"
+	dex
+	
+_Wartortle33DexEntry::
+	text "Often hides in"
+	next "water to stalk"
+	next "unwary prey. For"
+
+	page "swimming fast, it"
+	next "moves its ears to"
+	next "maintain balance"
 	dex
 
 _MagmarDexEntry::
@@ -1507,4 +1537,6 @@ _VictreebelDexEntry::
 	next "has ever returned"
 	next "from there"
 	dex
+	
+
 

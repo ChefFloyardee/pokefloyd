@@ -1868,7 +1868,7 @@ CoinCaseNumCoinsText:
 	TX_FAR _CoinCaseNumCoinsText
 	db "@"
 
-ItemUseOldRod:
+ItemUseSuperRod:
 	call FishingInit
 	jp c, ItemUseNotTime
 	lb bc, 5, MAGIKARP
@@ -1903,7 +1903,7 @@ ItemUseGoodRod:
 
 INCLUDE "data/good_rod.asm"
 
-ItemUseSuperRod:
+ItemUseOldRod:
 	call FishingInit
 	jp c, ItemUseNotTime
 	call ReadSuperRodData

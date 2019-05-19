@@ -13,7 +13,7 @@ LoneMoves:
 	db 2,MEGA_DRAIN
 	db 3,TOXIC
 	db 3,PSYWAVE
-	db 3,FIRE_BLAST
+	db 1,THUNDER
 	db 4,FISSURE
 
 TeamMoves:
@@ -29,4 +29,5 @@ TeamMoves:
 	db BRUNO,FISSURE
 	db AGATHA,TOXIC
 	db LANCE,BARRIER
+	db CHEF,PSYBEAM
 	db $FF

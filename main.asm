@@ -10,6 +10,7 @@ PICS_2 EQU $A
 PICS_3 EQU $B
 PICS_4 EQU $C
 PICS_5 EQU $D
+PICS_6 EQU $F
 
 INCLUDE "home.asm"
 
@@ -22,7 +23,7 @@ INCLUDE "engine/black_out.asm"
 
 MewPicFront:: INCBIN "pic/bmon/mew.pic"
 MewPicBack::  INCBIN "pic/monback/mewb.pic"
-INCLUDE "data/baseStats/mew.asm"
+
 
 INCLUDE "engine/battle/safari_zone.asm"
 
@@ -158,6 +159,9 @@ ClipboardSprite:       INCBIN "gfx/sprites/clipboard.2bpp"
 SnorlaxSprite:         INCBIN "gfx/sprites/snorlax.2bpp"
 OldAmberSprite:        INCBIN "gfx/sprites/old_amber.2bpp"
 LyingOldManSprite:     INCBIN "gfx/sprites/lying_old_man.2bpp"
+Quadruped2Sprite:       INCBIN "gfx/sprites/quadruped2.2bpp"
+SandshrewSprite:		INCBIN "gfx/sprites/sandshrew.2bpp"
+BulbasaurSprite:		INCBIN "gfx/sprites/bulbasaur.2bpp"
 
 
 SECTION "Graphics (BANK 4)", ROMX
@@ -582,6 +586,7 @@ TangelaPicFront::     INCBIN "pic/bmon/tangela.pic"
 TangelaPicBack::      INCBIN "pic/monback/tangelab.pic"
 
 
+
 SECTION "Battle (BANK 9)", ROMX
 
 INCLUDE "engine/battle/print_type.asm"
@@ -733,8 +738,6 @@ KakunaPicBack::       INCBIN "pic/monback/kakunab.pic"
 BeedrillPicFront::    INCBIN "pic/bmon/beedrill.pic"
 BeedrillPicBack::     INCBIN "pic/monback/beedrillb.pic"
 
-FossilKabutopsPic::   INCBIN "pic/bmon/fossilkabutops.pic"
-
 
 SECTION "Battle (BANK B)", ROMX
 
@@ -865,8 +868,6 @@ WartortlePicFront::    INCBIN "pic/bmon/wartortle.pic"
 WartortlePicBack::     INCBIN "pic/monback/wartortleb.pic"
 CharizardPicFront::    INCBIN "pic/bmon/charizard.pic"
 CharizardPicBack::     INCBIN "pic/monback/charizardb.pic"
-FossilAerodactylPic::  INCBIN "pic/bmon/fossilaerodactyl.pic"
-GhostPic::             INCBIN "pic/other/ghost.pic"
 OddishPicFront::       INCBIN "pic/bmon/oddish.pic"
 OddishPicBack::        INCBIN "pic/monback/oddishb.pic"
 GloomPicFront::        INCBIN "pic/bmon/gloom.pic"
@@ -890,8 +891,21 @@ INCLUDE "engine/overworld/pewter_guys.asm"
 INCLUDE "engine/multiply_divide.asm"
 INCLUDE "engine/game_corner_slots.asm"
 
+SECTION "Pics 6", ROMX ; BANK $0F
+FossilAerodactylPic::  INCBIN "pic/bmon/fossilaerodactyl.pic"
+GhostPic::             INCBIN "pic/other/ghost.pic"
+FossilKabutopsPic::   INCBIN "pic/bmon/fossilkabutops.pic"
+Wartortle2PicFront::  INCBIN "pic/bmon/wartortle2.pic"
+Wartortle3PicFront::  INCBIN "pic/bmon/wartortle3.pic"
+Wartortle2PicBack::   INCBIN "pic/monback/wartortleb2.pic"
+Wartortle3PicBack::   INCBIN "pic/monback/wartortleb3.pic"
+Wartortle33PicFront::  INCBIN "pic/bmon/wartortle3.pic"
+Wartortle33PicBack::   INCBIN "pic/monback/wartortleb3.pic"
+
+
 
 SECTION "bankE", ROMX
+
 
 INCLUDE "data/moves.asm"
 BaseStats: INCLUDE "data/base_stats.asm"

@@ -9,4 +9,4 @@ TradeMons:
 	db POLIWHIRL, JYNX,     1,"LOLA@@@@@@@"
 	db RAICHU,    ELECTRODE,1,"DORIS@@@@@@"
 	db VENONAT,   TANGELA,  2,"CRINKLES@@@"
-	db NIDORAN_M, NIDORAN_F,2,"SPOT@@@@@@@"
+	db WARTORTLE, WARTORTLE,2,"TOKKA JR@@@"

@@ -164,6 +164,8 @@ CinnabarQuizQuestions:
 	dw CinnabarQuizQuestionsText4
 	dw CinnabarQuizQuestionsText5
 	dw CinnabarQuizQuestionsText6
+	dw CinnabarQuizQuestionsText7
+	dw CinnabarQuizQuestionsText8
 
 CinnabarQuizQuestionsText1:
 	TX_FAR _CinnabarQuizQuestionsText1
@@ -187,6 +189,14 @@ CinnabarQuizQuestionsText5:
 
 CinnabarQuizQuestionsText6:
 	TX_FAR _CinnabarQuizQuestionsText6
+	db "@"
+	
+CinnabarQuizQuestionsText7:
+	TX_FAR _CinnabarQuizQuestionsText7
+	db "@"
+	
+CinnabarQuizQuestionsText8:
+	TX_FAR _CinnabarQuizQuestionsText8
 	db "@"
 
 CinnabarGymGateFlagAction:
@@ -261,7 +271,7 @@ CinnabarGymQuizIncorrectText:
 UpdateCinnabarGymGateTileBlocks_:
 ; Update the overworld map with open floor blocks or locked gate blocks
 ; depending on event flags.
-	ld a, 6
+	ld a, 8
 	ld [hGymGateIndex], a
 .loop
 	ld a, [hGymGateIndex]
@@ -310,6 +320,8 @@ CinnabarGymGateCoords:
 	db $03,$08,$5f,$00
 	db $02,$06,$54,$00
 	db $02,$03,$54,$00
+	db $17,$00,$5f,$00
+	db $01,$02,$54,$00
 
 PrintMagazinesText:
 	call EnableAutoTextBoxDrawing
@@ -465,3 +477,9 @@ DisplayOakLabEmailText:
 OakLabEmailText:
 	TX_FAR _OakLabEmailText
 	db "@"
+	
+DisplayOakLabEmailTextt:
+	TX_FAR _OakLabEmailTextt
+	db "@"
+	
+	

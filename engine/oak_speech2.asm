@@ -190,32 +190,32 @@ DisplayIntroNameTextBox:
 IF DEF(_RED)
 DefaultNamesPlayer:
 	db   "NEW NAME"
-	next "RED"
-	next "ASH"
-	next "JACK"
+	next "CHEF"
+	next "CHASE"
+	next "FLOYD"
 	db   "@"
 
 DefaultNamesRival:
 	db   "NEW NAME"
-	next "BLUE"
-	next "GARY"
-	next "JOHN"
+	next "RED HERRING"
+	next "RANDY"
+	next "RANDALL"
 	db   "@"
 ENDC
 
 IF DEF(_BLUE)
 DefaultNamesPlayer:
 	db   "NEW NAME"
-	next "BLUE"
-	next "GARY"
-	next "JOHN"
+	next "CHEF"
+	next "CHASE"
+	next "FLOYD"
 	db   "@"
 
 DefaultNamesRival:
 	db   "NEW NAME"
-	next "RED"
-	next "ASH"
-	next "JACK"
+	next "RED HERRING"
+	next "RANDY"
+	next "RANDALL"
 	db   "@"
 ENDC
 
@@ -246,26 +246,26 @@ GetDefaultName:
 IF DEF(_RED)
 DefaultNamesPlayerList:
 	db "NEW NAME@"
-	db "RED@"
-	db "ASH@"
-	db "JACK@"
+	db "CHEF@"
+	db "CHASE@"
+	db "FLOYD@"
 DefaultNamesRivalList:
 	db "NEW NAME@"
-	db "BLUE@"
-	db "GARY@"
-	db "JOHN@"
+	db "RED HERRING@"
+	db "RANDAY@"
+	db "RANDALL@"
 ENDC
 IF DEF(_BLUE)
 DefaultNamesPlayerList:
 	db "NEW NAME@"
-	db "BLUE@"
-	db "GARY@"
-	db "JOHN@"
+	db "CHEF@"
+	db "CHASE@"
+	db "FLOYD@"
 DefaultNamesRivalList:
 	db "NEW NAME@"
-	db "RED@"
-	db "ASH@"
-	db "JACK@"
+	db "RED HERRING@"
+	db "RANDAY@"
+	db "RANDALL@"
 ENDC
 
 TextTerminator_6b20:
