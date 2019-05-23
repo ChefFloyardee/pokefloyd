@@ -316,8 +316,8 @@ MapHS1A:
 MapHS1B:
 	db ROUTE_16,$07,Show
 MapHS21:
-	db ROUTE_22,$01,Hide
-	db ROUTE_22,$02,Hide
+	db DIGLETTS_CAVE_ROUTE_2,$01,Hide
+	db DIGLETTS_CAVE_ROUTE_2,$02,Hide
 MapHS23:
 	db ROUTE_24,$01,Show
 	db ROUTE_24,$08,Show

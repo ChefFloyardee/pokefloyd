@@ -241,7 +241,19 @@ BlaineEndBattleText:
 	db "@"
 
 BlaineFireBlastText:
-	TX_FAR _BlaineFireBlastText
+	TX_ASM
+	CheckEvent EVENT_OAK_APPEARED_IN_PALLET 
+	jr nz, .asm_627d9
+	ld hl, BlaineFireBlastText
+	jr .asm_0b11d
+.asm_627d9
+	ld hl, GText_75ac7
+.asm_0b11d
+	call PrintText
+	jp TextScriptEnd
+
+GText_75ac7:
+	TX_FAR _GText_75ac7
 	db "@"
 
 BlaineBadgeText:
@@ -567,3 +579,4 @@ ViridianCityText_19152:
 ViridianCityText_19157:
 	TX_FAR _ViridianCityText_19157
 	db "@"
+	

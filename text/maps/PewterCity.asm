@@ -102,8 +102,8 @@ _PewterCityText7::
 	cont "with any info!"
 	done
 
-_PewterCityText10::
-	text "PEWTER MUSEUM"
+_PewterCityText12::
+	text "FLOYDFIELD MUSEUM"
 	line "OF SCIENCE"
 	done
 
@@ -117,10 +117,10 @@ _PewterCityText11::
 	cont "Method!"
 	done
 
-_PewterCityText12::
-	text "PEWTER CITY"
-	line "A Stone Gray"
-	cont "City"
+_PewterCityText10::
+	text "FLOYDFIELD"
+	line "Letting The Units"
+	cont "Guide Us since 93!"
 	done
 	
 _PewterCityText16::

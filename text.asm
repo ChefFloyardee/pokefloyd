@@ -1983,7 +1983,8 @@ _WillBeTradedText::
 
 _Char00Text::
 	TX_NUM hSpriteIndexOrTextID,1,2
-	text " CLASSROOM RULES"
+	text " OUR SCIENCE"
+	line "CLASSROOM RULES"
 	para "Rule Number 3"
 	line "looks important!"
 	done
@@ -2478,7 +2479,6 @@ INCLUDE "text/maps/CinnabarLabMetronomeRoom.asm"
 INCLUDE "text/maps/CinnabarLabFossilRoom.asm"
 INCLUDE "text/maps/CinnabarPokecenter.asm"
 INCLUDE "text/maps/CinnabarMart.asm"
-INCLUDE "text/maps/IndigoPlateauLobby.asm"
 INCLUDE "text/maps/CopycatsHouse1F.asm"
 INCLUDE "text/maps/CopycatsHouse2F.asm"
 INCLUDE "text/maps/FightingDojo.asm"
@@ -3011,8 +3011,7 @@ _MonCannotLearnMachineMoveText::
 	prompt
 
 _ItemUseNotTimeText::
-	text "OAK: <PLAYER>!"
-	line "This isn't the"
+	text "This isn't the"
 	cont "time to use that! "
 	prompt
 
@@ -3265,6 +3264,7 @@ _UsedCutText::
 SECTION "Pokedex Text", ROMX ; BANK $2b
 
 INCLUDE "text/pokedex.asm"
+INCLUDE "text/maps/IndigoPlateauLobby.asm"
 
 
 SECTION "Move Names", ROMX ; BANK $2c

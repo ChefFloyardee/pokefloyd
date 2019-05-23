@@ -8,6 +8,7 @@ PewterMart_TextPointers:
 	dw PewterCashierText
 	dw PewterMartText2
 	dw PewterMartText3
+	
 
 PewterMartText2:
 	TX_ASM
@@ -26,3 +27,6 @@ PewterMartText3:
 .Text
 	TX_FAR _PewterMartText3
 	db "@"
+	
+
+

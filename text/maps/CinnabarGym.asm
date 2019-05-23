@@ -16,7 +16,7 @@ _BlaineBattleText::
 	line "if observed"
 	cont "to occur time and"
 	cont "time again with"
-	para "no change in"
+	para "NO CHANGE in"
 	line "results!"
 	para "However, when it"
 	line "comes to the"
@@ -62,6 +62,18 @@ _BlaineFireBlastText::
 	cont "to the right!"
 	para "Why don't you"
 	line "meet me up there!"
+	done
+	
+_GText_75ac7::
+	text "HAZA!"
+	para "Flummoxed as to"
+	line "how Chorflax 'n"
+	cont "I got back here"
+	cont "so FAST?!"
+	para "Perhaps we can"
+	line "also travel as"
+	cont "PARTICLES or"
+	cont "WAVES!"
 	done
 
 _BlaineBadgeText::

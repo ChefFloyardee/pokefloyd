@@ -30,7 +30,7 @@ MonsterNames:
 	db "PINSIR@@@@"
 	db "TANGELA@@@"
 	db "WARTORTLE'"
-	db "WARTORTLEX"
+	db "EVIL-TOKKA"
 	db "GROWLITHE@"
 	db "ONIX@@@@@@"
 	db "FEAROW@@@@"

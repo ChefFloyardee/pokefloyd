@@ -84,10 +84,13 @@ _OaksLabText_1d2f5::
 	done
 
 _OaksLabText_1d2fa::
-	text "OAK: <PLAYER>,"
-	line "raise your young"
-	cont "#MON by making"
-	cont "it fight!"
+	text "G: There are 7"
+	line "more SCI Badges"
+	cont "to earn my young"
+	cont "student, so make"
+	para "Mr. Floyd and I"
+	line "proud by earning"
+	cont "them all!"
 	done
 
 _OaksLabDeliverParcelText1::
@@ -124,44 +127,53 @@ _OaksLabAroundWorldText::
 	done
 
 _OaksLabGivePokeballsText1::
-	text "OAK: You can't get"
-	line "detailed data on"
-	cont "#MON by just"
-	cont "seeing them."
-
-	para "You must catch"
-	line "them! Use these"
-	cont "to capture wild"
-	cont "#MON."
-
-	para "<PLAYER> got 5"
-	line "# BALLs!@@"
+	text "G: My lad!"
+	para "Take this as"
+	line "well as further"
+	cont "apology on my"
+	cont "behalf!"
+	para "No student of"
+	line "SCIENCE should"
+	cont "ever OBSERVE such"
+	cont "rudeness!"
+	para "<PLAYER> got"
+	line "a SCOYENIA!@@"
+	done
 
 _OaksLabGivePokeballsText2::
 	text ""
-	para "When a wild"
-	line "#MON appears,"
-	cont "it's fair game."
-
-	para "Just throw a #"
-	line "BALL at it and try"
-	line "to catch it!"
-
-	para "This won't always"
-	line "work, though."
-
-	para "A healthy #MON"
-	line "could escape. You"
-	cont "have to be lucky!"
+	para "SCOYENIA is an"
+	line "ICHNOFACIES!"
+	para "That's a fancy"
+	line "SCIENTIFIC word"
+	cont "for a group of"
+	para "TRACE FOSSILS that"
+	line "indicate the"
+	para "CONDITIONS"
+	line "present when"
+	cont "their formative"
+	cont "organisms were"
+	cont "still alive!"
+	para "These will help"
+	line "you in your DATA"
+	cont "collection QUEST"
+	para "as well, since if"
+	line "you take this to"
+	cont "Dr.Ilya Buynevich"
+	para "he can restore them"
+	line "to life and give"
+	cont "you another 'MON"
+	cont "to LEARN about!"
 	done
 
 _OaksLabPleaseVisitText::
-	text "OAK: Come see me"
-	line "sometimes."
-
-	para "I want to know how"
-	line "your #DEX is"
-	cont "coming along."
+	text "G: There are 7"
+	line "more SCI Badges"
+	cont "to earn my young"
+	cont "student, so make"
+	para "Mr. Floyd and I"
+	line "proud by earning"
+	cont "them all!"
 	done
 
 _OaksLabText_1d31d::
@@ -280,35 +292,42 @@ _OaksLabRivalReceivedMonText::
 	text "!@@"
 
 _OaksLabRivalChallengeText::
-	text "<RIVAL>: Wait"
-	line "<PLAYER>!"
-	cont "Let's check out"
-	cont "our #MON!"
-
-	para "Come on, I'll take"
-	line "you on!"
+	text "Yo MUSH-HEAD!"
+	para "Lemme see this"
+	line "team of loser"
+	cont "'mon that you"
+	para "CLAIM you beat"
+	line "G with!"
 	done
 
 _OaksLabText_1d3be::
 	text "WHAT?"
 	line "Unbelievable!"
-	cont "I picked the"
-	cont "wrong #MON!"
+	cont "He's not going"
+	cont "to like this..."
 	prompt
 
 _OaksLabText_1d3c3::
-	text "<RIVAL>: Yeah! Am"
-	line "I great or what?"
+	text "<RIVAL>: I"
+	line "guess I picked"
+	cont "right again,"
+	para "MUSH-HEAD!"
 	prompt
 
 _OaksLabRivalToughenUpText::
-	text "<RIVAL>: Okay!"
-	line "I'll make my"
-	cont "#MON fight to"
-	cont "toughen it up!"
-
-	para "<PLAYER>! Gramps!"
-	line "Smell you later!"
+	text "<RIVAL>: You're"
+	line "on my radar now,"
+	cont "so you BETTER"
+	para "stay outta my"
+	line "way you LOSER!"
+	para "I'm gonna get"
+	line "all 8 SCI Badges"
+	cont "long before you!"
+	para "That's a HYPOTHESIS"
+	line "that won't be"
+	cont "OVERTURNED!"
+	para "Hey, look!"
+	line "A DISTRACTION!"
 	done
 
 _OaksLabText21::

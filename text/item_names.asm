@@ -39,7 +39,7 @@ ItemNames:
 	db "CARBOS@"
 	db "CALCIUM@"
 	db "RARE CANDY@"
-	db "DOME FOSSIL@"
+	db "SCOYENIA@"
 	db "HELIX FOSSIL@"
 	db "SECRET KEY@"
 	db "?????@"
