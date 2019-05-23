@@ -2,18 +2,18 @@ _LanceBeforeBattleText::
 	text "Well well well..."
 	para "If it isn't my"
 	line "former student,"
-	cont "here to challenge"
-	cont "his former teacher."
+	cont "here to CHALLENGE"
+	cont "his old teacher..."
 	
 	para "I thought I had"
 	line "taught you well"
-	cont "enough to know that"
-	cont "you'll NEVER be"
-	cont "better than me..."
+	cont "enough to know"
+	cont "that you'd NEVER"
+	cont "be better than I."
 	
 	para "Oh well...ya know,"
 	line "they say I'm not"
-	cont "REAL...but believe"
+	cont "REAL, but BELIEVE"
 	para "me when I say that"
 	line "I'm REAL ENOUGH to"
 	cont "FINISH you off..."
@@ -21,19 +21,18 @@ _LanceBeforeBattleText::
 	para "So then...CHEF!"
 	para "Not even the UNITS"
 	line "can save you now!"
-	para "And FYI...this is"
-	line "NO RED HERRING!!!"
+	para "And FYI..."
+	para "This is NO"
+	line "RED HERRING!?!?!"
 	done
 
 _LanceEndBattleText::
-	text "That's it!"
-
-	para "I hate to admit"
-	line "it, but you are a"
-	cont "#MON master!"
+	text "The units!"
+	para "They didn't guide"
+	line "me!"
 	prompt
 
-_LanceAfterBattleText::
+_LanceAfterBattleText1::
 	text "I still can't"
 	line "believe my"
 	cont "dragons lost to"

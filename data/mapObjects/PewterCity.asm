@@ -6,7 +6,7 @@ PewterCity_Object:
 	warp 19, 5, 2, MUSEUM_1F
 	warp 16, 17, 0, CINNABAR_GYM
 	warp 2, 33, 0, DIGLETTS_CAVE_ROUTE_2
-	warp 23, 17, 0, PEWTER_MART
+	warp 23, 17, 0, INDIGO_PLATEAU_LOBBY
 	warp 7, 29, 0, VIRIDIAN_SCHOOL_HOUSE
 	warp 13, 25, 0, PEWTER_POKECENTER
 	

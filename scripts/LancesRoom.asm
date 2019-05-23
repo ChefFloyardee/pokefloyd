@@ -156,7 +156,20 @@ LanceEndBattleText:
 	db "@"
 
 LanceAfterBattleText:
-	TX_FAR _LanceAfterBattleText
 	TX_ASM
 	SetEvent EVENT_BEAT_LANCE
+	ld hl, LanceAfterBattleText1
+	call PrintText
+	call GBFadeOutToBlack
+	ld a, HS_LANCES_ROOM
+	ld [wMissableObjectIndex], a
+	predef HideObject
+	call UpdateSprites
+	call Delay3
+	call GBFadeInFromBlack
 	jp TextScriptEnd
+
+
+LanceAfterBattleText1:
+	TX_FAR _LanceAfterBattleText1
+	db "@"

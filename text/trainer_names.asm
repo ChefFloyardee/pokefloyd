@@ -45,4 +45,4 @@ TrainerNames:
 	db "LORELEI@"
 	db "CHANNELER@"
 	db "AGATHA@"
-	db "LANCE@"
+	db "AKILA@"
