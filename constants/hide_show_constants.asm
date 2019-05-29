@@ -220,6 +220,7 @@ const_value = 0
 	const HS_CERULEAN_CAVE_B1F_ITEM_2      ; D3 X
 	const HS_VICTORY_ROAD_1F_ITEM_1        ; D4 X
 	const HS_VICTORY_ROAD_1F_ITEM_2        ; D5 X
+	const HS_LANCES_ROOM
 	const HS_CHAMPIONS_ROOM_OAK            ; D6
 	const HS_SEAFOAM_ISLANDS_1F_BOULDER_1  ; D7
 	const HS_SEAFOAM_ISLANDS_1F_BOULDER_2  ; D8
@@ -240,4 +241,4 @@ const_value = 0
 	const HS_INDIGO_PLATEAU_LOBBY_3
 	const HS_INDIGO_PLATEAU_LOBBY_4
 	const HS_INDIGO_PLATEAU_LOBBY_5
-	const HS_LANCES_ROOM
+	

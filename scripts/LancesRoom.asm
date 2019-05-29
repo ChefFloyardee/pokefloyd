@@ -41,6 +41,11 @@ ResetLanceScript:
 	xor a
 	ld [wLancesRoomCurScript], a
 	ret
+	
+	
+Lances_Room:
+	db HS_LANCES_ROOM
+	db $ff
 
 LancesRoom_ScriptPointers:
 	dw LanceScript0

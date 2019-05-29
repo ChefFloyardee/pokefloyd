@@ -38,7 +38,7 @@ MapHSPointers:
 	dw MapHSXX
 	dw MapHSXX
 	dw MapHSXX
-	dw MapHS21
+	dw MapHSXX
 	dw MapHSXX
 	dw MapHS23
 	dw MapHS24
@@ -51,7 +51,7 @@ MapHSPointers:
 	dw MapHSXX
 	dw MapHSXX
 	dw MapHS2D
-	dw MapHSXX
+	dw MapHS2E
 	dw MapHSXX
 	dw MapHSXX
 	dw MapHSXX
@@ -118,7 +118,7 @@ MapHSPointers:
 	dw MapHSXX
 	dw MapHSXX
 	dw MapHSXX
-	dw MapHSXX
+	dw MapHS71
 	dw MapHSXX
 	dw MapHSXX
 	dw MapHSXX
@@ -179,7 +179,7 @@ MapHSPointers:
 	dw MapHSXX
 	dw MapHSXX
 	dw MapHSXX
-	dw MapHSXX
+	dw MapHSAE
 	dw MapHSXX
 	dw MapHSB1
 	dw MapHSXX
@@ -315,7 +315,7 @@ MapHS1A:
 	db ROUTE_15,$0B,Show
 MapHS1B:
 	db ROUTE_16,$07,Show
-MapHS21:
+MapHS2E:
 	db DIGLETTS_CAVE_ROUTE_2,$01,Hide
 	db DIGLETTS_CAVE_ROUTE_2,$02,Hide
 MapHS23:
@@ -550,6 +550,8 @@ MapHSE3:
 MapHS6C:
 	db VICTORY_ROAD_1F,$03,Show
 	db VICTORY_ROAD_1F,$04,Show
+MapHS71:
+	db LANCES_ROOM,$01,Show
 MapHS78:
 	db CHAMPIONS_ROOM,$02,Hide
 MapHSC0:
@@ -570,13 +572,11 @@ MapHSA2:
 	db SEAFOAM_ISLANDS_B4F,$01,Hide
 	db SEAFOAM_ISLANDS_B4F,$02,Hide
 	db SEAFOAM_ISLANDS_B4F,$03,Show
-MapHSA3:
-	db INDIGO_PLATEAU_LOBBY,$01,Hide
-	db INDIGO_PLATEAU_LOBBY,$02,Hide
-	db INDIGO_PLATEAU_LOBBY,$03,Hide
-	db INDIGO_PLATEAU_LOBBY,$04,Hide
-	db INDIGO_PLATEAU_LOBBY,$05,Hide
-MapHS71:
-	db LANCES_ROOM,$01,Show
+MapHSAE:
+	db INDIGO_PLATEAU_LOBBY,$01,Show
+	db INDIGO_PLATEAU_LOBBY,$02,Show
+	db INDIGO_PLATEAU_LOBBY,$03,Show
+	db INDIGO_PLATEAU_LOBBY,$04,Show
+	db INDIGO_PLATEAU_LOBBY,$05,Show
 
 	db $FF,$01,Show
