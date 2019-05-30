@@ -8,8 +8,16 @@ LancesRoom_Object:
 
 	db 0 ; signs
 
-	db 1 ; objects
+	db 9 ; objects
+	object SPRITE_OMANYTE, 10, 12, STAY, DOWN, 1, OPP_LANCE, 1
+	object SPRITE_OMANYTE, 10, 12, STAY, DOWN, 2
+	object SPRITE_OMANYTE, 10, 12, STAY, DOWN, 2
+	object SPRITE_OMANYTE, 10, 12, STAY, DOWN, 2
+	object SPRITE_OMANYTE, 10, 12, STAY, DOWN, 2
 	object SPRITE_LANCE, 6, 1, STAY, DOWN, 1, OPP_LANCE, 1
+	object SPRITE_OMANYTE, 10, 12, STAY, DOWN, 2
+	object SPRITE_OMANYTE, 10, 12, STAY, DOWN, 2
+	object SPRITE_OMANYTE, 10, 12, STAY, DOWN, 2
 
 	; warp-to
 	warp_to 24, 16, LANCES_ROOM_WIDTH ; AGATHAS_ROOM

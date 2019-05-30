@@ -94,7 +94,7 @@ TX_ASM
 	lb bc, POLIWRATH, 68
 	call GivePokemon
 	jr nc, .asm_24365
-	ld a, HS_INDIGO_PLATEAU_LOBBY_1 
+	ld a, HS_INDIGO_PLATEAU_LOBBY_1
 	ld [wMissableObjectIndex], a
 	predef HideObject
 .asm_24365
@@ -116,7 +116,7 @@ TX_ASM
 	lb bc, KABUTOPS, 64
 	call GivePokemon
 	jr nc, .asm_24365
-	ld a, HS_INDIGO_PLATEAU_LOBBY_3 
+	ld a, HS_INDIGO_PLATEAU_LOBBY_3
 	ld [wMissableObjectIndex], a
 	predef HideObject
 .asm_24365

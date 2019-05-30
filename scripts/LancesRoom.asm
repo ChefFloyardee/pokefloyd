@@ -44,7 +44,7 @@ ResetLanceScript:
 	
 	
 Lances_Room:
-	db HS_LANCES_ROOM
+	db HS_LANCES_ROOM_1
 	db $ff
 
 LancesRoom_ScriptPointers:
@@ -134,6 +134,7 @@ LanceScript3:
 
 LancesRoom_TextPointers:
 	dw LanceText1
+	dw SilphCo7Text1555
 
 LanceTrainerHeader0:
 	dbEventFlagBit EVENT_BEAT_LANCES_ROOM_TRAINER_0
@@ -166,7 +167,7 @@ LanceAfterBattleText:
 	ld hl, LanceAfterBattleText1
 	call PrintText
 	call GBFadeOutToBlack
-	ld a, HS_LANCES_ROOM
+	ld a, HS_LANCES_ROOM_1
 	ld [wMissableObjectIndex], a
 	predef HideObject
 	call UpdateSprites
@@ -178,3 +179,14 @@ LanceAfterBattleText:
 LanceAfterBattleText1:
 	TX_FAR _LanceAfterBattleText1
 	db "@"
+
+SilphCo7Text1555:
+TX_ASM
+	lb bc, POLIWRATH, 68
+	call GivePokemon
+	jr nc, .asm_24365
+	ld a, HS_LANCES_ROOM_1
+	ld [wMissableObjectIndex], a
+	predef HideObject
+.asm_24365
+	jp TextScriptEnd
