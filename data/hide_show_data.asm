@@ -38,7 +38,7 @@ MapHSPointers:
 	dw MapHSXX
 	dw MapHSXX
 	dw MapHSXX
-	dw MapHSXX
+	dw MapHS21
 	dw MapHSXX
 	dw MapHS23
 	dw MapHS24
@@ -51,7 +51,7 @@ MapHSPointers:
 	dw MapHSXX
 	dw MapHSXX
 	dw MapHS2D
-	dw MapHS2E
+	dw MapHSXX
 	dw MapHSXX
 	dw MapHSXX
 	dw MapHSXX
@@ -315,9 +315,9 @@ MapHS1A:
 	db ROUTE_15,$0B,Show
 MapHS1B:
 	db ROUTE_16,$07,Show
-MapHS2E:
-	db DIGLETTS_CAVE_ROUTE_2,$01,Hide
-	db DIGLETTS_CAVE_ROUTE_2,$02,Hide
+MapHS21:
+	db ROUTE_22,$01,Hide
+	db ROUTE_22,$02,Hide
 MapHS23:
 	db ROUTE_24,$01,Show
 	db ROUTE_24,$08,Show

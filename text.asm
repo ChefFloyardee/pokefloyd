@@ -1526,8 +1526,8 @@ _EnemyAppearedText::
 
 _TrainerWantsToFightText::
 	TX_RAM wTrainerName
-	text " wants"
-	line "to fight!"
+	text ""
+	line "wants to fight!"
 	prompt
 
 _UnveiledGhostText::
@@ -3110,7 +3110,7 @@ _AlreadyKnowsText::
 _ConnectCableText::
 	text "Perfect...just"
 	line "place him in a"
-	cont "#Ball and"
+	cont "#BALL and"
 	cont "stand back as"
 	cont "I unlock this"
 	cont "#MON's true,"

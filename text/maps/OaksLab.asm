@@ -51,8 +51,8 @@ _OaksLabMonEnergeticText::
 	cont "POWERFUL!"
 	para "There must be"
 	line "a way to unlock"
-	cont "its full HIDDEN"
-	cont "POTENTIAL!"
+	cont "its full POTENTIAL"
+	cont "ENERGY!"
 	prompt
 
 _OaksLabReceivedMonText::

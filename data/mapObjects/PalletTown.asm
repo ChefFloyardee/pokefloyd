@@ -1,10 +1,11 @@
 PalletTown_Object:
 	db $b ; border block
 
-	db 3 ; warps
+	db 4 ; warps
 	warp 12, 4, 2, CINNABAR_GYM; staircase
 	warp 14, 4, 0, VIRIDIAN_NICKNAME_HOUSE
 	warp 16, 4, 1, OAKS_LAB
+	warp 8, 0, 0, LANCES_ROOM
 
 	db 5 ; signs
 	sign 13, 4, 11 ; PalletTownText4
@@ -25,3 +26,5 @@ PalletTown_Object:
 	warp_to 12, 4, PALLET_TOWN_WIDTH ; CINNABAR_GYM
 	warp_to 14, 4, PALLET_TOWN_WIDTH ; VIRIDIAN_NICKNAME_HOUSE
 	warp_to 16, 4, PALLET_TOWN_WIDTH ; OAKS_LAB
+	warp_to 8, 0, PALLET_TOWN_WIDTH ; LANCES_ROOM
+

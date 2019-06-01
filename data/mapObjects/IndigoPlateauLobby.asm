@@ -4,7 +4,7 @@ IndigoPlateauLobby_Object:
 	db 3 ; warps
 	warp 7, 11, 0, -1
 	warp 8, 11, 1, -1
-	warp 8, 0, 0, LORELEIS_ROOM
+	warp 8, 0, 0, LANCES_ROOM
 
 	db 0 ; signs
 
@@ -22,4 +22,4 @@ IndigoPlateauLobby_Object:
 	; warp-to
 	warp_to 7, 11, INDIGO_PLATEAU_LOBBY_WIDTH
 	warp_to 8, 11, INDIGO_PLATEAU_LOBBY_WIDTH
-	warp_to 8, 0, INDIGO_PLATEAU_LOBBY_WIDTH ; LORELEIS_ROOM
+	warp_to 8, 0, INDIGO_PLATEAU_LOBBY_WIDTH ; LANCES_ROOM
