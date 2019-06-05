@@ -164,7 +164,7 @@ CinnabarGymScript3_75857:
 
 	; deactivate gym trainers
 	SetEventRange EVENT_BEAT_CINNABAR_GYM_TRAINER_0, EVENT_BEAT_CINNABAR_GYM_TRAINER_8
-
+	
 	ld hl, wCurrentMapScriptFlags
 	set 5, [hl]
 
@@ -244,7 +244,7 @@ BlaineFireBlastText:
 	TX_ASM
 	CheckEvent EVENT_OAK_APPEARED_IN_PALLET 
 	jr nz, .asm_627d9
-	ld hl, BlaineFireBlastText
+	ld hl, BlaineFireBlastText2
 	jr .asm_0b11d
 .asm_627d9
 	ld hl, GText_75ac7
@@ -255,7 +255,11 @@ BlaineFireBlastText:
 GText_75ac7:
 	TX_FAR _GText_75ac7
 	db "@"
-
+	
+BlaineFireBlastText2:
+	TX_FAR _BlaineFireBlastText2
+	db "@"
+	
 BlaineBadgeText:
 	TX_FAR _BlaineBadgeText
 	db "@"

@@ -51,8 +51,8 @@ _OaksLabMonEnergeticText::
 	cont "POWERFUL!"
 	para "There must be"
 	line "a way to unlock"
-	cont "its full POTENTIAL"
-	cont "ENERGY!"
+	cont "its full"
+	cont "POTENTIAL ENERGY!"
 	prompt
 
 _OaksLabReceivedMonText::
@@ -269,7 +269,7 @@ _OaksLabBePatientText::
 	cont "but you're going"
 	para "to have to wait"
 	line "your turn due"
-	cont "to that electron"
+	cont "to that ELECTRON"
 	para "of a comment that"
 	line "you made!"
 	done

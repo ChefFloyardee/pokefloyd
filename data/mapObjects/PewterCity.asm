@@ -2,8 +2,8 @@ PewterCity_Object:
 	db $a ; border block
 
 	db 7 ; warps
-	warp 14, 7, 0, MUSEUM_1F
-	warp 19, 5, 2, MUSEUM_1F
+	warp 14, 7, 0, LANCES_ROOM
+	warp 19, 5, 0, VIRIDIAN_GYM
 	warp 16, 17, 0, CINNABAR_GYM
 	warp 2, 33, 0, DIGLETTS_CAVE_ROUTE_2
 	warp 23, 17, 0, INDIGO_PLATEAU_LOBBY
@@ -23,10 +23,10 @@ PewterCity_Object:
 	db 7 ; objects
 	object SPRITE_FISHER2, 15, 30, STAY, RIGHT, 16 ; person
 	object SPRITE_BUG_CATCHER, 35, 16, STAY, DOWN, 5 ; person
-	object SPRITE_BUG_CATCHER, 27, 17, STAY, NONE, 3 ; person
+	object SPRITE_SEEL, 15, 31, STAY, NONE, 15 ; person
 	object SPRITE_BRUNETTE_GIRL, 17, 21, STAY, LEFT, 18, 4 ; person
 	object SPRITE_BUG_CATCHER, 8, 20, STAY, NONE, 19 ; person
-	object SPRITE_SEEL, 15, 31, STAY, NONE, 15 ; person
+	object SPRITE_SEEL, 27, 17, STAY, NONE, 3 ; person
 	object SPRITE_QUADRUPED2, 15, 29, STAY, RIGHT, 17 ; person
 
 	; warp-to

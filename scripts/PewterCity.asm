@@ -364,7 +364,7 @@ PewterCityText15:
 	lb bc, WARTORTLE, 15
 	call GivePokemon
 	jr nc, .asm_24365
-	ld a, HS_VIRIDIAN_CITY_ITEM_1 
+	ld a, HS_MUSEUM_GUY
 	ld [wMissableObjectIndex], a
 	predef HideObject
 .asm_24365

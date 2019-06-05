@@ -137,6 +137,7 @@ MapHSPointers:
 	dw MapHSXX
 	dw MapHSXX
 	dw MapHSXX
+	dw MapHS84
 	dw MapHSXX
 	dw MapHSXX
 	dw MapHS87
@@ -178,8 +179,8 @@ MapHSPointers:
 	dw MapHSXX
 	dw MapHSXX
 	dw MapHSXX
-	dw MapHSXX
 	dw MapHSAE
+	dw MapHSXX
 	dw MapHSXX
 	dw MapHSB1
 	dw MapHSXX
@@ -300,6 +301,7 @@ MapHS0A:
 	db SAFFRON_CITY,$0C,Hide
 	db SAFFRON_CITY,$0D,Hide
 	db SAFFRON_CITY,$0E,Show
+	db SAFFRON_CITY,$0F,Hide
 MapHS0D:
 	db ROUTE_2,$01,Show
 	db ROUTE_2,$02,Show
@@ -316,8 +318,8 @@ MapHS1A:
 MapHS1B:
 	db ROUTE_16,$07,Show
 MapHS21:
-	db ROUTE_22,$01,Hide
-	db ROUTE_22,$02,Hide
+	db ROUTE_22,$01,Show
+	db ROUTE_22,$02,Show
 MapHS23:
 	db ROUTE_24,$01,Show
 	db ROUTE_24,$08,Show
@@ -365,6 +367,8 @@ MapHS94:
 	db POKEMON_TOWER_7F,$04,Show
 MapHS95:
 	db MR_FUJIS_HOUSE,$05,Hide
+MapHS84:
+	db CELADON_MANSION_ROOF_HOUSE,$02,Show
 MapHS87:
 	db GAME_CORNER,$0B,Show
 MapHS9B:
@@ -550,8 +554,6 @@ MapHSE3:
 MapHS6C:
 	db VICTORY_ROAD_1F,$03,Show
 	db VICTORY_ROAD_1F,$04,Show
-MapHSAE:
-	db INDIGO_PLATEAU_LOBBY,$02,Show
 MapHS78:
 	db CHAMPIONS_ROOM,$02,Hide
 MapHSC0:
@@ -573,10 +575,12 @@ MapHSA2:
 	db SEAFOAM_ISLANDS_B4F,$02,Hide
 	db SEAFOAM_ISLANDS_B4F,$03,Show
 MapHS71:
-	db LANCES_ROOM,$03,Show
-	db LANCES_ROOM,$06,Show
-	db LANCES_ROOM,$07,Show
-	db LANCES_ROOM,$08,Show
-	db LANCES_ROOM,$09,Show
+	db LANCES_ROOM,$01,Show
+MapHSAE:
+	db INDIGO_PLATEAU_LOBBY,$03,Show
+	db INDIGO_PLATEAU_LOBBY,$06,Show
+	db INDIGO_PLATEAU_LOBBY,$07,Show
+	db INDIGO_PLATEAU_LOBBY,$08,Show
+	db INDIGO_PLATEAU_LOBBY,$09,Show
 
 	db $FF,$01,Show

@@ -131,6 +131,14 @@ LanceScript3:
 	ld [wLancesRoomCurScript], a
 	ld [wCurMapScript], a
 	ret
+	
+	ld a, HS_ROUTE_22_RIVAL_2
+	ld [wMissableObjectIndex], a
+	predef ShowObject
+	SetEvents EVENT_2ND_ROUTE22_RIVAL_BATTLE, EVENT_ROUTE22_RIVAL_WANTS_BATTLE
+	jp nz, LanceScript3
+	CheckEventReuseA EVENT_2ND_ROUTE22_RIVAL_BATTLE ; is this the rival at the end of the game?
+	jp nz, LanceScript3
 
 LancesRoom_TextPointers:
 	dw LanceText1

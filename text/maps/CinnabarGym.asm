@@ -64,6 +64,19 @@ _BlaineFireBlastText::
 	line "meet me up there!"
 	done
 	
+_BlaineFireBlastText2::
+	text "Oh...before I"
+	line "forget!"
+	para "I think you've"
+	line "more than earned"
+	cont "a tour of my lab!"
+	para "It's just up"
+	line "those stairs and"
+	cont "to the right!"
+	para "Why don't you"
+	line "meet me up there!"
+	done
+	
 _GText_75ac7::
 	text "HAZA!"
 	para "Flummoxed as to"

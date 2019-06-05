@@ -47,58 +47,69 @@ _Route22Text_511bc::
 	prompt
 
 _Route22RivalBeforeBattleText2::
-	text "<RIVAL>: What?"
-	line "<PLAYER>! What a"
-	cont "surprise to see"
-	cont "you here!"
-
-	para "So you're going to"
-	line "#MON LEAGUE?"
-
-	para "You collected all"
-	line "the BADGEs too?"
-	cont "That's cool!"
-
-	para "Then I'll whip you"
-	line "<PLAYER> as a"
-	cont "warm up for"
-	cont "#MON LEAGUE!"
-
-	para "Come on!"
+	text "<RIVAL>:"
+	line "Yo MUSH-HEAD!"
+	para "You think I don't"
+	line "know who you're"
+	cont "working for?!"
+	para "HA! That hat is a"
+	line "DEAD GIVEAWAY!"
+	para "You're in here"
+	line "working for FLOYD,"
+	cont "aren't you!"
+	para "Well I got NEWS"
+	line "for you!"
+	para "You're just another"
+	line "WANNABE chef that"
+	cont "will crumble like" 
+	cont "all the others!"
+	para "Don't believe me?"
+	para "Well, G's not"
+	line "around this time"
+	cont "my friend, so"
+	para "I'll be MORE than"
+	line "glad to show you"
+	cont "some RED!?!?!"
 	done
 
 _Route22RivalAfterBattleText2::
-	text "That loosened me"
-	line "up! I'm ready for"
-	cont "#MON LEAGUE!"
-
-	para "<PLAYER>, you need"
-	line "more practice!"
-
-	para "But hey, you know"
-	line "that! I'm out of"
-	cont "here. Smell ya!"
+	text "<RIVAL>:"
+	line "You're on my"
+	cont "radar now, so"
+	cont "you BETTER"
+	para "stay outta my"
+	line "way you LOSER!"
+	para "I'm gonna get"
+	line "all 8 SCI Badges"
+	cont "long before you!"
+	para "That's a HYPOTHESIS"
+	line "that won't be"
+	cont "OVERTURNED!"
+	para "Hey, look!"
+	line "A DISTRACTION!"
+	done
 	done
 
 _Route22RivalDefeatedText2::
-	text "What!?"
-
-	para "I was just"
-	line "careless!"
+	text ""
+	para "WHAT?"
+	line "Unbelievable!"
+	cont "The boss is not"
+	cont "going to like"
+	cont "this..."
 	prompt
 
 _Route22Text_511d0::
-	text "<RIVAL>: Hahaha!"
-	line "<PLAYER>! That's"
-	cont "your best? You're"
-	cont "nowhere near as"
-	cont "good as me, pal!"
-
-	para "Go train some"
-	line "more! You loser!"
+	text "<RED HERRING>:"
+	line "You're all"
+	cont "MUSHED OUT!"
+	prompt
 	prompt
 
 _Route22FrontGateText::
-	text "#MON LEAGUE"
-	line "Front Gate"
+	text "KA2 CAVE"
+	line "Entrance Ahead"
 	done
+
+
+
