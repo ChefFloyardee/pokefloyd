@@ -315,17 +315,17 @@ _OaksLabText_1d3c3::
 	prompt
 
 _OaksLabRivalToughenUpText::
-	text "<RIVAL>: You're"
-	line "on my radar now,"
-	cont "so you BETTER"
-	para "stay outta my"
-	line "way you LOSER!"
-	para "I'm gonna get"
-	line "all 8 SCI Badges"
-	cont "long before you!"
-	para "That's a HYPOTHESIS"
-	line "that won't be"
-	cont "OVERTURNED!"
+	text "<RIVAL>:"
+	line "Errrghhhh!"
+	para "You're lucky G"
+	line "is here, since"
+	cont "if he wasn't I"
+	para "wouldn't have"
+	line "HELD BACK!"
+	para "Next time will"
+	line "be different..."
+	cont "you can CONFIRM"
+	cont "that HYPOTHESIS!"
 	para "Hey, look!"
 	line "A DISTRACTION!"
 	done

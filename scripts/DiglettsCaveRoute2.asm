@@ -128,7 +128,7 @@ Route22Script1:
 	call SetSpriteFacingDirectionAndDelay
 	xor a
 	ld [wJoyIgnore], a
-	ld a, $1
+	ld a, $2
 	ld [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	ld hl, wd72d
