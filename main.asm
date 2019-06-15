@@ -899,8 +899,8 @@ Wartortle2PicFront::  INCBIN "pic/bmon/wartortle2.pic"
 Wartortle3PicFront::  INCBIN "pic/bmon/wartortle3.pic"
 Wartortle2PicBack::   INCBIN "pic/monback/wartortleb2.pic"
 Wartortle3PicBack::   INCBIN "pic/monback/wartortleb3.pic"
-Wartortle33PicFront::  INCBIN "pic/bmon/wartortle3.pic"
-Wartortle33PicBack::   INCBIN "pic/monback/wartortleb3.pic"
+Wartortle33PicFront::  INCBIN "pic/bmon/wartortle33.pic"
+Wartortle33PicBack::   INCBIN "pic/monback/wartortleb33.pic"
 
 
 

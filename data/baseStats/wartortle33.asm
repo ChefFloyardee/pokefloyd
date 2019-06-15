@@ -12,10 +12,10 @@ INCBIN "pic/bmon/wartortle33.pic",0,1 ; 66, sprite dimensions
 dw Wartortle33PicFront
 dw Wartortle33PicBack
 ; attacks known at lvl 0
-db TACKLE
-db TRANSFORM
-db ICE_BEAM
-db PSYBEAM
+db HYPER_BEAM
+db THUNDER
+db SLUDGE
+db PSYWAVE
 db 0
 db 3 ; growth rate
 ; learnset

@@ -547,7 +547,7 @@ Wartortle2EvosMoves:
 	db 17, PSYBEAM
 	db 18, ICE_BEAM
 	db 19, TRANSFORM
-	db 24, BITE
+	db 29, BITE
 	db 31, WITHDRAW
 	db 35, SKULL_BASH
 	db 40, TRANSFORM
@@ -558,16 +558,16 @@ Wartortle3EvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 1, TRANSFORM
-	db 16, TRANSFORM
-	db 17, PSYBEAM
-	db 18, ICE_BEAM
-	db 19, TRANSFORM
-	db 24, BITE
-	db 31, WITHDRAW
-	db 35, SKULL_BASH
-	db 40, TRANSFORM
-	db 42, HYDRO_PUMP
+	db 99, TRANSFORM
+	db 99, TRANSFORM
+	db 99, PSYBEAM
+	db 99, ICE_BEAM
+	db 99, TRANSFORM
+	db 99, BITE
+	db 99, WITHDRAW
+	db 99, SKULL_BASH
+	db 99, TRANSFORM
+	db 99, HYDRO_PUMP
 	db 0
 
 GrowlitheEvosMoves:
@@ -673,8 +673,8 @@ MachokeEvosMoves:
 	db EV_TRADE, 1, MACHAMP
 	db 0
 ; Learnset
-	db 20, LOW_KICK
-	db 25, LEER
+	db 28, LOW_KICK
+	db 29, LEER
 	db 36, FOCUS_ENERGY
 	db 44, SEISMIC_TOSS
 	db 52, SUBMISSION
@@ -737,9 +737,12 @@ ParasectEvosMoves:
 
 PsyduckEvosMoves:
 ; Evolutions
-	db EV_LEVEL, 33, GOLDUCK
+	db EV_LEVEL, 23, GOLDUCK
 	db 0
 ; Learnset
+	db 20, SLASH
+	db 21, CONFUSION
+	db 22, AURORA_BEAM
 	db 28, TAIL_WHIP
 	db 31, DISABLE
 	db 36, CONFUSION
@@ -776,16 +779,16 @@ Wartortle33EvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 1, TRANSFORM
-	db 16, TRANSFORM
-	db 17, PSYBEAM
-	db 18, ICE_BEAM
-	db 19, TRANSFORM
-	db 24, BITE
-	db 31, WITHDRAW
-	db 35, SKULL_BASH
-	db 40, TRANSFORM
-	db 42, HYDRO_PUMP
+	db 99, TRANSFORM
+	db 99, TRANSFORM
+	db 99, PSYBEAM
+	db 99, ICE_BEAM
+	db 99, TRANSFORM
+	db 99, BITE
+	db 99, WITHDRAW
+	db 99, SKULL_BASH
+	db 99, TRANSFORM
+	db 99, HYDRO_PUMP
 	db 0
 
 MagmarEvosMoves:
@@ -810,11 +813,11 @@ ElectabuzzEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 34, THUNDERSHOCK
-	db 37, SCREECH
-	db 42, THUNDERPUNCH
-	db 49, LIGHT_SCREEN
-	db 54, THUNDER
+	db 99, THUNDERSHOCK
+	db 99, SCREECH
+	db 99, THUNDERPUNCH
+	db 99, LIGHT_SCREEN
+	db 99, THUNDER
 	db 0
 
 MagnetonEvosMoves:
@@ -1327,11 +1330,15 @@ VaporeonEvosMoves:
 
 MachopEvosMoves:
 ; Evolutions
-	db EV_LEVEL, 28, MACHOKE
+	db EV_LEVEL, 25, MACHOKE
 	db 0
 ; Learnset
-	db 20, LOW_KICK
-	db 25, LEER
+	db 21, ROCK_SLIDE
+	db 22, SEISMIC_TOSS
+	db 23, EARTHQUAKE
+	db 24, HYPER_BEAM
+	db 26, LOW_KICK
+	db 27, LEER
 	db 32, FOCUS_ENERGY
 	db 39, SEISMIC_TOSS
 	db 46, SUBMISSION

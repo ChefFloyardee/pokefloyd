@@ -55,7 +55,7 @@ SilphCo7Text11:
 .givelapras
 	ld hl, .MeetLaprasGuyText
 	call PrintText
-	lb bc, WARTORTLE_2, 70
+	lb bc, WARTORTLE_2, 27
 	call GivePokemon
 	jr nc, .done
 	ld a, [wSimulatedJoypadStatesEnd]
@@ -124,7 +124,7 @@ TX_ASM
 	
 SilphCo7Text155:
 TX_ASM
-	lb bc, GOLDUCK, 62
+	lb bc, GOLDUCK, 26
 	call GivePokemon
 	jr nc, .asm_24365
 	ld a, HS_INDIGO_PLATEAU_LOBBY_4
@@ -135,7 +135,7 @@ TX_ASM
 	
 SilphCo7Text166:
 TX_ASM
-	lb bc, MACHAMP, 60
+	lb bc, MACHOKE, 25
 	call GivePokemon
 	jr nc, .asm_24365
 	ld a, HS_INDIGO_PLATEAU_LOBBY_5

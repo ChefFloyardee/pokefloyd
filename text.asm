@@ -1188,8 +1188,8 @@ _LinkBattleLostText::
 
 _TrainerAboutToUseText::
 	TX_RAM wTrainerName
-	text " is"
-	line "about to use"
+	text ""
+	line "is about to use"
 	cont"@"
 	TX_RAM wEnemyMonNick
 	text "!"
@@ -1200,8 +1200,9 @@ _TrainerAboutToUseText::
 
 _TrainerSentOutText::
 	TX_RAM wTrainerName
-	text " sent"
-	line "out @"
+	text ""
+	line "sent out"
+	cont "@"
 	TX_RAM wEnemyMonNick
 	text "!"
 	done

@@ -2601,6 +2601,26 @@ PlayTrainerMusic::
 	ld a, MUSIC_MEET_EVIL_TRAINER
 	jr .PlaySound
 .noEvilTrainer
+	ld hl, AkilaBotList
+.akilabotTrainerListLoop
+	ld a, [hli]
+	cp $ff
+	jr z, .noAkilaBotTrainer
+	cp b
+	jr nz, .akilabotTrainerListLoop
+	ld a, MUSIC_MEET_AKILA_BOT
+	jr .PlaySound
+.noAkilaBotTrainer
+	ld hl, EvilTokkaList
+.eviltokkaTrainerListLoop
+	ld a, [hli]
+	cp $ff
+	jr z, .noEvilTokkaTrainer
+	cp b
+	jr nz, .eviltokkaTrainerListLoop
+	ld a, MUSIC_MEET_EVIL_TOKKA
+	jr .PlaySound
+.noEvilTokkaTrainer
 	ld hl, FemaleTrainerList
 .femaleTrainerListLoop
 	ld a, [hli]

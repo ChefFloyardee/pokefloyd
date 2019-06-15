@@ -599,7 +599,7 @@ RocketHideout3HiddenObjects:
 	dbw BANK(HiddenItems),HiddenItems
 	db $FF
 RocketHideout4HiddenObjects:
-	db $01,$19,SUPER_POTION
+	db $02,$19,LIFT_KEY
 	dbw BANK(HiddenItems),HiddenItems
 	db $FF
 SaffronPokecenterHiddenObjects:

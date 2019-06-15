@@ -48,7 +48,7 @@ MonsterNames:
 	db "PSYDUCK@@@"
 	db "DROWZEE@@@"
 	db "GOLEM@@@@@"
-	db "WARTOTLE33"
+	db "AKILA-BOT@"
 	db "MAGMAR@@@@"
 	db "MISSINGNO."
 	db "ELECTABUZZ"

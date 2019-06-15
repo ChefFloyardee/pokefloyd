@@ -86,6 +86,8 @@ FlyWarpDataPtr:
 	dw Route4FlyWarp
 	db ROUTE_10, 0
 	dw Route10FlyWarp
+	db VIRIDIAN_SCHOOL_HOUSE, 0
+	dw ViridianSchoolHouseFlyWarp
 
 ; Original Format:
 ;   [Event Displacement][Y-block][X-block][Y-sub_block][X-sub_block]
@@ -96,7 +98,7 @@ PalletTownFlyWarp:
 ViridianCityFlyWarp:
 	FLYWARP_DATA VIRIDIAN_CITY_WIDTH,   26, 23
 PewterCityFlyWarp:
-	FLYWARP_DATA PEWTER_CITY_WIDTH,     26, 13
+	FLYWARP_DATA PEWTER_CITY_WIDTH,     30, 7
 CeruleanCityFlyWarp:
 	FLYWARP_DATA CERULEAN_CITY_WIDTH,   18, 19
 LavenderTownFlyWarp:
@@ -117,3 +119,5 @@ Route4FlyWarp:
 	FLYWARP_DATA ROUTE_4_WIDTH,          6, 11
 Route10FlyWarp:
 	FLYWARP_DATA ROUTE_10_WIDTH,        20, 11
+ViridianSchoolHouseFlyWarp:
+	FLYWARP_DATA VIRIDIAN_SCHOOL_HOUSE_WIDTH,        1, 1

@@ -4,7 +4,7 @@ LancesRoom_Object:
 	db 3 ; warps
 	warp 24, 16, 2, AGATHAS_ROOM
 	warp 5, 0, 0, ROCKET_HIDEOUT_B4F
-	warp 6, 0, 0, CHAMPIONS_ROOM
+	warp 6, 0, 0, ROCKET_HIDEOUT_B4F
 
 	db 0 ; signs
 

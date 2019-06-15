@@ -1,12 +1,9 @@
 _RocketHideout4Text_4557a::
-	text "So! I must say, I"
-	line "am impressed you"
-	cont "got here!"
+	text "AKILAAAAA!!!!"
 	done
 
 _RocketHideout4Text_4557f::
-	text "WHAT!"
-	line "This cannot be!"
+	text "AKILAAAAA!!!!"
 	prompt
 
 _RocketHideout4Text_45584::
@@ -59,16 +56,57 @@ _RocketHide4AfterBattleText3::
 	done
 
 _RocketHideout4BattleText4::
-	text "The elevator"
-	line "doesn't work? Who"
-	cont "has the LIFT KEY?"
+	text "INTRUDER"
+	line "ALERT!"
+	para "Bzzt!"
 	done
 
 _RocketHideout4EndBattleText4::
-	text "No!"
-	prompt
+	text "NO!"
+	para "BOSS! I'm sorry I"
+	line "failed you!"
+	done
 
 _RocketHideout4Text_455ec::
-	text "Oh no! I dropped"
-	line "the LIFT KEY!"
+	text "Bzzt!"
+	done
+	
+_FloydNoteText::
+	text "Notes: Mar. 30th"
+	line "Began having"
+	cont "ideas and"
+	cont "thinking about"
+	cont "the feasibility"
+	para "of developing a"
+	line "virtual realm."
+	done
+
+_FinalFloydNoteText::
+	text "Akila's Log:"
+	line "After much struggle"
+	cont "and manipulation,"
+	para "Floyd has fallen"
+	line "into my trap and"
+	cont "this realm is now"
+	cont "under my control!"
+	para "Muahahaha!!!"
+	line "EVIL!"
+	para "At long last I have"
+	line "the technology I"
+	cont "need to BRING BACK"
+	para "that which has"
+	line "FALLEN!!!"
+	done
+	
+_FinalFloydNoteText2::
+	text "No more items"
+	line "back here, but"
+	cont "there are plenty"
+	cont "of interesting"
+	cont "machines and high"
+	cont "tech computing"
+	cont "devices."
+	para "If only they were"
+	line "being used to do"
+	cont "GOOD SCIENCE!"
 	done

@@ -93,6 +93,8 @@ ENDM
 	music_const MUSIC_MEET_EVIL_TRAINER,   Music_MeetEvilTrainer
 	music_const MUSIC_MEET_FEMALE_TRAINER, Music_MeetFemaleTrainer
 	music_const MUSIC_MEET_MALE_TRAINER,   Music_IntroBattle
+	music_const MUSIC_MEET_AKILA_BOT,      SFX_Cry1C_1
+	music_const MUSIC_MEET_EVIL_TOKKA,      SFX_Cry1D_1
 
 	; AUDIO_1 AUDIO_2 AUDIO_3
 	music_const SFX_SNARE_1,            SFX_Snare1_1

@@ -1,0 +1,24 @@
+RocketHideoutB2FMons:
+	db $0F
+	db 60,GOLEM
+	db 61,GOLEM
+	db 62,MAGMAR
+	db 63,MAGMAR
+	db 64,ELECTABUZZ
+	db 65,ELECTABUZZ
+	db 66,HYPNO
+	db 67,HYPNO
+	db 68,PINSIR
+	db 69,PINSIR
+	db $0F
+	db 60,GOLEM
+	db 61,GOLEM
+	db 62,MAGMAR
+	db 63,MAGMAR
+	db 64,ELECTABUZZ
+	db 65,ELECTABUZZ
+	db 66,HYPNO
+	db 67,HYPNO
+	db 68,PINSIR
+	db 69,PINSIR
+	db $00

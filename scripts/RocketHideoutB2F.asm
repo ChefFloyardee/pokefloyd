@@ -419,6 +419,10 @@ RocketHideoutB2F_TextPointers:
 	dw PickUpItemText
 	dw PickUpItemText
 	dw PickUpItemText
+	dw FloydNotesText2
+	dw FloydNotesText3
+	dw FloydNotesText4
+	dw FloydNotesText5
 
 RocketHideout2TrainerHeader0:
 	dbEventFlagBit EVENT_BEAT_ROCKET_HIDEOUT_2_TRAINER_0
@@ -447,4 +451,20 @@ RocketHideout2EndBattleText2:
 
 RocketHideout2AfterBattleTxt2:
 	TX_FAR _RocketHideout2AfterBattleTxt2
+	db "@"
+	
+FloydNotesText2:
+	TX_FAR _FloydNotesText2
+	db "@"
+	
+FloydNotesText3:
+	TX_FAR _FloydNotesText3
+	db "@"
+	
+FloydNotesText4:
+	TX_FAR _FloydNotesText4
+	db "@"
+	
+FloydNotesText5:
+	TX_FAR _FloydNotesText5
 	db "@"

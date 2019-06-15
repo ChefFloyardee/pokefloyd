@@ -61,6 +61,9 @@ RocketHideout4Script3:
 	ld a, HS_ROCKET_HIDEOUT_B4F_ITEM_4
 	ld [wMissableObjectIndex], a
 	predef ShowObject
+	ld a, HS_ROCKET_HIDEOUT_B4F_ITEM_1
+	ld [wMissableObjectIndex], a
+	predef ShowObject
 	call UpdateSprites
 	call GBFadeInFromBlack
 	xor a
@@ -83,6 +86,10 @@ RocketHideoutB4F_TextPointers:
 	dw PickUpItemText
 	dw PickUpItemText
 	dw RocketHideout4Text10
+	dw VoltorbWText
+	dw FloydNoteText
+	dw FinalFloydNoteText
+	dw FinalFloydNoteText2
 
 RocketHideout4TrainerHeader0:
 	dbEventFlagBit EVENT_BEAT_ROCKET_HIDEOUT_4_TRAINER_0
@@ -110,6 +117,15 @@ RocketHideout4TrainerHeader2:
 	dw RocketHideout4AfterBattleText4 ; TextAfterBattle
 	dw RocketHideout4EndBattleText4 ; TextEndBattle
 	dw RocketHideout4EndBattleText4 ; TextEndBattle
+	
+VoltorbWTrainerHeader:
+	dbEventFlagBit EVENT_BEAT_POWER_PLANT_VOLTORB_0
+	db 0 ; view range
+	dwEventFlagAddress EVENT_BEAT_POWER_PLANT_VOLTORB_0
+	dw VoltorbWBattleText ; TextBeforeBattle
+	dw VoltorbWBattleText ; TextAfterBattle
+	dw VoltorbWBattleText ; TextEndBattle
+	dw VoltorbWBattleText ; TextEndBattle
 
 	db $ff
 
@@ -150,8 +166,13 @@ RocketHideout4Text_4557f:
 	db "@"
 
 RocketHideout4Text10:
-	TX_FAR _RocketHideout4Text_45584
-	db "@"
+	TX_ASM
+	ld hl, RocketHideout4Text_4557f
+	call PrintText
+	ld a, WARTORTLE_3
+	call PlayCry
+	call WaitForSoundToFinish
+	jp TextScriptEnd
 
 RocketHideout4Text2:
 	TX_ASM
@@ -216,5 +237,57 @@ RocketHideout4AfterBattleText4:
 	jp TextScriptEnd
 
 RocketHideout4Text_455ec:
+	TX_ASM
+	CheckEvent EVENT_ROCKET_DROPPED_LIFT_KEY
+	jr nz, .asm_627d9
+	ld hl, RocketHideout4Text_455ecA
+	jr .asm_0b11d
+.asm_627d9
+	ld hl, RocketHideout4Text_455ecB
+.asm_0b11d
+	call PrintText
+	jp TextScriptEnd
+
+RocketHideout4Text_455ecA::
+	TX_FAR _RocketHideout4EndBattleText4
+	db "@"
+	
+RocketHideout4Text_455ecB::
+	TX_ASM
+	ld hl, RocketHideout4Text_455ecBB
+	call PrintText
+	ld a, MAGNETON
+	call PlayCry
+	call WaitForSoundToFinish
+	jp TextScriptEnd
+	
+RocketHideout4Text_455ecBB::
 	TX_FAR _RocketHideout4Text_455ec
+	db "@"
+	
+InitVoltorbWBattle:
+	call TalkToTrainer
+	ld a, [wCurMapScript]
+	ld [wPowerPlantCurScript], a
+	jp TextScriptEnd
+
+VoltorbWText:
+	TX_ASM
+	ld hl, VoltorbWTrainerHeader
+	jr InitVoltorbWBattle
+	
+VoltorbWBattleText:
+	TX_FAR _VoltorbBattleText
+	db "@"
+	
+FloydNoteText:
+	TX_FAR _FloydNoteText
+	db "@"
+	
+FinalFloydNoteText:
+	TX_FAR _FinalFloydNoteText
+	db "@"
+		
+FinalFloydNoteText2:
+	TX_FAR _FinalFloydNoteText2
 	db "@"

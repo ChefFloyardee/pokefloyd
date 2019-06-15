@@ -9,6 +9,8 @@ SetDefaultNames:
 	ld bc, wBoxDataEnd - wPlayerName
 	xor a
 	call FillMemory
+	ld a, PEWTER_CITY
+	ld [wLastBlackoutMap], a
 	ld hl, wSpriteStateData1
 	ld bc, $200
 	xor a
@@ -45,7 +47,7 @@ OakSpeech:
 	ld hl, wNumBoxItems
 	ld a, POKE_BALL
 	ld [wcf91], a
-	ld a, 1
+	ld a, 7
 	ld [wItemQuantity], a
 	call AddItemToInventory  ; give one potion
 	ld a, [wDefaultMap]

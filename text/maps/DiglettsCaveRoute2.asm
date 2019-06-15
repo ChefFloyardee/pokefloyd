@@ -47,7 +47,7 @@ _Route22Text_511bc::
 	prompt
 
 _Route22RivalBeforeBattleText2::
-	text "<RIVAL>:"
+	text "RED HERRING:"
 	line "Yo MUSH-HEAD!"
 	para "You think I don't"
 	line "know who you're"
@@ -73,7 +73,7 @@ _Route22RivalBeforeBattleText2::
 	done
 
 _Route22RivalAfterBattleText2::
-	text "<RIVAL>:"
+	text "RED HERRING:"
 	line "You're on my"
 	cont "radar now, so"
 	cont "you BETTER"

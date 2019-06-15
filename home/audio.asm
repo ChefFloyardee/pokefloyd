@@ -28,7 +28,11 @@ PlayDefaultMusicCommon::
 	jr .next
 
 .surfing
+	ld a, [wCurMap]
+	cp ROCKET_HIDEOUT_B4F
+	jr z, .walking
 	ld a, MUSIC_SURFING
+	
 
 .next
 	ld b, a

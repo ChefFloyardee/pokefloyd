@@ -49,7 +49,7 @@ CryData:
 	db $21, $20, $60; Psyduck
 	db $0D, $88, $20; Drowzee
 	db $12, $E0, $40; Golem
-	db $1D, $20, $40; Wartortle33
+	db $1C, $20, $C0; Wartortle33
 	db $04, $FF, $30; Magmar
 	db $00, $00, $00; MissingNo.
 	db $06, $8F, $FF; Electabuzz

@@ -3371,10 +3371,20 @@ IsGhostBattle:
 	dec a
 	ret nz
 	ld a, [wCurMap]
+	cp ROCKET_HIDEOUT_B2F
+	jr z, .checkscope
+	cp ROCKET_HIDEOUT_B4F
+	jr z, .checkscope
 	cp POKEMON_TOWER_1F
 	jr c, .next
 	cp MR_FUJIS_HOUSE
 	jr nc, .next
+.checkscope
+	ld a, [wEnemyMonSpecies2]
+	cp WARTORTLE_3
+	jr z, .next
+	cp WARTORTLE_33
+	jr z, .next
 	ld b, SILPH_SCOPE
 	call IsItemInBag
 	ret z

@@ -15,3 +15,12 @@ EvilTrainerList::
 	db OPP_GIOVANNI
 	db OPP_ROCKET
 	db $FF
+	
+AkilaBotList::
+	db WARTORTLE_33
+	db $FF
+	
+EvilTokkaList::
+	db WARTORTLE_3
+	db $FF
+
