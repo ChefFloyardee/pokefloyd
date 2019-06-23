@@ -374,8 +374,6 @@ MovementData_5114d:
 	db NPC_MOVEMENT_UP
 	db NPC_MOVEMENT_UP
 	db NPC_MOVEMENT_UP
-	db NPC_MOVEMENT_UP
-	db $FF
 	db $FF
 
 Route22Script6:

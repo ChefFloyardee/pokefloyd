@@ -8,7 +8,7 @@ PewterCity_Object:
 	warp 2, 33, 0, DIGLETTS_CAVE_ROUTE_2
 	warp 23, 17, 0, INDIGO_PLATEAU_LOBBY
 	warp 7, 29, 0, VIRIDIAN_SCHOOL_HOUSE
-	warp 13, 25, 0, PEWTER_POKECENTER
+	warp 13, 25, 0, HALL_OF_FAME
 	
 
 	db 7 ; signs

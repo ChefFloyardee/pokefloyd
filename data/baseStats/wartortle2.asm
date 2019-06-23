@@ -12,7 +12,7 @@ INCBIN "pic/bmon/wartortle2.pic",0,1 ; 66, sprite dimensions
 dw Wartortle2PicFront
 dw Wartortle2PicBack
 ; attacks known at lvl 0
-db TACKLE
+db WATERFALL
 db TRANSFORM
 db ICE_BEAM
 db PSYBEAM

@@ -8,7 +8,7 @@ HallOfFame_Object:
 	db 0 ; signs
 
 	db 1 ; objects
-	object SPRITE_OAK, 5, 2, STAY, DOWN, 1 ; person
+	object SPRITE_LAPRAS_GIVER, 5, 2, STAY, DOWN, 1 ; person
 
 	; warp-to
 	warp_to 4, 7, HALL_OF_FAME_WIDTH ; CHAMPIONS_ROOM

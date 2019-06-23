@@ -117,7 +117,7 @@ MainMenu:
 	ld a, [wCurMap] ; map ID
 	cp HALL_OF_FAME
 	jp nz, SpecialEnterMap
-	xor a
+	ld a, VIRIDIAN_SCHOOL_HOUSE ;post hof warp
 	ld [wDestinationMap], a
 	ld hl, wd732
 	set 2, [hl] ; fly warp or dungeon warp

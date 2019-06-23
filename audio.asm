@@ -431,18 +431,15 @@ Music_RivalAlternateStartAndTempo::
 
 ; an alternate tempo for Cities1 which is used for the Hall of Fame room
 Music_Cities1AlternateTempo::
-	ld a, 10
 	ld [wAudioFadeOutCounterReloadValue], a
 	ld [wAudioFadeOutCounter], a
 	ld a, $ff ; stop playing music after the fade-out is finished
 	ld [wAudioFadeOutControl], a
 	ld c, 100
 	call DelayFrames ; wait for the fade-out to finish
-	ld c, BANK(Music_Cities1)
-	ld a, MUSIC_CITIES1
+	ld c, BANK(Music_Routes3)
+	ld a, MUSIC_ROUTES3
 	call PlayMusic
-	ld hl, wChannelCommandPointers
-	ld de, Music_Cities1_branch_aa6f
 	jp Audio1_OverwriteChannelPointer
 
 

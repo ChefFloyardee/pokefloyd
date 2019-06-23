@@ -1,9 +1,8 @@
-_GaryChampionIntroText::
-	text "<RIVAL>: Hey!"
+_GaryChampionIntroText_1d5b1::
+	text "TOKKA: Tokk-ahhh!"
 
-	para "I was looking"
-	line "forward to seeing"
-	cont "you, <PLAYER>!"
+	
+	done
 
 	para "My rival should"
 	line "be strong to keep"
@@ -33,7 +32,6 @@ _GaryChampionIntroText::
 	para "I am the most"
 	line "powerful trainer"
 	cont "in the world!"
-	done
 
 _GaryDefeatedText::
 	text "NO!"
@@ -65,82 +63,63 @@ _GaryVictoryText::
 	line "Hahaha!"
 	prompt
 
-_GaryText_76103::
-	text "Why?"
-	line "Why did I lose?"
-
-	para "I never made any"
-	line "mistakes raising"
-	cont "my #MON..."
-
-	para "Darn it! You're"
-	line "the new #MON"
-	cont "LEAGUE champion!"
-
-	para "Although I don't"
-	line "like to admit it."
+_GaryText_76103_1d5b1::
+	text "Tokk-ahhhhhhhhh!"
 	done
 
 _GaryText2::
-	text "OAK: <PLAYER>!"
+	text "MR. FLOYD: Tokka?!"
+	para "Is that you?"
+	para "What's wrong???"
 	done
 
 _GaryText_76120::
-	text "OAK: So, you won!"
-	line "Congratulations!"
-	cont "You're the new"
-	cont "#MON LEAGUE"
-	cont "champion!"
-
-	para "You've grown up so"
-	line "much since you"
-	cont "first left with"
-	cont "@"
-	TX_RAM wcd6d
-	text "!"
-
-	para "<PLAYER>, you have"
-	line "come of age!"
+	text "MR. FLOYD: No way!"
+	para "Tokka!!! "
+	line "The message!!!"
+	para "It worked!"
+	para "One of my students"
+	line "managed to beat"
+	cont "the game and find"
+	cont "us!!!"
 	done
 
 _GaryText_76125::
-	text "OAK: <RIVAL>! I'm"
-	line "disappointed!"
-
-	para "I came when I"
-	line "heard you beat"
-	cont "the ELITE FOUR!"
-
-	para "But, when I got"
-	line "here, you had"
-	cont "already lost!"
-
-	para "<RIVAL>! Do you"
-	line "understand why"
-	cont "you lost?"
-
-	para "You have forgotten"
-	line "to treat your"
-	cont "#MON with"
-	cont "trust and love!"
-
-	para "Without them, you"
-	line "will never become"
-	cont "a champ again!"
+	text "MR FLOYD: Tokka!"
+	para "Do you know what"
+	line "this means!!!"
+	para "We can finally"
+	line "get the J out"
+	cont "of here and GO"
+	cont "HOME!!!"
+	para "Someone, GIVE THIS"
+	line "KID SOME BLUE!"
 	done
 
 _GaryText_7612a::
-	text "OAK: <PLAYER>!"
+	text "MR. FLOYD: <PLAYER>!"
 
-	para "You understand"
-	line "that your victory"
-	cont "was not just your"
-	cont "own doing!"
+	para "You've made me"
+	line "me so proud!"
+	para "You faced every"
+	line "scientific"
+	cont "CHALLENGE this"
+	cont "virtual realm"
+	cont "had to offer and"
+	cont "you CONQUERED"
+	cont "them all with"
+	cont "nothing more than"
+	cont "your very own"
+	para "SCIENTIFIC MIND!"
 
-	para "The bond you share"
-	line "with your #MON"
-	cont "is marvelous!"
+	para "You truly are"
+	line "worthy of that"
+	cont "hat and the title"
+	cont "of a CHEF OF"
+	cont "SCIENCE since you"
+	cont "COOKED UP"
+	cont "this game!"
 
 	para "<PLAYER>!"
-	line "Come with me!"
+	line "Please follow me!"
 	done

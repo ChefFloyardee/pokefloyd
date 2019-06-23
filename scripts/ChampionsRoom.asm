@@ -40,9 +40,7 @@ GaryScript1:
 	ret
 
 GaryEntrance_RLEMovement:
-	db D_UP,1
-	db D_RIGHT,1
-	db D_UP,3
+	db D_UP,4
 	db $ff
 
 GaryScript2:
@@ -125,11 +123,8 @@ GaryScript4:
 	ret
 
 OakEntranceAfterVictoryMovement:
-	db NPC_MOVEMENT_UP
-	db NPC_MOVEMENT_UP
-	db NPC_MOVEMENT_UP
-	db NPC_MOVEMENT_UP
-	db NPC_MOVEMENT_UP
+	db NPC_MOVEMENT_DOWN
+	db NPC_MOVEMENT_DOWN
 	db $FF
 
 GaryScript5:
@@ -253,9 +248,18 @@ GaryText1:
 .printText
 	call PrintText
 	jp TextScriptEnd
-
+	
 GaryChampionIntroText:
-	TX_FAR _GaryChampionIntroText
+	TX_ASM
+	ld hl, GaryChampionIntroText_1d5b1
+	call PrintText
+	ld a, WARTORTLE
+	call PlayCry
+	call WaitForSoundToFinish
+	jp TextScriptEnd
+
+GaryChampionIntroText_1d5b1:
+	TX_FAR _GaryChampionIntroText_1d5b1
 	db "@"
 
 GaryDefeatedText:
@@ -267,7 +271,16 @@ GaryVictoryText:
 	db "@"
 
 GaryText_76103:
-	TX_FAR _GaryText_76103
+	TX_ASM
+	ld hl, GaryText_76103_1d5b1
+	call PrintText
+	ld a, WARTORTLE
+	call PlayCry
+	call WaitForSoundToFinish
+	jp TextScriptEnd
+	
+GaryText_76103_1d5b1:
+	TX_FAR _GaryText_76103_1d5b1
 	db "@"
 
 GaryText2:

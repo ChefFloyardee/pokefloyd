@@ -547,6 +547,7 @@ Wartortle2EvosMoves:
 	db 17, PSYBEAM
 	db 18, ICE_BEAM
 	db 19, TRANSFORM
+	db 20, WATERFALL
 	db 29, BITE
 	db 31, WITHDRAW
 	db 35, SKULL_BASH

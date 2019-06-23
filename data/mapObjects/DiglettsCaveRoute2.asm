@@ -10,8 +10,8 @@ DiglettsCaveRoute2_Object:
 	sign 1, 1, 3 ; VidCityText1
 
 	db 2 ; objects
-	object SPRITE_BLUE, 2, -5, STAY, NONE, 1 ; person
-	object SPRITE_BLUE, 2, -5, STAY, NONE, 2 ; person
+	object SPRITE_BLUE, 2, -5, STAY, DOWN, 1 ; person
+	object SPRITE_BLUE, 2, -5, STAY, DOWN, 2 ; person
 
 	; warp-to
 	warp_to 2, 7, DIGLETTS_CAVE_ROUTE_2_WIDTH

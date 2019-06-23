@@ -10,8 +10,8 @@ ChampionsRoom_Object:
 	db 0 ; signs
 
 	db 2 ; objects
-	object SPRITE_BLUE, 4, 2, STAY, DOWN, 1 ; person
-	object SPRITE_OAK, 3, 7, STAY, UP, 2 ; person
+	object SPRITE_SEEL, 4, 2, STAY, DOWN, 1 ; person
+	object SPRITE_LAPRAS_GIVER, 3, 0, STAY, DOWN, 2 ; person
 
 	; warp-to
 	warp_to 3, 7, CHAMPIONS_ROOM_WIDTH ; LANCES_ROOM
