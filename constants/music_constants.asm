@@ -92,9 +92,10 @@ ENDM
 	music_const MUSIC_SILPH_CO,            Music_SilphCo
 	music_const MUSIC_MEET_EVIL_TRAINER,   Music_MeetEvilTrainer
 	music_const MUSIC_MEET_FEMALE_TRAINER, Music_MeetFemaleTrainer
-	music_const MUSIC_MEET_MALE_TRAINER,   Music_IntroBattle
+	music_const MUSIC_MEET_MALE_TRAINER,   Music_MeetMaleTrainer
 	music_const MUSIC_MEET_AKILA_BOT,      SFX_Cry1C_1
 	music_const MUSIC_MEET_EVIL_TOKKA,      SFX_Cry1D_1
+	music_const MUSIC_MEET_BOSS_TRAINER,      Music_IntroBattle
 
 	; AUDIO_1 AUDIO_2 AUDIO_3
 	music_const SFX_SNARE_1,            SFX_Snare1_1
@@ -155,7 +156,7 @@ ENDM
 	music_const SFX_CRY_24,             SFX_Cry24_1
 	music_const SFX_CRY_25,             SFX_Cry25_1
 
-	music_const SFX_GET_ITEM_2,         SFX_Get_Item2_1
+	music_const SFX_GET_ITEM_2,         SFX_Get_Item1_1
 	music_const SFX_TINK,               SFX_Tink_1
 	music_const SFX_HEAL_HP,            SFX_Heal_HP_1
 	music_const SFX_HEAL_AILMENT,       SFX_Heal_Ailment_1
@@ -163,7 +164,7 @@ ENDM
 	music_const SFX_PRESS_AB,           SFX_Press_AB_1
 
 	; AUDIO_1 AUDIO_3
-	music_const SFX_GET_ITEM_1,         SFX_Get_Item1_1
+	music_const SFX_GET_ITEM_1,         SFX_Get_Item2_1
 
 	music_const SFX_POKEDEX_RATING,     SFX_Pokedex_Rating_1
 	music_const SFX_GET_KEY_ITEM,       SFX_Get_Key_Item_1

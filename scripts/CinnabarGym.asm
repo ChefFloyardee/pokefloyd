@@ -86,6 +86,7 @@ CinnabarGymScript1:
 	ld a, [wOpponentAfterWrongAnswer]
 	ld [wTrainerHeaderFlagBit], a
 	ld [hSpriteIndexOrTextID], a
+	ld [wChampionsRoomCurScript], a
 	jp DisplayTextID
 
 CinnabarGymFlagAction:
@@ -163,7 +164,7 @@ CinnabarGymScript3_75857:
 	set 0, [hl]
 
 	; deactivate gym trainers
-	SetEventRange EVENT_BEAT_CINNABAR_GYM_TRAINER_0, EVENT_BEAT_CINNABAR_GYM_TRAINER_8
+	SetEventRange EVENT_BEAT_CINNABAR_GYM_TRAINER_0, EVENT_CINNABAR_GYM_GATE8_UNLOCKED
 	
 	ld a, HS_ROUTE_22_RIVAL_2
 	ld [wMissableObjectIndex], a

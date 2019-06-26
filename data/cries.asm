@@ -31,7 +31,7 @@ CryData:
 	db $14, $00, $80; Pinsir
 	db $12, $00, $80; Tangela
 	db $1D, $20, $40; Wartortle2
-	db $1D, $20, $40; Wartortle3
+	db $1D, $10, $40; Wartortle3
 	db $1F, $20, $40; Growlithe
 	db $17, $FF, $C0; Onix
 	db $18, $40, $A0; Fearow

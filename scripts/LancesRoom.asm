@@ -70,7 +70,26 @@ LanceScript0:
 	jr nc, .notStandingNextToLance
 	ld a, $1
 	ld [hSpriteIndexOrTextID], a
-	jp DisplayTextID
+	call DisplayTextID
+	call Delay3
+	ld a, OPP_LANCE
+	ld [wCurOpponent], a
+
+	; select which team to use during the encounter
+	ld a, [wRivalStarter]
+	cp STARTER2
+	jr nz, .NotSquirtle
+	ld a, $1
+	jr .done
+.NotSquirtle
+	cp STARTER3
+	jr nz, .Charmander
+	ld a, $2
+	jr .done
+.Charmander
+	ld a, $3
+.done
+	ld [wTrainerNo], a
 .notStandingNextToLance
 	cp $5  ; Is player standing on the entrance staircase?
 	jr z, WalkToLance
@@ -117,7 +136,7 @@ WalkToLance:
 
 WalkToLance_RLEList:
 	db D_UP, $0C
-	db D_LEFT, $0C
+	db D_LEFT, $0D
 	db D_DOWN, $07
 	db D_LEFT, $06
 	db $FF

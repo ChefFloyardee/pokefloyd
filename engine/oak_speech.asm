@@ -45,7 +45,7 @@ OakSpeech:
 	call SetDefaultNames
 	predef InitPlayerData2
 	ld hl, wNumBoxItems
-	ld a, POKE_BALL
+	ld a, POTION
 	ld [wcf91], a
 	ld a, 7
 	ld [wItemQuantity], a

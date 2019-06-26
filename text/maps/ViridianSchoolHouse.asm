@@ -55,3 +55,20 @@ _SchoolText8::
 _SchoolText_1d5b1::
 	text "TOKKA: Tokk-ahhh!"
 	done
+	
+_SchoolText10::
+	text "MR. FLOYD: SO!"
+	para "It looks like"
+	line "we're WRAPPING UP"
+	cont "the DO NOW so who"
+	cont "can read today's"
+	para "QP and AO for me?!"
+	done
+
+	text "MR. FLOYD: SO!"
+	para "It looks like"
+	line "we're WRAPPING UP"
+	cont "the DO NOW so can"
+	cont "I have a volunteer"
+	para "read today's QP"
+	line "and AO for me?!"

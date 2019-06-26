@@ -23,4 +23,8 @@ AkilaBotList::
 EvilTokkaList::
 	db WARTORTLE_3
 	db $FF
+	
+BossTrainerList::
+	db OPP_LANCE
+	db $FF
 

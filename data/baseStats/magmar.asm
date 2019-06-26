@@ -12,10 +12,10 @@ INCBIN "pic/bmon/magmar.pic",0,1 ; 66, sprite dimensions
 dw MagmarPicFront
 dw MagmarPicBack
 ; attacks known at lvl 0
-db EMBER
-db 0
-db 0
-db 0
+db FIRE_PUNCH
+db SOLARBEAM
+db FIRE_SPIN
+db GLARE
 db 0 ; growth rate
 ; learnset
 	tmlearn 1,5,6,8

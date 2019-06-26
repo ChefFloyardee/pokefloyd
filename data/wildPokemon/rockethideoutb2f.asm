@@ -5,7 +5,7 @@ RocketHideoutB2FMons:
 	db 62,MAGMAR
 	db 63,MAGMAR
 	db 64,ELECTABUZZ
-	db 65,ELECTABUZZ
+	db 65,KABUTOPS
 	db 66,HYPNO
 	db 67,HYPNO
 	db 68,PINSIR
@@ -16,7 +16,7 @@ RocketHideoutB2FMons:
 	db 62,MAGMAR
 	db 63,MAGMAR
 	db 64,ELECTABUZZ
-	db 65,ELECTABUZZ
+	db 65,KABUTOPS
 	db 66,HYPNO
 	db 67,HYPNO
 	db 68,PINSIR

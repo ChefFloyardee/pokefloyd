@@ -11,6 +11,7 @@ ViridianSchoolHouse_TextPointers:
 	dw SchoolText7
 	dw SchoolText8
 	dw SchoolText9
+	dw SchoolText10
 
 SchoolText1:
 	TX_FAR _SchoolText1
@@ -55,6 +56,10 @@ SchoolText9:
 
 SchoolText_1d5b1:
 	TX_FAR _SchoolText_1d5b1
+	db "@"
+	
+SchoolText10:
+	TX_FAR _SchoolText10
 	db "@"
 
 

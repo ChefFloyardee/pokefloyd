@@ -1,3 +1,6 @@
 GoodRodMons:
-	db 10,GOLDEEN
-	db 10,POLIWAG
+	db 15,DRAGONAIR
+	db 15,GOLDUCK
+	db 15,KINGLER
+	db 15,SEADRA
+

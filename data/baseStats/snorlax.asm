@@ -12,10 +12,10 @@ INCBIN "pic/bmon/snorlax.pic",0,1 ; 77, sprite dimensions
 dw SnorlaxPicFront
 dw SnorlaxPicBack
 ; attacks known at lvl 0
-db HEADBUTT
-db AMNESIA
-db REST
-db 0
+db HYPER_BEAM
+db METRONOME
+db RECOVER
+db HI_JUMP_KICK
 db 5 ; growth rate
 ; learnset
 	tmlearn 1,5,6,8

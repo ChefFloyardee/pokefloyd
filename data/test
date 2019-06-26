@@ -1,0 +1,104 @@
+    ld a, [wEnemyMonSpecies2]
+    ld [wd11e], a
+    call GetMonName
+	ld [EnemyTrainer]
+	cp Lance
+	jr z, .enemynick
+    ld hl, wcd6d
+    ld de, wEnemyMonNick
+    ld bc, NAME_LENGTH
+    call CopyData
+.enemynick
+	ld [EnemyNickNames]
+	db LANCE, "NIDOSMASH@", "WEIRDSAUR@", "SLOWDASH@@", "BLAHBLAH@@", "QUACKQUACK", "@@@@@@@@@@" db $FF
+	
+	ld a, [wEnemyMonSpecies2]
+    ld [wd11e], a
+    call GetMonName
+    ld hl, wcd6d
+    ld de, wEnemyMonNick
+    ld bc, NAME_LENGTH
+    call CopyData
+	
+	
+	IsLanceBattle:
+	ld a, [wIsInBattle]
+	dec a
+	ret nz
+	ld a, [wTrainerClass]
+	cp OPP_LANCE
+	jr z, .enemynick
+.enemynick
+	ld a, [LanceNicknameData]
+	
+	LanceNicknameData:
+	db OPP_LANCE, "NIDOSMASH@", "WEIRDSAUR@", "SLOWDASH@@", "BLAHBLAH@@", "QUACKQUACK", "@@@@@@@@@@"
+	db $FF
+	
+	
+	IsGhostBattle:
+	ld a, [wIsInBattle]
+	dec a
+	ret nz
+	ld a, [wTrainerClass]
+	cp ROCKET_HIDEOUT_B2F
+	jr z, .checkscope
+	cp ROCKET_HIDEOUT_B4F
+	jr z, .checkscope
+	cp POKEMON_TOWER_1F
+	jr c, .next
+	cp MR_FUJIS_HOUSE
+	jr nc, .next
+.checkscope
+	ld a, [wEnemyMonSpecies2]
+	cp WARTORTLE_3
+	jr z, .next
+	cp WARTORTLE_33
+	jr z, .next
+	ld b, SILPH_SCOPE
+	call IsItemInBag
+	ret z
+.next
+	ld a, 1
+	and a
+	ret
+	
+GetEnemyNick:
+    ld a, [wIsInBattle]
+    cp $2 ; trainer battle
+    jr z, .default
+    ld a, [wCurOpponent]
+    ld b, a
+    ld c, $ff
+    ld hl, .Lut
+.loop
+    inc c
+    ld a, [hli]
+    cp $ff
+    jr z, .default
+    cp b
+    jr nz, .loop
+    ld a, c
+    ld bc, PARTY_LENGTH * NAME_LENGTH
+    ld hl, .Names
+    call AddNTimes
+    ld a, [wWhichPokemon]
+    call SkipFixedLengthTextEntries
+    jr .copy
+.default
+    ld a, [wEnemyMonSpecies2]
+    ld [wd11e], a
+    call GetMonName
+    ld hl, wcd6d
+.copy
+    ld de, wEnemyMonNick
+    ld bc, NAME_LENGTH
+    jp CopyData
+
+.Lut
+    db OPP_LANCE
+    db OPP_OAK
+    db $ff
+.Names
+    db "Name1@@@@@@", "Name2@@@@@@", "Name3@@@@@@", "Name4@@@@@@", "Name5@@@@@@", "Name6@@@@@@"
+    db "Name1@@@@@@", "Name2@@@@@@", "Name3@@@@@@", "Name4@@@@@@", "Name5@@@@@@", "Name6@@@@@@"

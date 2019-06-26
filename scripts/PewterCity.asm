@@ -361,7 +361,7 @@ PewterCityText12:
 	
 PewterCityText15:
 	TX_ASM
-	lb bc, WARTORTLE, 15
+	lb bc, WARTORTLE, 99
 	call GivePokemon
 	jr nc, .asm_24365
 	ld a, HS_MUSEUM_GUY
@@ -372,6 +372,41 @@ PewterCityText15:
 
 VermilionHouse2Text1:
 	TX_ASM
+	CheckEvent EVENT_BEAT_CHAMPION_RIVAL
+	jr nz, .asm_627d9
+	ld a, [wd728]
+	bit 3, a
+	jr nz, .asm_03ef5
+	ld hl, VermilionHouse2Text_560b1
+	call PrintText
+	call YesNoChoice
+	ld a, [wCurrentMenuItem]
+	and a
+	jr nz, .asm_eb1b7
+	lb bc, OLD_ROD, 1
+	call GiveItem
+	jr nc, .BagFull
+	ld hl, wd728
+	set 3, [hl]
+	ld hl, VermilionHouse2Text_560b6
+	jr .asm_5dd95
+.BagFull
+	ld hl, VermilionHouse2Text_560ca
+	jr .asm_5dd95
+.asm_eb1b7
+	ld hl, VermilionHouse2Text_560c0
+	jr .asm_5dd95
+.asm_03ef5
+	ld hl, VermilionHouse2Text_560c5
+.asm_5dd95
+	jr .asm_0b11d
+.asm_627d9
+	ld hl, FloydText_75ac7
+.asm_0b11d
+	call PrintText
+	jp TextScriptEnd
+	
+VermilionHouse2Text1A:
 	ld a, [wd728]
 	bit 3, a
 	jr nz, .asm_03ef5
@@ -453,4 +488,8 @@ ViridianCityText17:
 
 BeatGText_75ac7:
 	TX_FAR _BeatGText_75ac7
+	db "@"
+	
+FloydText_75ac7:
+	TX_FAR _FloydText_75ac7
 	db "@"

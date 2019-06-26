@@ -11,6 +11,7 @@ PewterPokecenter_TextPointers:
 	dw UndergroundPathEntranceRoute5Text1
 	dw BulbasaurText
 	dw PewterPokecenterText3
+	dw ViridianCityText66
 
 PewterHealNurseText:
 	TX_POKECENTER_NURSE
@@ -112,3 +113,37 @@ PewterPokecenterText3:
 	TX_FAR _PewterPokecenterText3
 	db "@"
 	
+ViridianCityText66:
+	TX_ASM
+	CheckEvent EVENT_GOT_TM42
+	jr nz, .asm_4e5a0
+	lb bc, POKE_BALL, 1
+	call GiveItem
+	jr nc, .BagFull
+	ld hl, ReceivedTM42Text6
+	call PrintText
+	jr .asm_3c73c
+.BagFull
+	ld hl, TM42NoRoomText6
+	call PrintText
+	jr .asm_3c73c
+.asm_4e5a0
+.asm_3c73c
+	jp TextScriptEnd
+
+ViridianCityText_191ca6:
+	TX_FAR _ViridianCityText_191ca6
+	db "@"
+
+ReceivedTM42Text6:
+	TX_FAR _ReceivedTM42Text6
+	TX_SFX_ITEM_2
+	db "@"
+
+TM42Explanation6:
+	TX_FAR _TM42Explanation6
+	db "@"
+
+TM42NoRoomText6:
+	TX_FAR _TM42NoRoomText6
+	db "@"	

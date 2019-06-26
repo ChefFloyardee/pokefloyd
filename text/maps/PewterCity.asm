@@ -216,3 +216,10 @@ _BeatGText_75ac2::
 _BeatGText_75ac7::
 	text "GET EXCITED!"
 	done
+	
+_FloydText_75ac7::
+	text "George! Chase has"
+	line "finally returned!"
+	para "We can all now"
+	line "go fishing again!"
+	done

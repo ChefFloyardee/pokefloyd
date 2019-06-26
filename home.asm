@@ -2621,6 +2621,16 @@ PlayTrainerMusic::
 	ld a, MUSIC_MEET_EVIL_TOKKA
 	jr .PlaySound
 .noEvilTokkaTrainer
+	ld hl, BossTrainerList
+.bossTrainerListLoop
+	ld a, [hli]
+	cp $ff
+	jr z, .noBossTrainer
+	cp b
+	jr nz, .bossTrainerListLoop
+	ld a, MUSIC_MEET_BOSS_TRAINER
+	jr .PlaySound
+.noBossTrainer
 	ld hl, FemaleTrainerList
 .femaleTrainerListLoop
 	ld a, [hli]

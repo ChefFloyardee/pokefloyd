@@ -101,14 +101,14 @@ FishingGroup10:
 	db 15,MAGIKARP
 	
 FishingGroup11:
-	db 4
+	db 14
 	db 15,DRATINI
 	db 15,KINGLER
 	db 15,GOLDUCK
 	db 15,SLOWBRO
 	db 15,SEADRA
 	db 15,GYARADOS
-	db 15,GEODUDE
+	db 15,TENTACRUEL
 	db 15,POLIWRATH
 	db 15,CLOYSTER
 	db 15,LAPRAS

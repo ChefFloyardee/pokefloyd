@@ -6337,10 +6337,19 @@ LoadEnemyMonData:
 	inc de
 	ld a, [hl]     ; base exp
 	ld [de], a
+	 ld a, [wCurOpponent]
+    cp OPP_LANCE
+    jr nz, .loadSpeciesName
+    ld hl, .LanceMonsNicks
+    ld a, [wWhichPokemon]
+    call SkipFixedLengthTextEntries
+    jr .copyNick
+.loadSpeciesName
 	ld a, [wEnemyMonSpecies2]
 	ld [wd11e], a
 	call GetMonName
 	ld hl, wcd6d
+.copyNick
 	ld de, wEnemyMonNick
 	ld bc, NAME_LENGTH
 	call CopyData
@@ -6365,6 +6374,9 @@ LoadEnemyMonData:
 	dec b
 	jr nz, .statModLoop
 	ret
+	
+.LanceMonsNicks
+   db "LET@@@@@@@@", "THE@@@@@@@@", "UNITS@@@@@@", "GUIDE@@@@@@", "YOU!@@@@@@@", "EVIL-TOKKA@"
 
 ; calls BattleTransition to show the battle transition animation and initializes some battle variables
 DoBattleTransitionAndInitBattleVariables:

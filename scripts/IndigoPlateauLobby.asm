@@ -44,6 +44,9 @@ IndigoTradeNurseText:
 SilphCo7Text11:
 ; lapras guy
 	TX_ASM
+	ld a, HS_INDIGO_PLATEAU_LOBBY_1
+	ld [wMissableObjectIndex], a
+	predef HideObject
 	ld a, [wd72e]
 	bit 0, a ; got lapras?
 	jr z, .givelapras
@@ -55,7 +58,7 @@ SilphCo7Text11:
 .givelapras
 	ld hl, .MeetLaprasGuyText
 	call PrintText
-	lb bc, WARTORTLE_2, 27
+	lb bc, WARTORTLE_2, 70
 	call GivePokemon
 	jr nc, .done
 	ld a, [wSimulatedJoypadStatesEnd]
@@ -94,7 +97,7 @@ TX_ASM
 	lb bc, POLIWRATH, 68
 	call GivePokemon
 	jr nc, .asm_24365
-	ld a, HS_INDIGO_PLATEAU_LOBBY_1
+	ld a, HS_INDIGO_PLATEAU_LOBBY_3
 	ld [wMissableObjectIndex], a
 	predef HideObject
 .asm_24365
@@ -102,29 +105,7 @@ TX_ASM
 	
 SilphCo7Text133:
 TX_ASM
-	lb bc, SNORLAX, 66
-	call GivePokemon
-	jr nc, .asm_24365
-	ld a, HS_INDIGO_PLATEAU_LOBBY_2
-	ld [wMissableObjectIndex], a
-	predef HideObject
-.asm_24365
-	jp TextScriptEnd
-	
-SilphCo7Text144:
-TX_ASM
-	lb bc, KABUTOPS, 64
-	call GivePokemon
-	jr nc, .asm_24365
-	ld a, HS_INDIGO_PLATEAU_LOBBY_3
-	ld [wMissableObjectIndex], a
-	predef HideObject
-.asm_24365
-	jp TextScriptEnd
-	
-SilphCo7Text155:
-TX_ASM
-	lb bc, GOLDUCK, 26
+	lb bc, PORYGON, 66
 	call GivePokemon
 	jr nc, .asm_24365
 	ld a, HS_INDIGO_PLATEAU_LOBBY_4
@@ -133,12 +114,34 @@ TX_ASM
 .asm_24365
 	jp TextScriptEnd
 	
-SilphCo7Text166:
+SilphCo7Text144:
 TX_ASM
-	lb bc, MACHOKE, 25
+	lb bc, SNORLAX, 64
 	call GivePokemon
 	jr nc, .asm_24365
 	ld a, HS_INDIGO_PLATEAU_LOBBY_5
+	ld [wMissableObjectIndex], a
+	predef HideObject
+.asm_24365
+	jp TextScriptEnd
+	
+SilphCo7Text155:
+TX_ASM
+	lb bc, MACHAMP, 62
+	call GivePokemon
+	jr nc, .asm_24365
+	ld a, HS_INDIGO_PLATEAU_LOBBY_2
+	ld [wMissableObjectIndex], a
+	predef HideObject
+.asm_24365
+	jp TextScriptEnd
+	
+SilphCo7Text166:
+TX_ASM
+	lb bc, GOLDUCK, 60
+	call GivePokemon
+	jr nc, .asm_24365
+	ld a, HS_INDIGO_PLATEAU_LOBBY_6
 	ld [wMissableObjectIndex], a
 	predef HideObject
 .asm_24365

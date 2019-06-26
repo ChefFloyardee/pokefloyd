@@ -12,10 +12,10 @@ INCBIN "pic/bmon/pinsir.pic",0,1 ; 77, sprite dimensions
 dw PinsirPicFront
 dw PinsirPicBack
 ; attacks known at lvl 0
-db VICEGRIP
-db 0
-db 0
-db 0
+db HYPER_BEAM
+db SPIKE_CANNON
+db TWINEEDLE
+db PIN_MISSILE
 db 5 ; growth rate
 ; learnset
 	tmlearn 3,6,8

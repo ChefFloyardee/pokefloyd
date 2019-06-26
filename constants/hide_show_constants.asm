@@ -57,6 +57,8 @@ const_value = 0
 	const HS_POKEDEX_1                     ; 2F
 	const HS_POKEDEX_2                     ; 30
 	const HS_OAKS_LAB_OAK_2                ; 31
+	const HS_MR_FLOYD
+	const HS_STUDENT
 	const HS_VIRIDIAN_GYM_GIOVANNI         ; 32
 	const HS_VIRIDIAN_GYM_ITEM             ; 33 X
 	const HS_OLD_AMBER                     ; 34
@@ -241,4 +243,7 @@ const_value = 0
 	const HS_INDIGO_PLATEAU_LOBBY_3
 	const HS_INDIGO_PLATEAU_LOBBY_4
 	const HS_INDIGO_PLATEAU_LOBBY_5
+	const HS_INDIGO_PLATEAU_LOBBY_6
+	
+	
 	

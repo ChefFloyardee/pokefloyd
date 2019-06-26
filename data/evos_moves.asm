@@ -518,12 +518,12 @@ PinsirEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 25, SEISMIC_TOSS
-	db 30, GUILLOTINE
-	db 36, FOCUS_ENERGY
-	db 43, HARDEN
-	db 49, SLASH
-	db 54, SWORDS_DANCE
+	db 77, SEISMIC_TOSS
+	db 77, GUILLOTINE
+	db 77, FOCUS_ENERGY
+	db 77, HARDEN
+	db 77, SLASH
+	db 77, SWORDS_DANCE
 	db 0
 
 TangelaEvosMoves:
@@ -768,12 +768,12 @@ GolemEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 11, DEFENSE_CURL
-	db 16, ROCK_THROW
-	db 21, SELFDESTRUCT
-	db 29, HARDEN
-	db 36, EARTHQUAKE
-	db 43, EXPLOSION
+	db 77, DEFENSE_CURL
+	db 77, ROCK_THROW
+	db 77, SELFDESTRUCT
+	db 77, HARDEN
+	db 77, EARTHQUAKE
+	db 77, EXPLOSION
 	db 0
 
 Wartortle33EvosMoves:
@@ -796,12 +796,12 @@ MagmarEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 36, LEER
-	db 39, CONFUSE_RAY
-	db 43, FIRE_PUNCH
-	db 48, SMOKESCREEN
-	db 52, SMOG
-	db 55, FLAMETHROWER
+	db 77, LEER
+	db 77, CONFUSE_RAY
+	db 77, FIRE_PUNCH
+	db 77, SMOKESCREEN
+	db 77, SMOG
+	db 77, FLAMETHROWER
 	db 0
 
 MissingNo34EvosMoves:
@@ -1169,10 +1169,10 @@ KabutopsEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 34, ABSORB
-	db 39, SLASH
-	db 46, LEER
-	db 53, HYDRO_PUMP
+	db 77, ABSORB
+	db 77, SLASH
+	db 77, LEER
+	db 77, HYDRO_PUMP
 	db 0
 
 HorseaEvosMoves:
@@ -1398,8 +1398,8 @@ PoliwrathEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 16, HYPNOSIS
-	db 19, WATER_GUN
+	db 77, HYPNOSIS
+	db 77, WATER_GUN
 	db 0
 
 WeedleEvosMoves:
@@ -1534,11 +1534,11 @@ MachampEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 20, LOW_KICK
-	db 25, LEER
-	db 36, FOCUS_ENERGY
-	db 44, SEISMIC_TOSS
-	db 52, SUBMISSION
+	db 77, LOW_KICK
+	db 77, LEER
+	db 77, FOCUS_ENERGY
+	db 77, SEISMIC_TOSS
+	db 77, SUBMISSION
 	db 0
 
 MissingNo7FEvosMoves:
@@ -1551,23 +1551,23 @@ GolduckEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 28, TAIL_WHIP
-	db 31, DISABLE
-	db 39, CONFUSION
-	db 48, FURY_SWIPES
-	db 59, HYDRO_PUMP
+	db 77, TAIL_WHIP
+	db 77, DISABLE
+	db 77, CONFUSION
+	db 77, FURY_SWIPES
+	db 77, HYDRO_PUMP
 	db 0
 
 HypnoEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 12, DISABLE
-	db 17, CONFUSION
-	db 24, HEADBUTT
-	db 33, POISON_GAS
-	db 37, PSYCHIC_M
-	db 43, MEDITATE
+	db 77, DISABLE
+	db 77, CONFUSION
+	db 77, HEADBUTT
+	db 77, POISON_GAS
+	db 77, PSYCHIC_M
+	db 77, MEDITATE
 	db 0
 
 GolbatEvosMoves:
@@ -1596,10 +1596,10 @@ SnorlaxEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 35, BODY_SLAM
-	db 41, HARDEN
-	db 48, DOUBLE_EDGE
-	db 56, HYPER_BEAM
+	db 77, BODY_SLAM
+	db 77, HARDEN
+	db 77, DOUBLE_EDGE
+	db 77, HYPER_BEAM
 	db 0
 
 MagikarpEvosMoves:
@@ -1964,10 +1964,12 @@ PorygonEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 23, PSYBEAM
-	db 28, RECOVER
-	db 35, AGILITY
-	db 42, TRI_ATTACK
+	db 77, CONVERSION
+	db 77, SHARPEN
+	db 77, PSYBEAM
+	db 77, RECOVER
+	db 77, AGILITY
+	db 77, TRI_ATTACK
 	db 0
 
 AerodactylEvosMoves:

@@ -1,3 +1,13 @@
 CaveMons:
-	db $00
+	db $0F
+	db 25,PORYGON
+	db 25,SNORLAX
+	db 25,SANDSLASH
+	db 25,MAROWAK
+	db 25,KANGASKHAN
+	db 25,DITTO
+	db 25,PRIMEAPE
+	db 25,EEVEE
+	db 25,CLEFABLE
+	db 25,LICKITUNG
 	db $00

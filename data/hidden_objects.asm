@@ -509,9 +509,9 @@ CinnabarGymHiddenObjects:
 	dw PrintCinnabarQuiz
 	db $01,$11,POTION
 	dbw BANK(HiddenItems),HiddenItems
-	db $01,$0b,POTION
+	db $01,$0b,MAX_REVIVE
 	dbw BANK(HiddenItems),HiddenItems
-	db $01,$05,POTION
+	db $03,$04,HYPER_POTION
 	dbw BANK(HiddenItems),HiddenItems
 	db $FF
 CinnabarPokecenterHiddenObjects:

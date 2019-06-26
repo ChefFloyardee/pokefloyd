@@ -277,7 +277,9 @@ _OaksLabBePatientText::
 _OaksLabLeavingText::
 	text "G: Not so fast!"
 	line "You have a"
-	cont "SCI-mon to pick!"
+	cont "A-SCI-NGMENT!"
+	para "You have to pick"
+	cont "a SCI-mon!"
 	done
 
 _OaksLabRivalPickingMonText::
