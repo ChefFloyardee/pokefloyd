@@ -40,7 +40,7 @@ HallofFameRoomScript2:
 	ld [wLancesRoomCurScript], a
 	ld [wHallOfFameCurScript], a
 	; Elite 4 events
-	ResetEventRange ELITE4_EVENTS_START, EVENT_AUTOWALKED_INTO_AGATHAS_ROOM, 1
+	ResetEventRange ELITE4_EVENTS_START, ELITE4_CHAMPION_EVENTS_END, 1
 	xor a
 	ld [wHallOfFameCurScript], a
 	ld a, PEWTER_CITY

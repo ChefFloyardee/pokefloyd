@@ -6,7 +6,7 @@ ViridianSchoolHouse_Object:
 	warp 3, 7, 5, PEWTER_CITY
 
 	db 1 ; signs
-	sign 1, 0, -1 ; CeladonMart1Text2
+	sign 1, 0, 11 ; CeladonMart1Text2
 
 	db 10 ; objects
 	object SPRITE_BRUNETTE_GIRL, 3, 5, STAY, UP, 1 ; person

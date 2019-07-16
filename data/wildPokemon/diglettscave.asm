@@ -7,7 +7,7 @@ CaveMons:
 	db 25,KANGASKHAN
 	db 25,DITTO
 	db 25,PRIMEAPE
-	db 25,EEVEE
+	db 25,KADABRA
 	db 25,CLEFABLE
 	db 25,LICKITUNG
 	db $00

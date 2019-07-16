@@ -23,6 +23,14 @@ EvolveTradeMon:
 	cp "G"
 	jr z, .ok
 	
+	; MACHOKE
+	cp "M"
+	jr z, .ok
+	
+	; HAUNTER
+	cp "H"
+	jr z, .ok
+	
 	; WARTORTLE
 	cp "W"
 	jr z, .ok

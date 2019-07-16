@@ -225,6 +225,7 @@ PewterCity_TextPointers:
 	dw PewterGeorgeText
 	dw PewterCityText18
 	dw ViridianCityText17
+	dw PewterCityText20
 
 PewterCityText1:
 	TX_FAR _PewterCityText1
@@ -361,9 +362,15 @@ PewterCityText12:
 	
 PewterCityText15:
 	TX_ASM
-	lb bc, WARTORTLE, 99
+	lb bc, WARTORTLE, 15
 	call GivePokemon
 	jr nc, .asm_24365
+	ld a, HS_PEWTER_BOULDER_1
+	ld [wMissableObjectIndex], a
+	predef HideObject
+	ld a, HS_PEWTER_BOULDER_2
+	ld [wMissableObjectIndex], a
+	predef HideObject
 	ld a, HS_MUSEUM_GUY
 	ld [wMissableObjectIndex], a
 	predef HideObject
@@ -492,4 +499,8 @@ BeatGText_75ac7:
 	
 FloydText_75ac7:
 	TX_FAR _FloydText_75ac7
+	db "@"
+	
+PewterCityText20:
+	TX_FAR _PewterCityText20
 	db "@"

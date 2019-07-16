@@ -33,7 +33,7 @@ FoundHiddenItemText:
 	ld c, a
 	ld b, FLAG_SET
 	predef FlagActionPredef
-	ld a, SFX_GET_ITEM_1
+	ld a, SFX_GET_ITEM_2
 	call PlaySoundWaitForCurrent
 	call WaitForSoundToFinish
 	jp TextScriptEnd

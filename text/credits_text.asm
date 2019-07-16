@@ -66,99 +66,99 @@ CreditsTextPointers:
 
 CredVersion: ; this 1 byte difference makes all bank addresses offset by 1 in the blue version
 IF DEF(_RED)
-	db -8, "RED VERSION STAFF@"
+	db -8, "  FLOYD VERSION@"
 ENDC
 IF DEF(_BLUE)
-	db -8, "BLUE VERSION STAFF@"
+	db -8, "  FLOYD VERSION@"
 ENDC
 CredTajiri:
-	db -6, "SATOSHI TAJIRI@"
+	db -5, "begin by making     OBSERVATIONS!@"
 CredTaOota:
-	db -6, "TAKENORI OOTA@"
+	db -6, "to understanding      SCIENCE!@"
 CredMorimoto:
-	db -7, "SHIGEKI MORIMOTO@"
+	db -7, "@"
 CredWatanabe:
-	db -7, "TETSUYA WATANABE@"
+	db -7, "BILLION years old!@"
 CredMasuda:
-	db -6, "JUNICHI MASUDA@"
+	db -6, "    unit of           MATTER!@"
 CredNisino:
-	db -5, "KOHJI NISINO@"
+	db -7, "BILLION years old!@"
 CredSugimori:
-	db -5, "KEN SUGIMORI@"
+	db -5, "ACCELERATION!@"
 CredNishida:
-	db -6, "ATSUKO NISHIDA@"
+	db -6, "of CELLS!@"
 CredMiyamoto:
-	db -7, "SHIGERU MIYAMOTO@"
+	db -7, "#MON, NINTENDO, and the GAMEFREAK      Engine@"
 CredKawaguchi:
 	db -8, "TAKASHI KAWAGUCHI@"
 CredIshihara:
 	db -8, "TSUNEKAZU ISHIHARA@"
 CredYamauchi:
-	db -7, "HIROSHI YAMAUCHI@"
+	db -7, "  CHASEFLOYDINC         Production@"
 CredZinnai:
 	db -7, "HIROYUKI ZINNAI@"
 CredHishida:
-	db -7, "TATSUYA HISHIDA@"
+	db -7, "     TOKKA@"
 CredSakai:
-	db -6, "YASUHIRO SAKAI@"
+	db -6, "AKILA THENUWARA@"
 CredYamaguchi:
-	db -7, "WATARU YAMAGUCHI@"
+	db -7, "     FAMILY@"
 CredYamamoto:
-	db -8, "KAZUYUKI YAMAMOTO@"
+	db -7, "     FRIENDS@"
 CredTaniguchi:
-	db -8, "RYOHSUKE TANIGUCHI@"
+	db -8, "are APPLICATIONS of            SCIENCE!@"
 CredNonomura:
 	db -8, "FUMIHIRO NONOMURA@"
 CredFuziwara:
 	db -7, "MOTOFUMI FUZIWARA@"
 CredMatsusima:
-	db -7, "KENJI MATSUSIMA@"
+	db -7, "are APPLICATIONS of            SCIENCE!@"
 CredTomisawa:
-	db -7, "AKIHITO TOMISAWA@"
+	db -7, "  PAST and PRESENT@"
 CredKawamoto:
-	db -7, "HIROSHI KAWAMOTO@"
+	db -7, "     STUDENTS@"
 CredKakei:
-	db -6, "AKIYOSHI KAKEI@"
+	db -6, "is held CONSTANT!@"
 CredTsuchiya:
 	db -7, "KAZUKI TSUCHIYA@"
 CredTaNakamura:
-	db -6, "TAKEO NAKAMURA@"
+	db -6, "is what you                   CHANGE!@"
 CredYuda:
-	db -6, "MASAMITSU YUDA@"
+	db -6, "DEPENDS on the   CHANGING INDEPENDENT Variable!@"
 CredMon:
 	db -3, "#MON@"
 CredDirector:
-	db -3, "DIRECTOR@"
+	db -4, "All Science        EXPERIMENTS@"
 CredProgrammers:
-	db -5, "PROGRAMMERS@"
+	db -5, "MATH is                CRUCIAL@"
 CredCharDesign:
-	db -7, "CHARACTER DESIGN@"
+	db -4, "FORCE equals      MASS times@"
 CredMusic:
-	db -2, "MUSIC@"
+	db -6, "ATOMS are the         BASIC@"
 CredSoundEffects:
-	db -6, "SOUND EFFECTS@"
+	db -6, "Our UNIVERSE is     over 13.7@"
 CredGameDesign:
-	db -5, "GAME DESIGN@"
+	db -5, "The EARTH is       about 4.54@"
 CredMonsterDesign:
-	db -6, "MONSTER DESIGN@"
+	db -6, "All LIVING things are MADE@" 
 CredGameScene:
-	db -6, "GAME SCENARIO@"
+	db -6, "TECHNOLOGY and      ENGINEERING@"
 CredParam:
-	db -8, "PARAMETRIC DESIGN@"
+	db -8, "The INDEPENDENT      Variable@"
 CredMap:
-	db -4, "MAP DESIGN@"
+	db -4, "The DEPENDENT      Variable@"
 CredTest:
-	db -7, "PRODUCT TESTING@"
+	db -7, "The CONTROL          Variable@"
 CredSpecial:
-	db -6, "SPECIAL THANKS@"
+	db -7, " SPECIAL THANKS@"
 CredProducers:
-	db -4, "PRODUCERS@"
+	db -4, "BASED OFF OF@"
 CredProducer:
 	db -4, "PRODUCER@"
 CredExecutive:
-	db -8, "EXECUTIVE PRODUCER@"
+	db -7, "THIS HAS BEEN A@"
 CredTamada:
-	db -6, "SOUSUKE TAMADA@"
+	db -6, "  Chase Floyd@"
 CredSaOota:
 	db -5, "SATOSHI OOTA@"
 CredYoshikawa:
@@ -166,7 +166,7 @@ CredYoshikawa:
 CredToOota:
 	db -6, "TOMOMICHI OOTA@"
 CredUSStaff:
-	db -7, "US VERSION STAFF@"
+	db -7, "   CREATED BY@"
 CredUSCoord:
 	db -7, "US COORDINATION@"
 CredTilden:

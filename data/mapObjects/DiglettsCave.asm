@@ -11,7 +11,11 @@ DiglettsCave_Object:
 	sign 13, 17, 2 ; VidCityText1
 	sign 25, 25, 3 ; VidCityText1
 
-	db 0 ; objects
+	db 4 ; objects
+	object SPRITE_MEDIUM, 18, 25, STAY, DOWN, 4 ; person
+	object SPRITE_MEDIUM, 17, 26, STAY, RIGHT, 5 ; person
+	object SPRITE_MEDIUM, 19, 26, STAY, LEFT, 6 ; person
+	object SPRITE_OMANYTE, 18, 26, STAY, NONE, 1 ; person
 
 	; warp-to
 	warp_to 25, 15, DIGLETTS_CAVE_WIDTH ; DIGLETTS_CAVE_ROUTE_2

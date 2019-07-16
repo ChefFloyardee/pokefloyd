@@ -3,7 +3,7 @@ _LanceBeforeBattleText::
 	para "If it isn't my"
 	line "former student,"
 	cont "here to CHALLENGE"
-	cont "his old teacher..."
+	cont "his old teacher."
 	
 	para "I thought I had"
 	line "taught you well"
@@ -50,7 +50,7 @@ _LanceAfterBattleText1::
 	cont "my brain WILL win"
 	cont "THE WAR!"
 	para "You can search my"
-	line "lab for EONS if"
+	line "lab for EONS"
 	cont "if you'd like, but"
 	para "you'll NEVER"
 	line "figure out how to"

@@ -4,7 +4,7 @@ TechnicalMachines:
 	db SWORDS_DANCE
 	db WHIRLWIND
 	db MEGA_KICK
-	db TOXIC
+	db METRONOME
 	db HORN_DRILL
 	db BODY_SLAM
 	db TAKE_DOWN
@@ -33,7 +33,7 @@ TechnicalMachines:
 	db DOUBLE_TEAM
 	db REFLECT
 	db BIDE
-	db METRONOME
+	db TOXIC
 	db SELFDESTRUCT
 	db EGG_BOMB
 	db FIRE_BLAST

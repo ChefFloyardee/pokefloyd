@@ -223,3 +223,7 @@ _FloydText_75ac7::
 	para "We can all now"
 	line "go fishing again!"
 	done
+	
+_PewterCityText20::
+	text "GET EXCITED!"
+	done

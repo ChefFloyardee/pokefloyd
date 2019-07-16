@@ -137,7 +137,7 @@ ViridianCityText_191ca6:
 
 ReceivedTM42Text6:
 	TX_FAR _ReceivedTM42Text6
-	TX_SFX_ITEM_2
+	TX_SFX_ITEM_1
 	db "@"
 
 TM42Explanation6:

@@ -35,6 +35,10 @@ SuperRodData:
 	dbw CERULEAN_CAVE_B1F, FishingGroup9
 	dbw CERULEAN_CAVE_1F, FishingGroup9
 	dbw PEWTER_CITY, FishingGroup11
+	dbw CINNABAR_GYM, FishingGroup12
+	dbw OAKS_LAB, FishingGroup12
+	dbw ROCKET_HIDEOUT_B4F, FishingGroup14
+	dbw ROCKET_HIDEOUT_B2F, FishingGroup14
 	db $FF
 
 ; fishing groups
@@ -101,15 +105,27 @@ FishingGroup10:
 	db 15,MAGIKARP
 	
 FishingGroup11:
-	db 14
-	db 15,DRATINI
-	db 15,KINGLER
+	db 4
+	db 15,DRAGONAIR
 	db 15,GOLDUCK
-	db 15,SLOWBRO
+	db 15,KINGLER
 	db 15,SEADRA
-	db 15,GYARADOS
+	
+FishingGroup12:
+	db 4
+	db 15,SLOWBRO
 	db 15,TENTACRUEL
-	db 15,POLIWRATH
+	db 15,GYARADOS
+	db 15,CLOYSTER
+	
+FishingGroup14:
+	db 4
+	db 55,DRAGONITE
+	db 55,OMASTAR
+	db 55,AERODACTYL
+	db 55,ALAKAZAM
+	
+	
 	db 15,CLOYSTER
 	db 15,LAPRAS
 	db 15,VAPOREON

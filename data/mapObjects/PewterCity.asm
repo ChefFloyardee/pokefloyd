@@ -2,8 +2,8 @@ PewterCity_Object:
 	db $a ; border block
 
 	db 7 ; warps
-	warp 14, 7, 0, LANCES_ROOM
-	warp 19, 5, 0, VIRIDIAN_GYM
+	warp 14, 7, 0, HALL_OF_FAME
+	warp 19, 5, 0, LANCES_ROOM
 	warp 16, 17, 0, CINNABAR_GYM
 	warp 2, 33, 0, DIGLETTS_CAVE_ROUTE_2
 	warp 23, 17, 0, INDIGO_PLATEAU_LOBBY
@@ -20,7 +20,7 @@ PewterCity_Object:
 	sign 17, 19, 11 ; PewterCityText11
 	sign 25, 23, 12 ; PewterCityText12
 
-	db 7 ; objects
+	db 9 ; objects
 	object SPRITE_FISHER2, 15, 30, STAY, RIGHT, 16 ; person
 	object SPRITE_BUG_CATCHER, 35, 16, STAY, DOWN, 5 ; person
 	object SPRITE_SEEL, 15, 31, STAY, NONE, 15 ; person
@@ -28,6 +28,8 @@ PewterCity_Object:
 	object SPRITE_BUG_CATCHER, 8, 20, STAY, NONE, 19 ; person
 	object SPRITE_SEEL, 27, 17, STAY, NONE, 3 ; person
 	object SPRITE_QUADRUPED2, 15, 29, STAY, RIGHT, 17 ; person
+	object SPRITE_BOULDER, 13, 12, STAY, NONE, 20 ; person
+	object SPRITE_BOULDER, 13, 13, STAY, NONE, 20 ; person
 
 	; warp-to
 	warp_to 14, 7, PEWTER_CITY_WIDTH ; MUSEUM_1F

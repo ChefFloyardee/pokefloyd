@@ -2,21 +2,22 @@ TitleMons:
 ; mons on the title screen are randomly chosen from here
 IF DEF(_BLUE)
 	db WARTORTLE
+	db WARTORTLE_2
+	db WARTORTLE_3
+	db KANGASKHAN
+	db PORYGON
+	db DITTO
+	db SNORLAX
+	db GENGAR
+	db MACHAMP
 	db GOLEM
 	db ELECTABUZZ
 	db MAGMAR
-	db PORYGON
-	db MEW
-	db MACHAMP
-	db PINSIR
-	db SCYTHER
-	db POLIWRATH
-	db MEWTWO
-	db GOLDUCK
-	db SNORLAX
 	db KABUTOPS
-	db SEADRA
-	db SANDSLASH
+	db HYPNO
+	db PINSIR
+	db GOLDUCK
+	db POLIWRATH
 ENDC
 IF DEF(_GREEN)
 	db BULBASAUR

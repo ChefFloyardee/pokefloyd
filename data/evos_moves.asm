@@ -351,7 +351,11 @@ GengarEvosMoves:
 	db 0
 ; Learnset
 	db 29, HYPNOSIS
-	db 38, DREAM_EATER
+	db 30, DREAM_EATER
+	db 31, HYPER_BEAM
+	db 32, GLARE
+	db 33, HAZE
+	db 34, NIGHT_SHADE
 	db 0
 
 NidoranFEvosMoves:
@@ -542,17 +546,19 @@ Wartortle2EvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 1, TRANSFORM
-	db 16, TRANSFORM
-	db 17, PSYBEAM
-	db 18, ICE_BEAM
-	db 19, TRANSFORM
+	db 17, TRANSFORM
+	db 18, PSYBEAM
+	db 19, ICE_BEAM
 	db 20, WATERFALL
-	db 29, BITE
-	db 31, WITHDRAW
-	db 35, SKULL_BASH
-	db 40, TRANSFORM
-	db 42, HYDRO_PUMP
+	db 21, TRANSFORM
+	db 22, PSYBEAM
+	db 23, ICE_BEAM
+	db 24, WATERFALL
+	db 25, BITE
+	db 26, WITHDRAW
+	db 27, SKULL_BASH
+	db 28, TRANSFORM
+	db 29, HYDRO_PUMP
 	db 0
 	
 Wartortle3EvosMoves:
@@ -674,8 +680,11 @@ MachokeEvosMoves:
 	db EV_TRADE, 1, MACHAMP
 	db 0
 ; Learnset
+	db 27, ROCK_SLIDE
 	db 28, LOW_KICK
 	db 29, LEER
+	db 30, EARTHQUAKE
+	db 31, HYPER_BEAM
 	db 36, FOCUS_ENERGY
 	db 44, SEISMIC_TOSS
 	db 52, SUBMISSION
@@ -768,12 +777,16 @@ GolemEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 77, DEFENSE_CURL
-	db 77, ROCK_THROW
-	db 77, SELFDESTRUCT
-	db 77, HARDEN
-	db 77, EARTHQUAKE
-	db 77, EXPLOSION
+	db 27, DEFENSE_CURL
+	db 28, ROCK_THROW
+	db 29, SELFDESTRUCT
+	db 30, HARDEN
+	db 31, EARTHQUAKE
+	db 32, EXPLOSION
+	db 33, FLAMETHROWER
+	db 34, ROLLING_KICK
+	db 35, ROCK_SLIDE
+	db 36, HYPER_BEAM
 	db 0
 
 Wartortle33EvosMoves:
@@ -814,11 +827,11 @@ ElectabuzzEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 99, THUNDERSHOCK
-	db 99, SCREECH
-	db 99, THUNDERPUNCH
-	db 99, LIGHT_SCREEN
-	db 99, THUNDER
+	db 28, THUNDERSHOCK
+	db 29, SCREECH
+	db 30, THUNDERPUNCH
+	db 31, LIGHT_SCREEN
+	db 32, THUNDER
 	db 0
 
 MagnetonEvosMoves:
@@ -1398,8 +1411,14 @@ PoliwrathEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 77, HYPNOSIS
-	db 77, WATER_GUN
+	db 27, BUBBLEBEAM
+	db 28, PSYCHIC_M
+	db 29, ICE_PUNCH
+	db 30, BODY_SLAM
+	db 31, HYPNOSIS
+	db 32, WATER_GUN
+	db 33, HYDRO_PUMP
+	db 34, MEGA_PUNCH
 	db 0
 
 WeedleEvosMoves:
@@ -1534,11 +1553,14 @@ MachampEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 77, LOW_KICK
-	db 77, LEER
-	db 77, FOCUS_ENERGY
-	db 77, SEISMIC_TOSS
-	db 77, SUBMISSION
+	db 27, ROCK_SLIDE
+	db 28, LOW_KICK
+	db 29, LEER
+	db 30, EARTHQUAKE
+	db 31, HYPER_BEAM
+	db 36, FOCUS_ENERGY
+	db 44, SEISMIC_TOSS
+	db 52, SUBMISSION
 	db 0
 
 MissingNo7FEvosMoves:
@@ -1551,11 +1573,13 @@ GolduckEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 77, TAIL_WHIP
-	db 77, DISABLE
-	db 77, CONFUSION
-	db 77, FURY_SWIPES
-	db 77, HYDRO_PUMP
+	db 26, SLASH
+	db 27, AURORA_BEAM
+	db 28, DISABLE
+	db 29, CONFUSION
+	db 30, FURY_SWIPES
+	db 32, TAIL_WHIP
+	db 31, HYDRO_PUMP
 	db 0
 
 HypnoEvosMoves:
@@ -1596,10 +1620,12 @@ SnorlaxEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 77, BODY_SLAM
-	db 77, HARDEN
-	db 77, DOUBLE_EDGE
-	db 77, HYPER_BEAM
+	db 27, HI_JUMP_KICK
+	db 28, RECOVER
+	db 29, BODY_SLAM
+	db 30, HARDEN
+	db 31, DOUBLE_EDGE
+	db 32, HYPER_BEAM
 	db 0
 
 MagikarpEvosMoves:
@@ -1964,12 +1990,13 @@ PorygonEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 77, CONVERSION
-	db 77, SHARPEN
-	db 77, PSYBEAM
-	db 77, RECOVER
-	db 77, AGILITY
-	db 77, TRI_ATTACK
+	db 16, CONVERSION
+	db 17, SHARPEN
+	db 18, PSYBEAM
+	db 19, RECOVER
+	db 20, AGILITY
+	db 21, TRI_ATTACK
+	db 22, THUNDER
 	db 0
 
 AerodactylEvosMoves:
@@ -2055,7 +2082,7 @@ CharmeleonEvosMoves:
 WartortleEvosMoves:
 ; Evolutions
 	db EV_TRADE, 1, WARTORTLE_2
-	DB EV_LEVEL, 36, BLASTOISE
+	db EV_LEVEL, 36, BLASTOISE
 	db 0
 ; Learnset
 	db 8, BUBBLE

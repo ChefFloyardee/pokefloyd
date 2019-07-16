@@ -351,7 +351,7 @@ _YeahText::
 	text "Yeah!@@"
 
 _DexSeenOwnedText::
-	text "#DEX   Seen:@"
+	text "SCI-mon DEX Seen:@"
 	TX_NUM wDexRatingNumMonsSeen, 1, 3
 	text ""
 	line "         Owned:@"
@@ -359,7 +359,8 @@ _DexSeenOwnedText::
 	db "@"
 
 _DexRatingText::
-	text "#DEX Rating", $6d
+	text "SCI-mon DEX"
+	line "Rating", $6d
 	done
 
 _GymStatueText1::
@@ -3013,7 +3014,7 @@ _MonCannotLearnMachineMoveText::
 
 _ItemUseNotTimeText::
 	text "This isn't the"
-	cont "time to use that! "
+	line "time to use that! "
 	prompt
 
 _ItemUseNotYoursToUseText::
@@ -3123,7 +3124,7 @@ _TradedForText::
 	line "@"
 	TX_RAM wInGameTradeGiveMonName
 	text "'s hidden"
-	cont "potential!"
+	cont "POTENTIAL ENERGY!"
 	para "@"
 	TX_RAM wInGameTradeReceiveMonName
 	text " IS PRIME!@@"
@@ -3167,43 +3168,53 @@ _AfterTrade1Text::
 	done
 
 _WannaTrade2Text::
-	text "Hello there! Do"
-	line "you want to trade"
-
-	para "your @"
+	text "Hello there..."
+	line "I am a #MON"
+	cont "channeller."
+	para "I have the ability"
+	line "to unlock a"
+	cont "#MON's latent,"
+	cont "POTENTIAL ENERGY."
+	para "However, I"
+	line "specialize only"
+	cont "with @"
 	TX_RAM wInGameTradeGiveMonName
-	text ""
-	line "for @"
-	TX_RAM wInGameTradeReceiveMonName
+	text "."
+	para "Do you have one?"
+	para "If so, may I see"
+	line "this @"
+	TX_RAM wInGameTradeGiveMonName
 	text "?"
 	done
 
 _NoTrade2Text::
-	text "Well, if you"
-	line "don't want to..."
+	text "Well then...suit"
+	line "yourself..."
 	done
 
 _WrongMon2Text::
-	text "Hmmm? This isn't"
+	text "Child! This is no"
 	line "@"
 	TX_RAM wInGameTradeGiveMonName
-	text "."
+	text "!"
 
-	para "Think of me when"
-	line "you get one."
+	para "Think of me, and"
+	line "the POWER I can"
+	cont "give, if you ever"
+	cont "find one..."
 	done
 
 _Thanks2Text::
-	text "Thanks!"
+	text "There...it"
+	line "has been done."
 	done
 
 _AfterTrade2Text::
-	text "The @"
-	TX_RAM wInGameTradeGiveMonName
-	text " you"
-	line "traded to me"
-
-	para "went and evolved!"
+	text "Go forth my"
+	line "child and use"
+	cont "that #MON's"
+	cont "POTENTIAL to save"
+	cont "this world..."
 	done
 
 _WannaTrade3Text::

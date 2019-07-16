@@ -276,7 +276,7 @@ _OaksLabBePatientText::
 
 _OaksLabLeavingText::
 	text "G: Not so fast!"
-	line "You have a"
+	line "You have an"
 	cont "A-SCI-NGMENT!"
 	para "You have to pick"
 	cont "a SCI-mon!"
@@ -303,10 +303,7 @@ _OaksLabRivalChallengeText::
 	done
 
 _OaksLabText_1d3be::
-	text "WHAT?"
-	line "Unbelievable!"
-	cont "He's not going"
-	cont "to like this..."
+	text "WHAT the J?!"
 	prompt
 
 _OaksLabText_1d3c3::
@@ -322,12 +319,12 @@ _OaksLabRivalToughenUpText::
 	para "You're lucky G"
 	line "is here, since"
 	cont "if he wasn't I"
-	para "wouldn't have"
-	line "HELD BACK!"
+	cont "wouldn't have"
+	cont "HELD BACK!"
 	para "Next time will"
 	line "be different..."
-	cont "you can CONFIRM"
-	cont "that HYPOTHESIS!"
+	para "You can CONFIRM"
+	line "that HYPOTHESIS!"
 	para "Hey, look!"
 	line "A DISTRACTION!"
 	done
@@ -431,10 +428,12 @@ _OaksLabText_441cc::
 	prompt
 
 _OaksLabText_44201::
-	text "You still have"
-	line "lots to do."
-	cont "Look for #MON"
-	cont "in grassy areas!"
+	text "Congratulations!"
+	line "You've learned"
+	cont "A LOT about"
+	para "SCIENCE, but there"
+	line "is always MORE to"
+	cont "LEARN!"
 	done
 
 _OaksLabText_44206::

@@ -42,7 +42,7 @@ ItemNames:
 	db "SCOYENIA@"
 	db "SKOLITHOS@"
 	db "SECRET KEY@"
-	db "?????@"
+	db "BLUE MARK@"
 	db "BIKE VOUCHER@"
 	db "X ACCURACY@"
 	db "LEAF STONE@"

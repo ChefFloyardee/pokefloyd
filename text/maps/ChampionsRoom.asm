@@ -85,20 +85,21 @@ _GaryText_76120::
 	done
 
 _GaryText_76125::
-	text "MR FLOYD: Tokka!"
+	text "MR. FLOYD: Tokka!"
 	para "Do you know what"
 	line "this means!!!"
 	para "We can finally"
-	line "get the J out"
-	cont "of here and GO"
-	cont "HOME!!!"
+	line "get the J"
+	cont "out of here and"
+	cont "go HOME!!!"
 	para "Someone, GIVE THIS"
 	line "KID SOME BLUE!"
 	done
 
 _GaryText_7612a::
 	text "MR. FLOYD: <PLAYER>!"
-
+	line "You won the game!"
+	cont "You did it!"
 	para "You've made me"
 	line "me so proud!"
 	para "You faced every"
@@ -115,7 +116,7 @@ _GaryText_7612a::
 	para "You truly are"
 	line "worthy of that"
 	cont "hat and the title"
-	cont "of a CHEF OF"
+	cont "of a CHEF of"
 	cont "SCIENCE since you"
 	cont "COOKED UP"
 	cont "this game!"

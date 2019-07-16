@@ -12,6 +12,8 @@ const_value = 0
 	const HS_MUSEUM_GUY                    ; 03
 	const HS_GYM_GUY                       ; 04
 	const HS_VIRIDIAN_CITY_ITEM_1
+	const HS_PEWTER_BOULDER_1
+	const HS_PEWTER_BOULDER_2
 	const HS_CERULEAN_RIVAL                ; 05
 	const HS_CERULEAN_ROCKET               ; 06
 	const HS_CERULEAN_GUARD_1              ; 07
@@ -244,6 +246,7 @@ const_value = 0
 	const HS_INDIGO_PLATEAU_LOBBY_4
 	const HS_INDIGO_PLATEAU_LOBBY_5
 	const HS_INDIGO_PLATEAU_LOBBY_6
+
 	
 	
 	

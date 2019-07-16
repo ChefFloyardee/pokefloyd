@@ -105,7 +105,7 @@ TX_ASM
 	
 SilphCo7Text133:
 TX_ASM
-	lb bc, PORYGON, 66
+	lb bc, PORYGON, 64
 	call GivePokemon
 	jr nc, .asm_24365
 	ld a, HS_INDIGO_PLATEAU_LOBBY_4
@@ -116,7 +116,7 @@ TX_ASM
 	
 SilphCo7Text144:
 TX_ASM
-	lb bc, SNORLAX, 64
+	lb bc, SNORLAX, 66
 	call GivePokemon
 	jr nc, .asm_24365
 	ld a, HS_INDIGO_PLATEAU_LOBBY_5

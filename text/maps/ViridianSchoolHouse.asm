@@ -65,10 +65,57 @@ _SchoolText10::
 	para "QP and AO for me?!"
 	done
 
+	;tex "MR. FLOYD: SO!"
+	;par "It looks like"
+	;lin "we're WRAPPING UP"
+	;con "the DO NOW so can"
+	;con "I have a volunteer"
+	;par "read today's QP"
+	;lin "and AO for me?!"
+	
+_SchoolText11::
+	text "OUR SCIENCE"
+	line "CLASSROOM RULES"
+	para "Rule Number 3"
+	line "looks important!"
+	done
+	
+	
+_VermilionHouse2Text_560b1z::
+	text "<PLAYER>!"
+	prompt
+
+_VermilionHouse2Text_560b6z::
+	text "You've so totally"
+	line "earned some BLUE!"
+	para "<PLAYER> received"
+	line "a @"
+	TX_RAM wcf4b
+	text "!@@"
+
+_VermilionHouse2Text_560bbz::
+	text ""
+
+	para "BLUE IS TOO COOL!"; "SCIENCE ON!" ;"BLUE 4 YOU!"
+	done
+
+_VermilionHouse2Text_560c0z::
+	text "Oh...but what's"
+	line "not to like?"
+	done
+
+_VermilionHouse2Text_560c5z::
 	text "MR. FLOYD: SO!"
 	para "It looks like"
 	line "we're WRAPPING UP"
-	cont "the DO NOW so can"
-	cont "I have a volunteer"
-	para "read today's QP"
-	line "and AO for me?!"
+	cont "the DO NOW so who"
+	cont "can read today's"
+	para "QP and AO for me?!"
+	done
+
+_VermilionHouse2Text_560caz::
+	text "Oh no!"
+
+	para "You have no room"
+	line "for your reward!"
+	done
