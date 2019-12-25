@@ -226,6 +226,7 @@ PewterCity_TextPointers:
 	dw PewterCityText18
 	dw ViridianCityText17
 	dw PewterCityText20
+	dw PokeCenterSignText2
 
 PewterCityText1:
 	TX_FAR _PewterCityText1
@@ -371,6 +372,9 @@ PewterCityText15:
 	ld a, HS_PEWTER_BOULDER_2
 	ld [wMissableObjectIndex], a
 	predef HideObject
+	ld a, HS_PEWTER_BOULDER_3
+	ld [wMissableObjectIndex], a
+	predef HideObject
 	ld a, HS_MUSEUM_GUY
 	ld [wMissableObjectIndex], a
 	predef HideObject
@@ -503,4 +507,8 @@ FloydText_75ac7:
 	
 PewterCityText20:
 	TX_FAR _PewterCityText20
+	db "@"
+	
+PokeCenterSignText2:
+	TX_FAR _PokeCenterSignText2
 	db "@"

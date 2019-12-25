@@ -3,14 +3,13 @@ _SSAnne10Text8::
 	line "Goggoh!@@"
 
 _SSAnne10BattleText1::
-	text "You know what they"
-	line "say about sailors"
-	cont "and fighting!"
+	text "Are you being"
+	line "your BEST self?!"
 	done
 
 _SSAnne10EndBattleText1::
-	text "Right!"
-	line "Good fight, mate!"
+	text "That's just"
+	line "FLOYD!"
 	prompt
 
 _SSAnne10AfterBattleText1::

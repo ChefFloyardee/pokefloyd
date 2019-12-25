@@ -15,12 +15,12 @@ PewterCity_Object:
 	sign 5, 29, 13 ; PewterCityText6
 	sign 33, 19, 7 ; PewterCityText7
 	sign 24, 17, 8 ; MartSignText
-	sign 14, 25, 9 ; PokeCenterSignText
+	sign 14, 25, 21 ; PokeCenterSignText
 	sign 15, 9, 10 ; PewterCityText10
 	sign 17, 19, 11 ; PewterCityText11
 	sign 25, 23, 12 ; PewterCityText12
 
-	db 9 ; objects
+	db 10 ; objects
 	object SPRITE_FISHER2, 15, 30, STAY, RIGHT, 16 ; person
 	object SPRITE_BUG_CATCHER, 35, 16, STAY, DOWN, 5 ; person
 	object SPRITE_SEEL, 15, 31, STAY, NONE, 15 ; person
@@ -30,6 +30,7 @@ PewterCity_Object:
 	object SPRITE_QUADRUPED2, 15, 29, STAY, RIGHT, 17 ; person
 	object SPRITE_BOULDER, 13, 12, STAY, NONE, 20 ; person
 	object SPRITE_BOULDER, 13, 13, STAY, NONE, 20 ; person
+	object SPRITE_BOULDER, 16, 18, STAY, NONE, 20 ; person
 
 	; warp-to
 	warp_to 14, 7, PEWTER_CITY_WIDTH ; MUSEUM_1F

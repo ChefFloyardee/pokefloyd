@@ -14,6 +14,7 @@ const_value = 0
 	const HS_VIRIDIAN_CITY_ITEM_1
 	const HS_PEWTER_BOULDER_1
 	const HS_PEWTER_BOULDER_2
+	const HS_PEWTER_BOULDER_3
 	const HS_CERULEAN_RIVAL                ; 05
 	const HS_CERULEAN_ROCKET               ; 06
 	const HS_CERULEAN_GUARD_1              ; 07

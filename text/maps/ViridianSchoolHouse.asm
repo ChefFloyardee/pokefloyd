@@ -108,14 +108,126 @@ _VermilionHouse2Text_560c5z::
 	text "MR. FLOYD: SO!"
 	para "It looks like"
 	line "we're WRAPPING UP"
+	cont "the DO NOW, so"
+	cont "who wants to" ;wants to
+	para "READ today's QP and"
+	line "AO for the class?!"
+	done
+
+
+	text "MR. FLOYD: SO!"
+	para "It looks like"
+	line "we're WRAPPING UP"
 	cont "the DO NOW so who"
 	cont "can read today's"
 	para "QP and AO for me?!"
-	done
+	
 
 _VermilionHouse2Text_560caz::
 	text "Oh no!"
 
 	para "You have no room"
 	line "for your reward!"
+	done
+
+_EndText2::
+	text "DO NOW DO NOW!"
+	para "QP QP!"
+	para "I'm making a RAP"
+	line "about Mr. Floyd's"
+	cont "class!"
+	para "AaaaaOoooooo!"
+	done
+	
+_EndText7::
+	text "Mr. Floyd has one"
+	line "MAD sweater"
+	cont "collection!"
+	para "I'm LICHEN his"
+	line "style!"
+	done
+	
+_EndText3::
+	text "Chef Floyardee is"
+	line "COOKIN' UP those"
+	cont "DO NOWs and QPs!"
+	para "He be JUST CHEFIN'!"
+	done
+	
+_EndText5::
+	text "Fine...I'll read"
+	line "it..."
+	para "Rule Number 3"
+	line "for the class:"
+	cont "Raise your hand"
+	para "and do not speak"
+	line "out while I or"
+	cont "others are"
+	cont "speaking..."
+	para "DOT SMILEY-FACE..!"
+	done
+	
+_EndText4::
+	text "WOAH! What the J?!"
+	para "Mr. Floyd is BACK!"
+	para "I better REV UP my"
+	line "SCIENTIFIC MIND!"
+	para "Huh?! He needs a"
+	line "volunteer to read"
+	cont "today's QP and AO?"
+	para "I'll SO TOTALLY do"
+	line "that!"
+	para "Today's QP"
+	para "QP BOOK REVIEW"
+	para "DRAW the diagram"
+	line "of a CIRCUIT on"
+	cont "Pg. 93 in your"
+	cont "books, and then"
+	cont "LIST 3 household"
+	cont "devices that USE"
+	cont "one!"
+	para "Open books, work"
+	line "on today's-"
+	para "No!"
+	line "The AO is on the"
+	cont "bottom!"
+	done
+	
+_EndText6::
+	text "I wanna do a LAB"
+	line "with TOKKA...!"
+	para "Wait...what?!"
+	para "Mr. Floyd is"
+	line "handing out some"
+	cont "BLUE?!"
+	para "I guess that means"
+	line "we're HEADIN' DOWN"
+	cont "to GAME-TOWN!"
+	para "I call dibs on"
+	line "the RANDOMIZER!"
+	done
+	
+_EndText1::
+	text "Yeah, I know!"
+	para "Listen to AKILA"
+	line "and LET THE"
+	cont "UNITS GUIDE YOU..."
+	para "and you'll NEVER"
+	line "get a DO NOW wrong!"
+	done
+	
+_SchoolBattleText1::
+	text "Quit messing with"
+	line "us, kid!"
+	done
+
+_SchoolEndBattleText1::
+	text "I give"
+	line "up!"
+	prompt
+
+_SchoolAfterBattleText1::
+	text "A hint? You can"
+	line "open doors with a"
+	cont "CARD KEY!"
 	done

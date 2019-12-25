@@ -227,3 +227,8 @@ _FloydText_75ac7::
 _PewterCityText20::
 	text "GET EXCITED!"
 	done
+	
+_PokeCenterSignText2::
+	text "Heal Your #MON!"
+	line "#MON CENTER"
+	done

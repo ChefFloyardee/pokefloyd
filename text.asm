@@ -808,14 +808,14 @@ _ViridianSchoolNotebookText5::
 
 _ViridianSchoolNotebookText1::
 	text "Looked at the"
-	line "notebook!"
+	line "Science Notebook!"
 	para "DO NOW"
 	para "Know:"
 	line "Asked:"
 	cont "Answer:"
 	para "QP"
 	para "......"
-	para "H-Dub"
+	para "HW"
 	para "......"
 	prompt
 
@@ -827,7 +827,7 @@ _ViridianSchoolNotebookText2::
 	cont "Answer:"
 	para "QP"
 	para "......"
-	para "H-Dub"
+	para "HW"
 	para "......"
 	prompt
 
@@ -839,7 +839,7 @@ _ViridianSchoolNotebookText3::
 	cont "Answer:"
 	para "QP"
 	para "......"
-	para "H-Dub"
+	para "HW"
 	para "......"
 	prompt
 
@@ -851,7 +851,7 @@ _ViridianSchoolNotebookText4::
 	cont "Answer:"
 	para "QP"
 	para "......"
-	para "H-Dub"
+	para "HW"
 	para "......"
 	prompt
 

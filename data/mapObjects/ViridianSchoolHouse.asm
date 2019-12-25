@@ -16,8 +16,8 @@ ViridianSchoolHouse_Object:
 	object SPRITE_YOUNG_BOY, 2, 5, STAY, UP, 6 ; person
 	object SPRITE_LITTLE_GIRL, 5, 5, STAY, UP, 5 ; person
 	object SPRITE_SEEL, 6, 1, STAY, DOWN, 9 ; person
+	object SPRITE_LAPRAS_GIVER, 2, 1, STAY, DOWN, 10, OPP_PROF_OAK, 1
 	object SPRITE_BLACK_HAIR_BOY_1, 5, 4, STAY, LEFT, 3 ; person
-	object SPRITE_LAPRAS_GIVER, 2, 1, STAY, DOWN, 10 ; person
 	object SPRITE_LASS, 4, 1, STAY, DOWN, 7 ; person
 
 	; warp-to

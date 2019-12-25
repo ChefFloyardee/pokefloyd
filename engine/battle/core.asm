@@ -6339,8 +6339,15 @@ LoadEnemyMonData:
 	ld [de], a
 	 ld a, [wCurOpponent]
     cp OPP_LANCE
-    jr nz, .loadSpeciesName
+	jr nz, .next
     ld hl, .LanceMonsNicks
+	ld a, [wWhichPokemon]
+    call SkipFixedLengthTextEntries
+    jr .copyNick
+.next
+	cp OPP_PROF_OAK
+	jr nz, .loadSpeciesName
+	ld hl, .OakMonsNicks
     ld a, [wWhichPokemon]
     call SkipFixedLengthTextEntries
     jr .copyNick
@@ -6377,6 +6384,9 @@ LoadEnemyMonData:
 	
 .LanceMonsNicks
    db "LET@@@@@@@@", "THE@@@@@@@@", "UNITS@@@@@@", "GUIDE@@@@@@", "YOU!@@@@@@@", "EVIL-TOKKA@"
+   
+.OakMonsNicks
+   db "SUBLAX@@@@@", "2@@@@@@@@@@", "CHASE-JR@@@", "FLOYD@@@@@@", "INC@@@@@@@@", "TOKKA@@@@@@"
 
 ; calls BattleTransition to show the battle transition animation and initializes some battle variables
 DoBattleTransitionAndInitBattleVariables:

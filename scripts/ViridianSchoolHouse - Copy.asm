@@ -1,16 +1,16 @@
 ViridianSchoolHouse_Script:
-    call EnableAutoTextBoxDrawing
-    ld hl, SchoolTrainerHeader0
-    ld de, ViridianSchoolHouse_ScriptPointers
-    ld a, [wSSAnneB1FRoomsCurScript]
-    call ExecuteCurMapScriptInTable
-    ld [wSSAnneB1FRoomsCurScript], a
-    ret
- 
+	call EnableAutoTextBoxDrawing
+	ld hl, ViridianSchoolHouseTrainerHeader0
+	ld de, ViridianSchoolHouse_ScriptPointers
+	ld a, [wViridianSchoolHouseCurScript]
+	call ExecuteCurMapScriptInTable
+	ld [wViridianSchoolHouseCurScript], a
+	ret
+
 ViridianSchoolHouse_ScriptPointers:
-    dw CheckFightingMapTrainers
-    dw DisplayEnemyTrainerTextAndStartBattle
-    dw EndTrainerBattle
+	dw CheckFightingMapTrainers
+	dw DisplayEnemyTrainerTextAndStartBattle
+	dw EndTrainerBattle
 
 ViridianSchoolHouse_TextPointers:
 	dw SchoolText1
@@ -24,17 +24,16 @@ ViridianSchoolHouse_TextPointers:
 	dw SchoolText9
 	dw SchoolText10
 	dw SchoolText11
-	dw SchoolText21
-	dw SchoolText22
+	dw SilphCo3Text11
 	
-SchoolTrainerHeader0:
-    dbEventFlagBit EVENT_BEAT_SS_ANNE_10_TRAINER_0
-    db ($0 << 4) ; trainer's view range
-    dwEventFlagAddress EVENT_BEAT_SS_ANNE_10_TRAINER_0
-    dw SchoolBattleText1 ; TextBeforeBattle
-    dw SchoolAfterBattleText1 ; TextAfterBattle
-    dw SchoolEndBattleText1 ; TextEndBattle
-    dw SchoolEndBattleText1 ; TextEndBattle
+ViridianSchoolHouseTrainerHeader0:
+	dbEventFlagBit EVENT_BEAT_SILPH_CO_3F_TRAINER_0
+	db ($2 << 4) ; trainer's view range
+	dwEventFlagAddress EVENT_BEAT_SILPH_CO_3F_TRAINER_0
+	dw SilphCo3BattleText11 ; TextBeforeBattle
+	dw SilphCo3AfterBattleText11 ; TextAfterBattle
+	dw SilphCo3EndBattleText11 ; TextEndBattle
+	dw SilphCo3EndBattleText11 ; TextEndBattle
 	
 	db $ff
 
@@ -168,10 +167,34 @@ SchoolText_1d5b1:
 	db "@"
 	
 SchoolText10:
-    TX_ASM
-    ld hl, SchoolTrainerHeader0
-    call TalkToTrainer
-    jp TextScriptEnd
+	TX_ASM
+	ld a, [wd728]
+	bit 3, a
+	jr nz, .asm_03ef5
+	ld hl, VermilionHouse2Text_560b1z
+	call PrintText
+	jr nz, .asm_eb1b7
+	lb bc, UNUSED_ITEM, 1
+	call GiveItem
+	jr nc, .BagFull
+	ld hl, wd728
+	set 3, [hl]
+	ld hl, VermilionHouse2Text_560b6z
+	jr .asm_5dd95
+.BagFull
+	ld hl, VermilionHouse2Text_560caz
+	jr .asm_5dd95
+.asm_eb1b7
+	ld hl, VermilionHouse2Text_560c0z
+	jr .asm_5dd95
+.asm_03ef5
+	ld hl, VermilionHouse2Text_560c5z
+.asm_5dd95
+	jr .asm_0b11d
+.asm_0b11d
+	call PrintText
+	SetEvent EVENT_ENTERED_BLUES_HOUSE 
+	jp TextScriptEnd
 
 VermilionHouse2Text_560b1z:
 	TX_FAR _VermilionHouse2Text_560b1z
@@ -228,54 +251,23 @@ EndText7:
 	TX_FAR _EndText7
 	db "@"
 	
-SchoolText21:
-    TX_ASM
-    ld hl, SchoolTrainerHeader0
-    call TalkToTrainer
-    jp TextScriptEnd	
+SilphCo3BattleText11:
+	TX_FAR _SilphCo3BattleText11
+	db "@"
+
+SilphCo3EndBattleText11:
+	TX_FAR _SilphCo3EndBattleText11
+	db "@"
+
+SilphCo3AfterBattleText11:
+	TX_FAR _SilphCo3AfterBattleText11
+	db "@"	
 	
-SchoolText22:
-    TX_FAR _SchoolText2
-    db "@"
- 
-SchoolBattleText1:
-    TX_FAR _SSAnne10BattleText1
-    db "@"
- 
-SchoolEndBattleText1:
-    TX_FAR _SSAnne10EndBattleText1
-    db "@"
- 
-SchoolAfterBattleText1:
+SilphCo3Text11:
 	TX_ASM
-	ld a, [wd728]
-	bit 3, a
-	jr nz, .asm_03ef5
-	ld hl, VermilionHouse2Text_560b1z
-	call PrintText
-	jr nz, .asm_eb1b7
-	lb bc, UNUSED_ITEM, 1
-	call GiveItem
-	jr nc, .BagFull
-	ld hl, wd728
-	set 3, [hl]
-	ld hl, VermilionHouse2Text_560b6z
-	jr .asm_5dd95
-.BagFull
-	ld hl, VermilionHouse2Text_560caz
-	jr .asm_5dd95
-.asm_eb1b7
-	ld hl, VermilionHouse2Text_560c0z
-	jr .asm_5dd95
-.asm_03ef5
-	ld hl, VermilionHouse2Text_560c5z
-.asm_5dd95
-	jr .asm_0b11d
-.asm_0b11d
-	call PrintText
-	SetEvent EVENT_ENTERED_BLUES_HOUSE 
+	ld hl, ViridianSchoolHouseTrainerHeader0
+	call TalkToTrainer
 	jp TextScriptEnd
-    db "@"
 
 
 
