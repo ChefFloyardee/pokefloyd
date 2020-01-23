@@ -336,13 +336,13 @@ ItemUseBall:
 ; Great Ball:        BallFactor2 = 200
 ; Ultra/Safari Ball: BallFactor2 = 150
 	ld a, [wcf91]
-	ld b, 255
+	ld b, 155
 	cp POKE_BALL
 	jr z, .skip4
-	ld b, 200
+	ld b, 100
 	cp GREAT_BALL
 	jr z, .skip4
-	ld b, 150
+	ld b, 55
 	cp ULTRA_BALL
 	jr z, .skip4
 
