@@ -83,6 +83,9 @@ _SchoolText11::
 	
 _VermilionHouse2Text_560b1z::
 	text "<PLAYER>!"
+	para "You did it! This"
+	line "FINAL battle was"
+	cont "your FINAL test!"
 	prompt
 
 _VermilionHouse2Text_560b6z::

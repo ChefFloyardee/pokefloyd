@@ -4071,15 +4071,15 @@ CheckForDisobedience:
 	ld a, 101
 	jr nz, .next
 	bit 5, [hl]
-	ld a, 70
+	ld a, 90
 	jr nz, .next
 	bit 3, [hl]
-	ld a, 50
+	ld a, 80
 	jr nz, .next
 	bit 1, [hl]
-	ld a, 30
+	ld a, 70
 	jr nz, .next
-	ld a, 25
+	ld a, 50
 .next
 	ld b, a
 	ld c, a

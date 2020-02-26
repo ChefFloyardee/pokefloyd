@@ -8,8 +8,8 @@ _SSAnne10BattleText1::
 	done
 
 _SSAnne10EndBattleText1::
-	text "That's just"
-	line "FLOYD!"
+	text "That's"
+	line "just FLOYD!"
 	prompt
 
 _SSAnne10AfterBattleText1::

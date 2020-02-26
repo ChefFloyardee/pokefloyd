@@ -61,6 +61,13 @@ _PalletTownText5::
 	text "A large boulder"
 	line "blocks the"
 	cont "entrance."
+	para "The nameplate"
+	line "behind it is"
+	cont "scratched off"
+	cont "a bit, but it"
+	para "looks like it used"
+	line "to read;"
+	para "A////'S OFFICE"
 	done
 
 _PalletTownText11::
@@ -112,7 +119,7 @@ _PalletTownText99::
 	
 _PalletTownText98::
 	text "The nameplate"
-	line "ia scratched off"
+	line "is scratched off"
 	cont "a bit, but it"
 	para "looks like it used"
 	line "to read;"

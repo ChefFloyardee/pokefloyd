@@ -19,7 +19,7 @@ PalletTown_Object:
 	object SPRITE_OAK_AIDE, 3, 8, WALK, 0, 2 ; person
 	object SPRITE_BRUNETTE_GIRL, 11, 10, WALK, 0, 3 ; person
 	object SPRITE_ROCKER, 9, 4, WALK, 0, 4 ; person
-	object SPRITE_BOULDER, 8, 1, STAY, 0, 5 ; person
+	object SPRITE_BOULDER, 9, 1, STAY, 0, 5 ; person
 	object SPRITE_BLACK_HAIR_BOY_1, 17, 8, STAY, UP, 10 ; person
 
 	; warp-to

@@ -361,8 +361,9 @@ _CinnabarGymText_75a33::
 	line "INDEPENDENT"
 	cont "variable that"
 	para "you CHANGE to"
-	line "produce a resultant"
-	cont "CHANGE in your"
+	line "produce a"
+	cont "resultant CHANGE"
+	cont "in your"
 	para "DEPENDENT VARIABLE!"
 	done
 

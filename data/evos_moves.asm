@@ -1295,7 +1295,7 @@ EeveeEvosMoves:
 	db 0
 ; Learnset
 	db 27, QUICK_ATTACK
-	db 31, TAIL_WHIP
+	db 31, SAND_ATTACK
 	db 37, BITE
 	db 45, TAKE_DOWN
 	db 0

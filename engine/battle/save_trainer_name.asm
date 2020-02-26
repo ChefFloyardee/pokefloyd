@@ -99,7 +99,7 @@ JugglerName:
 BlackbeltName:
 	db "BLACKBELT@"
 ProfOakName:
-	db "PROF.OAK@"
+	db "MR. FLOYD@"
 ChiefName:
 	db "CHIEF@"
 ScientistName:
